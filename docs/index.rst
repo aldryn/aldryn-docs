@@ -3,13 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-======
-Aldryn
-======
-
 .. image:: _static/aldryn-logo-main.png
    :width: 200 px
    :alt: Aldryn logo
+
+
 
 .. ATTENTION::
    This guide is currently under heavy active development. If you’d like to help,
