@@ -28,8 +28,8 @@ Glossary
 
     Login
         Authentication application used by :term:`Control Panel`,
-        https://www.django-cms.org and :term:`Deployed Sites`. Located at https://login.django-cms.com.
-        Git repository is at https://github.com/aldryn/login.django-cms.com.
+        https://www.django-cms.org and :term:`Deployed Sites`. Located at https://login.aldryn.com.
+        Git repository is at https://github.com/aldryn/login.aldryn.com.
 
     Boilerplates
         A set of templates, static files and optionally compass files. Similar to a theme, but
