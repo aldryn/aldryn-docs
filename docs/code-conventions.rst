@@ -15,7 +15,7 @@ Model Field Naming
 
 Date and time:
 
-Use the ``_at`` suffix for `datetime`` and the ``_on`` suffix for ``dates``.
+Use the ``_at`` suffix for ``datetime`` and the ``_on`` suffix for ``dates``.
 
 * timestamps (usually automatically created): ``created_at``, ``created_on``, ``modified_at``, ``modified_on`` (past time form!)
 * date/datetime that control something: ``publish_at``, ``start_at``, ``end_at`` (use imperative form)
