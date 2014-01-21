@@ -70,6 +70,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   custom_domains
    addon-first-steps
    addon-namespace
    addon-apphook
