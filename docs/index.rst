@@ -13,20 +13,29 @@
    This guide is currently under heavy active development. If you’d like to help,
    `fork us on GitHub <https://github.com/aldryn/aldryn-docs>`_!
 
+#######
+Welcome
+#######
+
+
 `Aldryn`_ is an easy to use and developer friendly content management system for web professionals.
-`Aldryn`_ goes full circle by assisting with many aspects the web project lifecycle. Providing
+It goes full circle by assisting with many aspects the web project lifecycle. Providing
 hosting, content management, Addon-development, dependency management, product lifecycle and
 shared team access.
 
 This documentation provides a high level overview of what Aldryn has to offer. Then goes deeper
-into topics that are typically used by:
+into topics that are typically used by.
 
 * Project Managers
+
 * Content Creators
+
 * Web Developers (frontend and backend)
 
-Getting help
-============
+
+############
+Getting Help
+############
 
 Having trouble? We'd like to help!
 
@@ -51,40 +60,40 @@ Having trouble? We'd like to help!
 .. _issue tracker: https://github.com/aldryn/aldryn/issues
 
 
+################
 Project Managers
-================
+################
 
+* Todo
+
+
+################
 Content Creators
-================
+################
 
+* Todo
+
+
+##############
 Web Developers
-==============
+##############
 
 While this document is focused on code for the aldryn platform, many things also apply to general
 django projects and apps.
 
-
-
-Contents:
+******
+Addons
+******
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   custom_domains
-   addon-first-steps
-   addon-namespace
-   addon-apphook
-   addon-translations
-   addon-draft-live
-   addon-upload
-   migrations (don't touch other apps. migrate to zero on uninstall? backwards migrations!)
-   divio-boilerplate
-   search
-   code-conventions
-   custom-boilerplates
-   glossary
-   faq
-   support
+    addons/index
+    custom-domains
+    code-conventions
+    glossary
+    contents
+    faq/index
 
 
 .. _Aldryn: http://www.aldryn.com/
