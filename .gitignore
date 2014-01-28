@@ -1,1 +1,5 @@
-/docs/_build
+docs/_build/
+.idea/
+*.pyc
+*.pyo
+/env/
