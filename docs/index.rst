@@ -72,6 +72,7 @@ Table of Contents
     sites/index
     addons/index
     boilerplates/index
+    themes/index
     faq/index
     glossary
 

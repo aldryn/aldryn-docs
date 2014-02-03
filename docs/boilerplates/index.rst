@@ -7,4 +7,3 @@ Boilerplates
 
     first-steps
     configuration
-    code-conventions
