@@ -1,6 +1,6 @@
-################
+================
 Code Conventions
-################
+================
 
 
 The Aldryn certified Addons all follow a distinct coding style. Some rules are of a more cosmetic
@@ -11,7 +11,7 @@ nature, others exist to easy interoperability between Addons.
 
 
 Model Field Naming
-==================
+------------------
 
 Date and time:
 
@@ -36,7 +36,7 @@ templates:
 
 
 Database Fields
-===============
+---------------
 
 * ForeignKeys that can be blank, should also have ``on_delete=models.SET_NULL``. This prevents cascade deletes of a lot of attached content that is usually not what you want.
 * Filer fields are also ForeignKeys, so the rule above applies!

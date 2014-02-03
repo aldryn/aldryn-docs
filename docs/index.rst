@@ -8,15 +8,14 @@
    :alt: Aldryn logo
 
 
-
 .. ATTENTION::
    This guide is currently under heavy active development. If you’d like to help,
    `fork us on GitHub <https://github.com/aldryn/aldryn-docs>`_!
 
+
 #######
 Welcome
 #######
-
 
 `Aldryn`_ is an easy to use and developer friendly content management system for web professionals.
 It goes full circle by assisting with many aspects the web project lifecycle. Providing
@@ -24,7 +23,7 @@ hosting, content management, Addon-development, dependency management, product l
 shared team access.
 
 This documentation provides a high level overview of what Aldryn has to offer. Then goes deeper
-into topics that are typically used by.
+into topics that are typically used by:
 
 * Project Managers
 
@@ -42,7 +41,7 @@ Having trouble? We'd like to help!
 * Try the :doc:`FAQ <faq/index>` -- it's got answers to many common questions.
 
 * Looking for specific information? Try the :ref:`genindex`, :ref:`modindex` or
-  the :doc:`detailed table of contents <contents>`.
+  the :doc:`detailed table of contents <index>`.
 
 * Search for information in the archives of the Aldryn Q&A group, or
   `post a question`_.
@@ -60,40 +59,20 @@ Having trouble? We'd like to help!
 .. _issue tracker: https://github.com/aldryn/aldryn/issues
 
 
-################
-Project Managers
-################
-
-* Todo
-
-
-################
-Content Creators
-################
-
-* Todo
-
-
-##############
-Web Developers
-##############
-
 While this document is focused on code for the aldryn platform, many things also apply to general
 django projects and apps.
 
-******
-Addons
-******
+#################
+Table of Contents
+#################
 
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
 
+    sites/index
     addons/index
-    custom-domains
-    code-conventions
-    glossary
-    contents
+    boilerplates/index
     faq/index
-
+    glossary
 
 .. _Aldryn: http://www.aldryn.com/

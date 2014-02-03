@@ -1,6 +1,6 @@
-######
-Addons
-######
+############
+Boilerplates
+############
 
 .. toctree::
     :maxdepth: 2
