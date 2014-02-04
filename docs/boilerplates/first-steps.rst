@@ -1,5 +1,5 @@
 ===========
-First steps
+First Steps
 ===========
 
 Boilerplates are a set of default templates and staticfiles, optionally with initial data.
@@ -65,10 +65,29 @@ Now we include some basic markup into **base.html** and the result should be sim
 .. HINT::
    Within the divio-boilerplate we use **base_root.html** to define this setup and base.html extends base_root.html.
    This is a perfect example of how djangos template inheritance works and you might want to check more possibilities
-   within the  `django template documentation <https://docs.djangoproject.com/en/dev/ref/templates/>`_!.
+   within the  `django template documentation <https://docs.djangoproject.com/en/dev/ref/templates/>`_.
 
 
 Static Files
 ------------
+
+This folder is completely accessible to the public. You can access files by combining your websites URL
+and the folder **/static/**. You would end up with something like http://www.aldryn.com/static/favicon.png.
+
+The structure there can be freely arranged as you please. For the divio-boilerplate we choose shorthands like
+**js**, **css**, **img**. You can also place your fonts, favicons and much more into /static/.
+
+We recommend adding only layout specific files. Images for galleries or downloadable files should be managed
+using the `django-filer <https://github.com/stefanfoulis/django-filer>`_ which can be accessed through the admin.
+
+You can link within your templates to your static files using django's ``{% static "" %}`` template tag.
+For this to work, you need to add ``{% load static %}`` first and than reference to your file, for example:
+``{% static "img/logo.png" %}``. You can ommit /static/ as the template tag will automatically append the correct path.
+This is helpfull if you are using CDN's, which Aldryn uses per default. So we **recommend** to always use this tag
+within your templates or snippets.
+
+
+Private Files
+-------------
 
 todo
