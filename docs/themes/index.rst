@@ -1,6 +1,6 @@
-######
+======
 Themes
-######
+======
 
 .. toctree::
     :maxdepth: 2

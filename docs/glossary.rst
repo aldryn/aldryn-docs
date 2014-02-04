@@ -2,7 +2,6 @@
 Glossary
 ########
 
-
 .. glossary::
 
     Control Panel

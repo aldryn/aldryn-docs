@@ -1,6 +1,6 @@
-######
+======
 Addons
-######
+======
 
 .. toctree::
     :maxdepth: 2

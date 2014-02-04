@@ -6,7 +6,9 @@ A boilerplate requires a configuration file named ``boilerplate.json`` which fol
 This file is placed within the root/ of your boilerplate and can be validated using the **cmscloud** clients command
 ``cmscloud boilerplate validate``.
 
-The following is an example of a configuration file using all options::
+The following is an example of a configuration file using all options:
+
+.. code-block:: json
 
     {
         "name": "My Boilerplate",
