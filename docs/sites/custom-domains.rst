@@ -1,6 +1,6 @@
-##############
+==============
 Custom Domains
-##############
+==============
 
 Enter your custom domain on the general settings tab on the controlpanel. Then point your DNS to your site url.::
 
