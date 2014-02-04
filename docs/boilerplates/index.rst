@@ -7,4 +7,5 @@ Boilerplates
 
     first-steps
     configuration
+    initial-data
     code-conventions

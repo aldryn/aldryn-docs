@@ -91,6 +91,60 @@ Private Files
 
 Private files are not accessible to the public and are mostly used for preprocessors like less, sass or haml.
 
+To get started, create a folder with the containing files like **/private/sass/** and add required configuration
+files within /private/. Aldryn will than automatically detect your settings and convert them into our system.
+Configuration files can be set to compile locally. Within the divio-boilerplate example, base.scss will be
+compiled into /static/css/base.css.
+
+You can also have multiple preprocessors so you would end up with a structure like:
+
+.. code-block:: text
+
+    /private/
+        |- coffeescript/
+        |- haml/
+        |- sass/
+
 .. WARNING::
-   Aldryn currently only supports **sass** / **compass**. Additional services like **less** and **haml** will
-   be added soon.
+   Aldryn currently only supports **sass** / **compass**. Additional services like **less**, **haml** or **coffeescript**
+   will be added soon.
+
+
+Boilerplate.json
+----------------
+
+Add a ``boilerplate.json`` configuration file so Aldryn can recognise your boilerplate, validate and upload
+it to the market place. This file is described in more detail within the :doc:`configuration <configuration>` section.
+
+
+Upload
+------
+
+As soon as everything is ready, you will have to upload the boilerplate to Aldryn. This requires the
+`cmscloud client <http://www.aldryn.com/en/help/cloud-client/>`_ which will provide you with the following two commands
+for boilerplates:
+
+* ``cmscloud boilerplate validate``
+* ``cmscloud boilerplate upload``
+
+The first will validate your configuration file (``boilerplate.json``)
+and the second will upload your boilerplate to the marketplace.
+
+In short:
+*********
+
+#. Navigate to the root folder of your boilerplate using any **Shell** that is available to you
+#. Ensure you are logged in to the cmscloud running ``cmscloud login``
+#. Validate the boilerplate running ``cmscloud boilerplate validate``
+#. Upload the boilerplate running ``cmscloud boilerplate upload``
+
+Now you can navigate to the `my boilerplates <https://control.aldryn.com/account/my-boilerplates/>`_
+and install your boilerplate.
+
+.. WARNING::
+   All boilerplates are currently set to be private. As a result, only yourself and shared users can install or
+   modify the boilerplate. We will cahnge this setting in the future so you can define this state.
+
+.. HINT::
+   You can update a boilerplate by increasing the **version** within the ``boilerplate.json``. To upload follow the
+   "Upload" steps again.
