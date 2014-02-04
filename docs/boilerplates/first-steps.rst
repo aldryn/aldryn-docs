@@ -83,11 +83,14 @@ using the `django-filer <https://github.com/stefanfoulis/django-filer>`_ which c
 You can link within your templates to your static files using django's ``{% static "" %}`` template tag.
 For this to work, you need to add ``{% load static %}`` first and than reference to your file, for example:
 ``{% static "img/logo.png" %}``. You can ommit /static/ as the template tag will automatically append the correct path.
-This is helpfull if you are using CDN's, which Aldryn uses per default. So we **recommend** to always use this tag
-within your templates or snippets.
+This is helpfull if you are using CDN's. So we **recommend** to always use this tag within your templates or snippets.
 
 
 Private Files
 -------------
 
-todo
+Private files are not accessible to the public and are mostly used for preprocessors like less, sass or haml.
+
+.. WARNING::
+   Aldryn currently only supports **sass** / **compass**. Additional services like **less** and **haml** will
+   be added soon.
