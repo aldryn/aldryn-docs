@@ -7,5 +7,6 @@ Boilerplates
 
     first-steps
     configuration
+    protected-files
     initial-data
     code-conventions

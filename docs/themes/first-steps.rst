@@ -22,3 +22,13 @@ This is a rough overview of how to create and implement a theme:
    ``ln -s divio-boilerplate/private/sass/libs libs``
 
 #. Create and maintain your ``app.json``
+
+
+TODO
+----
+
+Explain concept:
+
+* boilerplate
+* apps
+* theme
