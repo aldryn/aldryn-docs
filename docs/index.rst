@@ -70,6 +70,7 @@ Table of Contents
     :maxdepth: 1
 
     sites/index
+    client/index
     addons/index
     boilerplates/index
     themes/index

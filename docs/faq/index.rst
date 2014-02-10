@@ -2,4 +2,4 @@
 FAQ
 ===
 
-todo
+There are no frequently asked questions yet.

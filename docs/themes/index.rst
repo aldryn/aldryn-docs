@@ -6,4 +6,5 @@ Themes
     :maxdepth: 2
 
     first-steps
+    configuration
     inheritance

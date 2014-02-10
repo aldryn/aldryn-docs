@@ -1,5 +1,5 @@
-=======================
-Json Configuration File
-=======================
+=============
+Configuration
+=============
 
 Hello World
