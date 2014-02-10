@@ -54,7 +54,7 @@ Now we include some basic markup into **base.html** and the result should be sim
     <body>
         {% cms_toolbar %}
 
-        <p>Hello World</p>p>
+        <p>Hello World</p>
 
         {% render_block "js" %}
         {{ ALDRYN_SNAKE.render_tail }}
@@ -121,11 +121,11 @@ Upload
 ------
 
 As soon as everything is ready, you will have to upload the boilerplate to Aldryn. This requires the
-`cmscloud client <http://www.aldryn.com/en/help/cloud-client/>`_ which will provide you with the following two commands
+`aldryn client <http://www.aldryn.com/en/help/cloud-client/>`_ which will provide you with the following two commands
 for boilerplates:
 
-* ``cmscloud boilerplate validate``
-* ``cmscloud boilerplate upload``
+* ``aldryn boilerplate validate``
+* ``aldryn boilerplate upload``
 
 The first will validate your configuration file (``boilerplate.json``)
 and the second will upload your boilerplate to the marketplace.
@@ -134,9 +134,9 @@ In short:
 *********
 
 #. Navigate to the root folder of your boilerplate using any **Shell** that is available to you
-#. Ensure you are logged in to the cmscloud running ``cmscloud login``
-#. Validate the boilerplate running ``cmscloud boilerplate validate``
-#. Upload the boilerplate running ``cmscloud boilerplate upload``
+#. Ensure you are logged in to the aldryn_client running ``aldryn login``
+#. Validate the boilerplate running ``aldryn boilerplate validate``
+#. Upload the boilerplate running ``aldryn boilerplate upload``
 
 Now you can navigate to the `my boilerplates <https://control.aldryn.com/account/my-boilerplates/>`_
 and install your boilerplate.

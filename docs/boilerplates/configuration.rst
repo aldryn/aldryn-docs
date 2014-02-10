@@ -26,10 +26,6 @@ The following is an example of a configuration file using all options:
         "author": {
             "name": "Divio",
             "url": "https://www.aldryn.com"
-        },
-        "license": {
-            "name": "BSD",
-            "text": "!literal-include LICENSE.txt"
         }
     }
 
@@ -74,13 +70,3 @@ Options
    .. option:: url:
 
       URL to your website (optional)
-
-.. option:: license
-
-   .. option:: name:
-
-      Name of your license (eg BSD)
-
-   .. option:: text:
-
-      Full text of the license (pro tip: use !literal-include <filename>)
