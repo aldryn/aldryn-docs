@@ -13,22 +13,22 @@ This is a rough overview of how to create and implement a theme:
 
    ``cd aldryn-theme-standardsite/aldryn_theme_standardsite/templates/``
 
-   ``ln -s . aldryn_theme``
+   ``ln -s . aldryn_theme_standardsite``
 
 #. Copy and prepare all the files you need: **templates**, **static** and **private**
 
 #. Create symlinks for missing libs within sass or similar if there are shared within your boilerplate:
 
-   ``ln -s divio-boilerplate/private/sass/libs libs``
+   ``ln -s aldryn-boilerplate/private/sass/libs libs``
 
-#. Create and maintain your ``app.json``
+#. Create and maintain your ``addon.json``
 
 
-TODO
-----
+When to use a theme?
+--------------------
 
-Explain concept:
+We recommend using a theme only if you use the same design/frontend within multiple sites. This allows you to update
+the design centrally and apply the change to all your sites.
 
-* boilerplate
-* apps
-* theme
+However, it does not make sense to create a theme for a single site/design, as the update process can be done either
+within the boilerplate alone or manually.
