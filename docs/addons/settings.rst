@@ -5,17 +5,17 @@ Settings
 if you want to provide settings (and a nice form) for your app, you may add a file ``aldryn_config.py``
 to the root of your app (next to setup.py).
 
-This file **must** contain a class named ``Form`` which **must** subclass ``cmscloud_client.forms.BaseForm``.
+This file **must** contain a class named ``Form`` which **must** subclass ``aldryn_client.forms.BaseForm``.
 
 The ``Form`` class may contain any number of form fields.
 
 Available fields are:
 
-* ``cmscloud_client.forms.CharField``
-* ``cmscloud_client.forms.CheckboxField``
-* ``cmscloud_client.forms.SelectField``
-* ``cmscloud_client.forms.NumberField``
-* ``cmscloud_client.forms.StaticFileField``
+* ``aldryn_client.forms.CharField``
+* ``aldryn_client.forms.CheckboxField``
+* ``aldryn_client.forms.SelectField``
+* ``aldryn_client.forms.NumberField``
+* ``aldryn_client.forms.StaticFileField``
 
 All fields must provide a label as first argument and take a keyword argument named ``required`` to indicate
 whether this field is required or not.
@@ -55,7 +55,7 @@ Add-ons can use special APIs to inject content into templates (either in the hea
 
 Those APIs are:
 
-* ``cmscloud.template_api.registry.add_to_head`` to add content to the head.
-* ``cmscloud.template_api.registry.add_to_tail`` to add content to the end of the body.
+* ``aldryn.template_api.registry.add_to_head`` to add content to the head.
+* ``aldryn.template_api.registry.add_to_tail`` to add content to the end of the body.
 
 If you're using those APIs, you probably want to do so from a models.py file.
