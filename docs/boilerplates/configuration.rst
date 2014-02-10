@@ -3,8 +3,8 @@ Configuration
 =============
 
 A boilerplate requires a configuration file named ``boilerplate.json`` which follows the general json guidelines.
-This file is placed within the root/ of your boilerplate and can be validated using the **cmscloud** clients command
-``cmscloud boilerplate validate``.
+This file is placed within the root/ of your boilerplate and can be validated using the **aldryn** clients command
+``aldryn boilerplate validate``.
 
 The following is an example of a configuration file using all options:
 

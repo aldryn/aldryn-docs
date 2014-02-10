@@ -7,4 +7,5 @@ Addons
 
     first-steps
     configuration
+    settings
     code-conventions
