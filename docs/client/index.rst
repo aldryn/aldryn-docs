@@ -6,3 +6,4 @@ Cloud Client
     :maxdepth: 2
 
     commands
+    dump
