@@ -8,7 +8,7 @@ If you want to write an addon, write a standard Django app (including working se
 An addon requires a configuration file named ``addon.json`` which follows the general json guidelines.
 Place this file next to your setup.py and you should be ready to run ``aldryn addon validate``.
 
-All addons **must** have a valid license file. Preferably called ``LICENSE`` in the root
+All addons **must** have a valid license file. Preferably called ``LICENSE.txt`` in the root
 of the Project.
 
 The following is an example of a configuration file using all options:
@@ -83,7 +83,7 @@ The Source should contain:
 
 A short introduction what the package is about. Installation instructions (non-aldryn, like with any other package)
 
-.. TODO:: more guideslines. link to someplace where this is well described.
+.. TODO:: more guidelines. link to someplace where this is well described.
 
 Include a link back to aldryn
 
@@ -93,6 +93,7 @@ Include a link back to aldryn
 ``LICENSE.txt``
 ~~~~~~~~~~~~~~~
 
+.. TODO:: links/description of common licenses
 
 
 ``MANIFEST.in``
