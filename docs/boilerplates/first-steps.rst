@@ -1,8 +1,7 @@
-===========
 First Steps
 ===========
 
-Boilerplates are a set of default templates and staticfiles, optionally with initial data.
+Boilerplates are a set of default templates and staticfiles.
 
 The structure will be something like:
 

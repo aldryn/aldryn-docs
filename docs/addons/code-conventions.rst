@@ -1,4 +1,3 @@
-================
 Code Conventions
 ================
 
@@ -8,6 +7,17 @@ nature, others exist to easy interoperability between Addons.
 
 .. IMPORTANT::
    PEP8, PEP8, PEP8! But with a max line length of 100 instead of 80.
+
+On Aldryn we strive to have a system that is as automated as possible. Whenever possible something
+should work automatically. If it can't be done automatically we want to assist in the manual
+process as much as possible.
+
+Addon updates should be as automated as possible. Make sure you stay backwards compatible or
+supply clean upgrade paths. A ``CHANGELOG.rst`` is a must. Every release should be listed,
+the newest being at the top. Backwards incompatible changes must be clearly listed. Preferably
+with a link to further documentation with help to migrate in such cases.
+More about :ref:`packaging <addon-packaging>`
+
 
 
 Model Field Naming

@@ -1,12 +1,8 @@
-========
 Commands
 ========
 
 The aldryn client has various commands to help you with apps and boilerplates:
 
-| ``aldryn gui``
-| - starts the *Aldryn Application*
-|
 | ``aldryn login``
 | - starts the login process, you will need to be logged in to use most of the commands
 |
