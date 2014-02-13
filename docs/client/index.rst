@@ -8,4 +8,3 @@ Aldryn Client
     installation
     usage
     commands
-    advanced
