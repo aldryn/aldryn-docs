@@ -99,10 +99,10 @@ You can also have multiple preprocessors so you would end up with a structure li
 
 .. code-block:: text
 
-    /private/
-        |- coffeescript/
-        |- haml/
-        |- sass/
+    private/
+        ├─ coffeescript/
+        ├─ haml/
+        └─ sass/
 
 .. WARNING::
    Aldryn currently only supports **sass** / **compass**. Additional services like **less**, **haml** or **coffeescript**
