@@ -1,4 +1,3 @@
-=============
 Configuration
 =============
 
@@ -13,7 +12,7 @@ The following is an example of a configuration file using all options:
     {
         "name": "My Boilerplate",
         "description": "Uses default resets and stylings.",
-        "version": "1.0.0",
+        "version": "1.0",
         "url": "https://github.com/aldryn",
         "templates": [
             ["fullwidth.html", "full width"],
@@ -28,6 +27,9 @@ The following is an example of a configuration file using all options:
             "url": "https://www.aldryn.com"
         }
     }
+
+
+.. NOTE:: Please follow a strict :ref:`Versioning Scheme <versioning>`!
 
 
 Options

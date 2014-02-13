@@ -7,3 +7,4 @@ Cloud Client
 
     commands
     dump
+    advanced

@@ -1,9 +1,11 @@
-========
-Settings
-========
+Addon Configuration
+===================
 
-if you want to provide settings (and a nice form) for your app, you may add a file ``aldryn_config.py``
-to the root of your app (next to setup.py).
+If you want to provide configuration (and a nice form) for your app, you may add a file
+``aldryn_config.py`` to the root of your app (next to setup.py). This configuration form will
+then be displayed on the detail page of the installed addon on the controlpanel.
+
+.. image:: ../_static/addons/screenshot_addon_configuration.png
 
 This file **must** contain a class named ``Form`` which **must** subclass ``aldryn_client.forms.BaseForm``.
 
@@ -46,16 +48,3 @@ Custom field validation
 If you want to have custom field validation, subclass a field and overwrite it's ``clean`` method,
 which takes a single argument (the value to clean) and should return a cleaned value or raise
 ``aldryn_client.forms.ValidationError`` with a nice message as to why the validation failed.
-
-
-Custom Runtime APIs
--------------------
-
-Add-ons can use special APIs to inject content into templates (either in the head or at the end of the body) from Python.
-
-Those APIs are:
-
-* ``aldryn.template_api.registry.add_to_head`` to add content to the head.
-* ``aldryn.template_api.registry.add_to_tail`` to add content to the end of the body.
-
-If you're using those APIs, you probably want to do so from a models.py file.

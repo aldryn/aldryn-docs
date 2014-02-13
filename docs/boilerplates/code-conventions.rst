@@ -1,4 +1,3 @@
-================
 Code Conventions
 ================
 
@@ -11,9 +10,10 @@ the folder structure:
 
 .. code-block:: text
 
-    /private/
-    /static/
-    /templates/
+    mysite/
+        ├─ private/
+        ├─ static/
+        └─ templates/
 
 These folders are all **required**.
 

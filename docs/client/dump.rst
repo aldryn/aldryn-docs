@@ -4,7 +4,12 @@ django CMS Cloud Client
 
 
 .. warning:: this is just a dump from the old README.rst of aldryn-client. needs cleanup.
+.. warning:: titles depth is wrong
+.. warning:: don't repeat stuff from addons/boilerplate section. here we should cover basics like login and link to the other sections.
 
+
+
+.. _cloud-client-installation:
 
 **********
 Installing
@@ -20,10 +25,6 @@ Using the client
 After installing, you'll have a command line tool called ``aldryn`` at your disposal. Running
 it with no arguments will give you all possible commands.
 
-What it's not telling you is that you can override the host it's talking to by setting the environemnt variable
-``ALDRYN_HOST`` to something (for example: ``http://localhost:8000``). If you want to use the client locally, just
-invoke it like this: ``ALDRYN_HOST=http://localhost:8000 aldryn ...``.
-
 Logging in
 ==========
 
@@ -35,25 +36,8 @@ store a token in your local ``.netrc`` file that will be used for subsequent req
 Apps
 ****
 
-If you want to write an aldryn Addon, write a standard Django app (including working setup.py!).
+see :ref:`addon-packaging`
 
-Once done with that, add a ``app.json`` file at the root of your app (next to setup.py).
-
-The ``app.json`` **must** be present to upload an app to the Aldryn!
-
-It requires at least the following keys:
-
-* ``name``: The name of your app
-* ``package-name``: The **package** name of your app (the thing you have in setup.py under ``name``)
-* ``version``: The version of this app (**must** be compatible with ``LooseVersion``)
-* ``description``: A description of your app
-* ``installed-apps``: A list of apps that need to be added to ``INSTALLED_APPS`` to make your app work.
-* ``author``: A dictionary with the the following keys:
-    * ``name``: Your name!
-    * ``url``: URL to your website (optional)
-* ``license``: A dictionary with the following keys:
-    * ``name``: Name of your license (eg BSD)
-    * ``text``: Full text of the license
 
 
 Settings

@@ -1,11 +1,15 @@
-=============
-Configuration
-=============
+.. _addon-packaging:
+
+Packaging and Sourcecode
+========================
 
 If you want to write an addon, write a standard Django app (including working setup.py!).
 
 An addon requires a configuration file named ``addon.json`` which follows the general json guidelines.
 Place this file next to your setup.py and you should be ready to run ``aldryn addon validate``.
+
+All addons **must** have a valid license file. Preferably called ``LICENSE.txt`` in the root
+of the Project.
 
 The following is an example of a configuration file using all options:
 
@@ -14,7 +18,7 @@ The following is an example of a configuration file using all options:
     {
         "name": "My Addon",
         "description": "This is my custom application.",
-        "version": "1.0.0",
+        "version": "1.0",
         "url": "https://github.com/aldryn",
         "package-name": "my-addon",
         "installed-apps": [
@@ -25,6 +29,8 @@ The following is an example of a configuration file using all options:
             "url": "https://www.aldryn.com"
         }
     }
+
+.. NOTE:: Please follow a strict :ref:`Versioning Scheme <versioning>`!
 
 
 Options
@@ -63,3 +69,42 @@ Options
    .. option:: url:
 
       URL to your website (optional)
+
+
+Source Repository Guidelines
+----------------------------
+
+Use our cookie cutter template for addons: (does not exist yet :-( )
+
+The Source should contain:
+
+``README.rst``
+~~~~~~~~~~~~~~
+
+A short introduction what the package is about. Installation instructions (non-aldryn, like with any other package)
+
+.. TODO:: more guidelines. link to someplace where this is well described.
+
+Include a link back to aldryn
+
+* rst: ``This package is compatible with `Aldryn <http://www.aldryn.com>`_.``
+* markdown: ``This package is compatible with [Aldryn](http://www.aldryn.com).``
+
+``LICENSE.txt``
+~~~~~~~~~~~~~~~
+
+.. TODO:: links/description of common licenses
+
+
+``MANIFEST.in``
+~~~~~~~~~~~~~~~
+
+::
+
+    include LICENSE.txt
+    include README.rst
+    recursive-include mypackage/templates *
+    recursive-include mypackage/static *
+    recursive-include mypackage/locale *
+    recursive-exclude * *.pyc
+

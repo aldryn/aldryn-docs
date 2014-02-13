@@ -9,13 +9,13 @@
 
 
 .. ATTENTION::
-   This guide is currently under heavy active development. If you’d like to help,
-   `fork us on GitHub <https://github.com/aldryn/aldryn-docs>`_!
+   This guide is currently under heavy active development.
+   If you’d like to help, fork us on `GitHub <https://github.com/aldryn/aldryn-docs>`_!
 
 
-#######
-Welcome
-#######
+####################
+Aldryn Documentation
+####################
 
 `Aldryn`_ is an easy to use and developer friendly content management system for web professionals.
 It goes full circle by assisting with many aspects the web project lifecycle. Providing
@@ -74,6 +74,8 @@ Table of Contents
     addons/index
     boilerplates/index
     themes/index
+    workflows_for_agencies/index
+    conventions/index
     faq/index
     glossary
 
