@@ -1,3 +1,6 @@
+!.gitignore
+.*
+
 docs/_build/
 .idea/
 *.pyc

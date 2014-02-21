@@ -10,7 +10,7 @@ The structure will be something like:
 * **/templates/** for all required templates including the starting base.html
 * **boilerplate.json** the configuration file described in :doc:`boilerplate.json <configuration>`
 
-A full example can be found on https://github.com/divio/divio-boilerplate.
+A full example can be found on https://github.com/aldryn/aldryn-boilerplate.
 
 
 Templates
@@ -34,14 +34,14 @@ part.
 except they can also render entire html snippets or code. render_head should be added before the closing **</head>**
 section and render_tail just before the closing **</body>** tag.
 
-In addition, we need to implement the **django-cms** specific tags. Add ``{% load cms_tags %}`` as the very first line
-within your base.html and than include ``{% cms_toolbar %}`` just after your **<body>** tag.
+In addition, we need to implement the **django-cms** specific tags. Add ``{% load cms_tags sekizai_tags %}``
+as the very first line within your base.html and than include ``{% cms_toolbar %}`` just after your **<body>** tag.
 
 Now we include some basic markup into **base.html** and the result should be similar to:
 
 .. code-block:: html
 
-    {% load cms_tags %}
+    {% load cms_tags sekizai_tags %}
     <!doctype html>
     <html>
     <head>
@@ -62,7 +62,7 @@ Now we include some basic markup into **base.html** and the result should be sim
 
 
 .. HINT::
-   Within the divio-boilerplate we use **base_root.html** to define this setup and base.html extends base_root.html.
+   Within the aldryn-boilerplate we use **base_root.html** to define this setup and base.html extends base_root.html.
    This is a perfect example of how djangos template inheritance works and you might want to check more possibilities
    within the  `django template documentation <https://docs.djangoproject.com/en/dev/ref/templates/>`_.
 
@@ -73,15 +73,15 @@ Static Files
 This folder is completely accessible to the public. You can access files by combining your websites URL
 and the folder **/static/**. You would end up with something like http://www.aldryn.com/static/favicon.png.
 
-The structure there can be freely arranged as you please. For the divio-boilerplate we choose shorthands like
+The structure there can be freely arranged as you please. For the aldryn-boilerplate we choose shorthands like
 **js**, **css**, **img**. You can also place your fonts, favicons and much more into /static/.
 
 We recommend adding only layout specific files. Images for galleries or downloadable files should be managed
 using the `django-filer <https://github.com/stefanfoulis/django-filer>`_ which can be accessed through the admin.
 
-You can link within your templates to your static files using django's ``{% static "" %}`` template tag.
+You can link within your templates to your static files using django's ``{% static '' %}`` template tag.
 For this to work, you need to add ``{% load static %}`` first and than reference to your file, for example:
-``{% static "img/logo.png" %}``. You can ommit /static/ as the template tag will automatically append the correct path.
+``{% static 'img/logo.png' %}``. You can ommit /static/ as the template tag will automatically append the correct path.
 This is helpfull if you are using CDN's. So we **recommend** to always use this tag within your templates or snippets.
 
 
@@ -92,17 +92,17 @@ Private files are not accessible to the public and are mostly used for preproces
 
 To get started, create a folder with the containing files like **/private/sass/** and add required configuration
 files within /private/. Aldryn will than automatically detect your settings and convert them into our system.
-Configuration files can be set to compile locally. Within the divio-boilerplate example, base.scss will be
+Configuration files can be set to compile locally. Within the aldryn-boilerplate example, base.scss will be
 compiled into /static/css/base.css.
 
 You can also have multiple preprocessors so you would end up with a structure like:
 
 .. code-block:: text
 
-    /private/
-        |- coffeescript/
-        |- haml/
-        |- sass/
+    private/
+        ├─ coffeescript/
+        ├─ haml/
+        └─ sass/
 
 .. WARNING::
    Aldryn currently only supports **sass** / **compass**. Additional services like **less**, **haml** or **coffeescript**

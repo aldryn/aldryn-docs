@@ -1,7 +1,7 @@
 Commands
 ========
 
-The aldryn client has various commands to help you with apps and boilerplates:
+The *aldryn client* has various commands to help you with addons and boilerplates:
 
 | ``aldryn login``
 | - starts the login process, you will need to be logged in to use most of the commands
@@ -23,4 +23,7 @@ The aldryn client has various commands to help you with apps and boilerplates:
 |
 | ``aldryn sites``
 | - shows a list of all sites
+|
+| ``aldryn newest_version``
+| - check if a newer version of the *aldryn client* is available
 |

@@ -52,13 +52,13 @@ Options
 
    The url to your repository or website
 
-.. option:: package-name
+.. option:: package—name
 
-   The **package** name of your app (the thing you have in setup.py under ``name``)
+   The **package** name of your app (the thing you have in the setup.py under ``name``)
 
-.. option:: installed-apps
+.. option:: installed—apps
 
-   A list of apps that need to be added to ``INSTALLED_APPS`` to make your app work.
+   A list of apps that needs to be added to the ``INSTALLED_APPS`` to make your app work.
 
 .. option:: author
 
