@@ -50,3 +50,14 @@ Database Fields
 
 * ForeignKeys that can be blank, should also have ``on_delete=models.SET_NULL``. This prevents cascade deletes of a lot of attached content that is usually not what you want.
 * Filer fields are also ForeignKeys, so the rule above applies!
+* Tables and fields should never be different based on settings. (causes troubles with migrations)
+
+
+Avoid Sessions for Anonymous Users whenever possible
+----------------------------------------------------
+
+For full-page caching.
+
+.. TODO:: figure out some good rules for avoiding anonymous sessions.
+          Should Apps be "certified" that they don't require anonymous sessions?
+          Configurable with setting? csrf_cookie? current language cookie?
