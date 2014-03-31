@@ -74,7 +74,7 @@ Options
 Source Repository Guidelines
 ----------------------------
 
-Use our cookie cutter template for addons: (does not exist yet :-( )
+Use our cookie cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
 
 The Source should contain:
 
