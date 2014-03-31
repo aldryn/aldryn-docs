@@ -21,6 +21,7 @@ Available fields are:
 
 All fields must provide a label as first argument and take a keyword argument named ``required`` to indicate
 whether this field is required or not.
+Additionally, all fields support ``help_text`` and ``initial`` keyword arguments.
 
 ``CharFields`` take optional ``max_length`` and ``min_length`` arguments.
 
@@ -48,3 +49,17 @@ Custom field validation
 If you want to have custom field validation, subclass a field and overwrite it's ``clean`` method,
 which takes a single argument (the value to clean) and should return a cleaned value or raise
 ``aldryn_client.forms.ValidationError`` with a nice message as to why the validation failed.
+
+Example:
+
+.. code-block:: python
+
+    from aldryn_client import forms
+
+    class EvenNumberField(forms.NumberField):
+        def clean(self, value):
+            value = super(EvenNumberField, self).clean(value)
+            if value % 2 != 0:
+                raise forms.ValidationError('Please provide an even number')
+            else:
+                return value
