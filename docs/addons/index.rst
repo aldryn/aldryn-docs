@@ -12,3 +12,4 @@ extra metadata that makes it work on aldryn.
     addon-configuration
     code-conventions
     injecting_html
+    template-structure
