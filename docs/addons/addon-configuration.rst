@@ -63,3 +63,12 @@ Example:
                 raise forms.ValidationError('Please provide an even number')
             else:
                 return value
+
+
+Extending the Toolbar
+---------------------
+
+To create a better user experience, django CMS 3 provides a way of extending the toolbar so you could add entrues such
+as **Block > Add new entry** to make it easier for the user to use your addon. A detailed guide can be found within
+the django CMS documentation:
+http://django-cms.readthedocs.org/en/develop/extending_cms/toolbar.html
