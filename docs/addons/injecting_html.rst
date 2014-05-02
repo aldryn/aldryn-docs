@@ -3,7 +3,7 @@ Injecting HTML
 
 Add-ons can use special APIs to inject content into templates
 (either in the head or at the end of the body) from Python.
-This is done by by the aldryn-snake app. It is pre-installed in all aldryn sites and all
+This is done by the aldryn-snake app. It is pre-installed in all aldryn sites and all
 templates render these sections by convention.
 
 Those APIs are:
