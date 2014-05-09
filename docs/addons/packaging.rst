@@ -27,6 +27,9 @@ The following is an example of a configuration file using all options:
         "author": {
             "name": "Divio",
             "url": "https://www.aldryn.com"
+        },
+        "license": {
+            "name": "BSD"
         }
     }
 
@@ -70,6 +73,12 @@ Options
 
       URL to your website (optional)
 
+.. option:: license
+
+   .. option:: name:
+
+      Type of the license, e.g. BSD, MIT
+
 
 Source Repository Guidelines
 ----------------------------
@@ -94,6 +103,8 @@ Include a link back to aldryn
 ~~~~~~~~~~~~~~~
 
 .. TODO:: links/description of common licenses
+
+http://en.wikipedia.org/wiki/List_of_software_licenses
 
 
 ``MANIFEST.in``

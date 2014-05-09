@@ -25,6 +25,9 @@ The following is an example of a configuration file using all options:
         "author": {
             "name": "Divio",
             "url": "https://www.aldryn.com"
+        },
+        "license": {
+            "name": "BSD"
         }
     }
 
@@ -72,3 +75,9 @@ Options
    .. option:: url:
 
       URL to your website (optional)
+
+.. option:: license
+
+   .. option:: name:
+
+      Type of the license, e.g. BSD, MIT
