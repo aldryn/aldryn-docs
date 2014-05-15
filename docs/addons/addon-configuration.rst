@@ -38,9 +38,27 @@ Generating settings
 To generate settings, define a ``to_settings`` method which takes two arguments:
 
 * A cleaned data of your form
-* A dictionary of existing settings (which contains ``MIDDLEWARE_CLASSES``).
+* A dictionary of existing settings (which contains ``MIDDLEWARE_CLASSES`` and ``DEBUG``).
 
 Add the settings you want on to the settings dictionary and return it.
+
+Example:
+
+.. code-block:: python
+
+    # -*- coding: utf-8 -*-
+    from aldryn_client import forms
+
+
+    class Form(forms.BaseForm):
+
+        ...
+
+        def to_settings(self, cleaned_data, settings_dict):
+            if settings_dict.get('DEBUG'):
+                settings_dict['EMAIL_BACKEND'] = 'django.core.mail.backends.console.EmailBackend'
+            return settings_dict
+
 
 
 Custom field validation
@@ -54,7 +72,9 @@ Example:
 
 .. code-block:: python
 
+    # -*- coding: utf-8 -*-
     from aldryn_client import forms
+
 
     class EvenNumberField(forms.NumberField):
         def clean(self, value):
