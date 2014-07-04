@@ -6,8 +6,14 @@ This is a rough overview of how to create and implement a theme:
 
 #. Create a base theme project similar to https://github.com/aldryn/aldryn-theme-standardsite
 
-#. Add ``aldryn-snake`` and ``aldryn-theme-standardsite`` to your installed apps **before** any other
+#. Create a django based project to develop our theme for example https://github.com/aldryn/aldryn-theme-project
+   Use this project to preview your theme locally.
+
+#. Add ``aldryn_theme_standardsite`` to your installed apps **before** any other
    apps that use templates or static files for local testing
+
+#. Activate the virtualenv and install *aldryn-theme-standardsite* locally using
+   ``pip install -e ../aldryn-theme-standardsite``
 
 #. Create essential symlinks to make templates recocnisable on your local setup:
 
@@ -15,13 +21,15 @@ This is a rough overview of how to create and implement a theme:
 
    ``ln -s . aldryn_theme_standardsite``
 
+#. Make sure your ``base.html`` redirects to ``{% extends "aldryn_theme_standardsite/base.html" %}``
+
 #. Copy and prepare all the files you need: **templates**, **static** and **private**
 
 #. Create symlinks for missing libs within sass or similar if there are shared within your boilerplate:
 
    ``ln -s aldryn-boilerplate/private/sass/libs libs``
 
-#. Create and maintain your ``addon.json``
+#. Create and maintain your ``addon.json`` and ``aldryn_theme_standardsite/__init__.py`` for version changes
 
 
 When to use a theme?
