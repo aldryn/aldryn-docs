@@ -22,7 +22,7 @@ It goes full circle by assisting with many aspects the web project lifecycle. Pr
 hosting, content management, Addon-development, dependency management, product lifecycle and
 shared team access.
 
-This documentation provides a high level overview of what Aldryn has to offer. Then goes deeper
+This documentation provides a high level overview of what Aldryn has to offer. It then goes deeper
 into topics that are typically used by:
 
 * Project Managers
