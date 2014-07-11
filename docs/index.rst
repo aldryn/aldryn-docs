@@ -9,27 +9,36 @@
 
 
 .. ATTENTION::
-   This guide is currently under heavy active development.
+   This guide is currently in development.
    If you’d like to help, fork us on `GitHub <https://github.com/aldryn/aldryn-docs>`_!
 
 
-####################
-Aldryn Documentation
-####################
+#################
+Welcome to Aldryn
+#################
 
-`Aldryn`_ is an easy to use and developer friendly content management system for web professionals.
-It goes full circle by assisting with many aspects the web project lifecycle. Providing
-hosting, content management, Addon-development, dependency management, product lifecycle and
-shared team access.
+`Aldryn`_ is an easy-to-use and developer-friendly content management platform.
 
-This documentation provides a high level overview of what Aldryn has to offer. It then goes deeper
-into topics that are typically used by:
+Aldryn has been designed to meet the needs of:
 
-* Project Managers
+* **web content creators**, who require an efficient and reliable way to produce content
 
-* Content Creators
+* **agencies**, who work with multiple clients and content creators, and need to manage them all
 
-* Web Developers (frontend and backend)
+* **web developers**, who implement designs and create applications, and need a low-friction
+  workflow for their deployment
+
+At the heart of Aldryn is `django CMS`_, a powerful and extensible open-source web content
+management system, and a large - and growing - ecosystem of compatible applications.
+
+The platform also provides:
+
+* automated deployment
+* hosting
+* shared team access
+* automated installation (including dependency management) and integration of third-party
+  :term:`Addons`
+* management via a web interface or desktop-based application
 
 
 ############
@@ -43,8 +52,7 @@ Having trouble? We'd like to help!
 * Looking for specific information? Try the :ref:`genindex`, :ref:`modindex` or
   the :doc:`detailed table of contents <index>`.
 
-* Search for information in the archives of the Aldryn Q&A group, or
-  `post a question`_.
+* Search the archives of the `Aldryn email list`_, or post your own question.
 
 * Ask a question in the `#aldryn IRC channel`_.
 
@@ -54,13 +62,10 @@ Having trouble? We'd like to help!
 
 
 .. _archives: http://groups.google.com/group/aldryn/
-.. _post a question: https://groups.google.com/d/forum/aldryn
+.. _Aldryn email list: https://groups.google.com/d/forum/aldryn
 .. _#aldryn IRC channel: irc://irc.freenode.net/aldryn
 .. _issue tracker: https://github.com/aldryn/aldryn/issues
 
-
-While this document is focused on code for the aldryn platform, many things also apply to general
-django projects and apps.
 
 #################
 Table of Contents
@@ -80,3 +85,4 @@ Table of Contents
     glossary
 
 .. _Aldryn: http://www.aldryn.com/
+.. _django CMS: http://django-cms.org/
