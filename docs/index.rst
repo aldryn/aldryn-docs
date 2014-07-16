@@ -76,6 +76,7 @@ Table of Contents
 
     sites/index
     client/index
+    developing/index
     addons/index
     boilerplates/index
     themes/index

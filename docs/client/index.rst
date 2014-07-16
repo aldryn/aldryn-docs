@@ -1,3 +1,5 @@
+.. _aldryn_client:
+
 ============
 Aldryn Client
 ============
