@@ -73,7 +73,7 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
-    introduction
+    introduction/index
     how-to/index
     reference/index
     improving

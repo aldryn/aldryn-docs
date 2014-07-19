@@ -35,8 +35,8 @@ Glossary
 
     Boilerplates
         A set of default templates, static files and optionally `Compass
-        <http://compass-style.org>`_ files. Similar to a theme, but Aldryn does not allow changing
-        of Boilerplates, which is why they're not named theme.
+        <http://compass-style.org>`_ files. A site's Boilerplate can be updated, but cannot be
+        switched for another (unlike a Theme).
 
     Staging
         Changes you make to your environment are applied to its **staged** version.

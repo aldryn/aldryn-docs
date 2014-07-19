@@ -2,10 +2,18 @@
 Introduction to key features & components
 #########################################
 
-Aldryn is a cloud-based platform for Django-based websites. There are a number of similar services
-available, so it's worth taking a moment to describe some of the basics.
+Aldryn is a cloud-based platform for Django-based websites.
 
-Aldryn is designed to meet the needs of three distinct groups:
+.. toctree::
+    :maxdepth: 1
+
+    concepts
+    tools
+
+There are a number of similar services available, so it's worth taking a moment to describe some of
+the basics.
+
+Aldryn is designed to meet the needs of three distinct groups of web professionals:
 
 * content creators
 * agencies and designers
@@ -31,33 +39,3 @@ function as a cloud-based offering, that can be managed without difficulty by a 
 using the Control Panel. Aldryn solves the problem of meeting these competing needs by making
 possible **Local Development** in an environment (supported by tools that build it automaticallu)
 that replicates the cloud environment.
-
-=============
-Control Panel
-=============
-
-The `Aldryn Control Panel <https://control.aldryn.com/control/>`_ is a web-based tool, and is the
-primary management resource for Aldryn sites.
-
-Most key features of the Control Panel are explained by the built-in **Tour**, but more advanced
-features will be explained in the documentation for processes that require their use.
-
-=================
-The Aldryn Client
-=================
-
-The **Aldryn Client** is a command-line application. Key functions:
-
-* **login**: the client can log you in to the Aldryn platform, to establish a direct connection
-  between your local and the cloud environments
-* **workspace replication**: replicate the cloud environment locally for development
-* **file synchronisation**: aimed at front-end developers; allows local work on static files and
-  assets
-* **development management**: commands to validate and upload Addons and Boilerplates
-
-======================
-The Aldryn Desktop App
-======================
-
-Like the file synchronisation functions of the Aldryn Client, this is aimed at front-end
-developers, and provides a graphical user interface for those functions.

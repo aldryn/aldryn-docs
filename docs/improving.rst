@@ -83,3 +83,9 @@ Inline markup
 
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _restructuredText: http://docutils.sourceforge.net/docs/ref/rst/introduction.html
+
+Internal links
+--------------
+
+Please use absolute link paths - `/packaging` - rather than relative paths - `packaging`. It makes
+it much easier to update them with a search & replace when files are moved.

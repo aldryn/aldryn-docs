@@ -3,7 +3,7 @@ Initial Data
 
 
 .. WARNING::
-   This feature is still in development and might be temporary unavailable.
+   This feature is still in development and might be temporarily unavailable.
 
 To include initial data in your Boilerplate, add **aldryn_client** to your installed apps in your project and
 call the management command ``aldryn_dumpdata <outfile> <language>``.

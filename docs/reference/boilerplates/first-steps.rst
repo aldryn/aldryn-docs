@@ -105,7 +105,7 @@ You can also have multiple preprocessors so you would end up with a structure li
         └─ sass/
 
 .. WARNING::
-   Aldryn currently only supports **sass**/**`Compass <http://compass-style.org>`_ **. Additional
+   Aldryn currently only supports **sass**/`Compass <http://compass-style.org>`_. Additional
    services like **less**, **haml** or **coffeescript** will be added soon.
 
 
@@ -141,8 +141,9 @@ Now you can navigate to the `my Boilerplates <https://control.aldryn.com/account
 and install your Boilerplate.
 
 .. WARNING::
-   All Boilerplates are currently set to be private. As a result, only yourself and shared users can install or
-   modify the Boilerplate. We will cahnge this setting in the future so you can define this state.
+   All Boilerplates are currently set to be private. As a result, only yourself and shared users
+   can install or modify the Boilerplate. We will change this setting in the future so you can
+   define this state.
 
 .. HINT::
    You can update a Boilerplate by increasing the **version** within the ``boilerplate.json``. To upload follow the

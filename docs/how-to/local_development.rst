@@ -10,8 +10,9 @@ your code will run as expected in the Aldryn enviroment, the platform gives you 
 locally to test it.
 
 .. ATTENTION::
-   This guide expects you to have already :doc:`created a site on Aldryn <create_site>`.
-   You should also have some basic experience creating Django applications.
+   This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
+   or even better, your contributions </improving>`. This documentation is on `GitHub
+   <https://github.com/aldryn/aldryn-docs>`_
 
 
 Replicate your Aldryn site locally

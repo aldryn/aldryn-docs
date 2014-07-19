@@ -82,7 +82,7 @@ Options
 Source Repository Guidelines
 ----------------------------
 
-Use our cookie cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
+Use our cookie-cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
 
 The Source should contain:
 
