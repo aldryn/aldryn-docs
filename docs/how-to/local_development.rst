@@ -53,12 +53,12 @@ created. Within it you'll find:
 Test the replicated site
 ------------------------
 
-You need to activate this new virtualenv, and fire up the runserver::
+You need to activate this new virtualenv, and fire up the Django runserver::
 
     source .virtualenv/bin/activate
     python .site/manage.py runserver
 
-Note that if you fire up the runserver, and try to visit a page on the site that
+Note that if you start the runserver, and try to visit a page on the site that
 requires database access *before* you have suplied database settings, the process
 won't exit when you quit the runserver. You'll need to find and kill the process
 manually::

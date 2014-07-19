@@ -40,15 +40,15 @@ Options
 
 .. option:: name
 
-   The name of your boilerplate
+   The name of your Boilerplate
 
 .. option:: description
 
-   A description of your boilerplate
+   A description of your Boilerplate
 
 .. option:: version
 
-   The version of this boilerplate (must be compatible with LooseVersion)
+   The version of this Boilerplate (must be compatible with LooseVersion)
 
 .. option:: url
 

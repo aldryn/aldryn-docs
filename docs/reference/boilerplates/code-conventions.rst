@@ -1,7 +1,7 @@
 Code Conventions
 ================
 
-There are many boilerplates and equally as many code conventions and styleguides. We will not go as far as to
+There are many Boilerplates and equally as many code conventions and styleguides. We will not go as far as to
 command you to use tabs over spaces, camcelCase over under_score, but we might want you to redirect to our
 `aldryn-boilerplate <https://github.com/divio/divio-boilerplate>`_'s README.rst which offers some advice.
 

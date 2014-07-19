@@ -5,7 +5,7 @@ django CMS Cloud Client
 
 .. warning:: this is just a dump from the old README.rst of aldryn-client. needs cleanup.
 .. warning:: titles depth is wrong
-.. warning:: don't repeat stuff from addons/boilerplate section. here we should cover basics like login and link to the other sections.
+.. warning:: don't repeat stuff from addons/Boilerplate section. here we should cover basics like login and link to the other sections.
 
 
 
@@ -110,8 +110,8 @@ Boilerplates
 
 Boilerplates are a set of default templates and staticfiles, optionally with initial data.
 
-To get started, create a normal Django (CMS) project and develop your boilerplate. When you're happy with how it looks
-and optionally added some default content, you can transform this into a boilerplate.
+To get started, create a normal Django (CMS) project and develop your Boilerplate. When you're happy with how it looks
+and optionally added some default content, you can transform this into a Boilerplate.
 
 In your base template (or base templates), you **must** include the variable ``{{ TEMPLATE_API_REGISTRY.render_head }}``
 in the head section of your HTML, and ``{{ TEMPLATE_API_REGISTRY.render_tail }}`` just before the closing ``</body>``
@@ -122,13 +122,13 @@ tag. Further, your base template **must** include the ``{% cms_toolbar %}`` temp
 
 Now add a ``boilderplate.yaml`` file to the root of your project (next to the ``static`` and ``templates`` folders).
 
-The ``boilerplate.yaml`` **must** be present to upload a boilerplate to the CMS Cloud!
+The ``boilerplate.yaml`` **must** be present to upload a Boilerplate to the CMS Cloud!
 
 It requires at least the following keys:
 
-* ``name``: The name of your boilerplate
-* ``version``: The version of this boilerplate (**must** be compatible with ``LooseVersion``)
-* ``description``: A description of your boilerplate
+* ``name``: The name of your Boilerplate
+* ``version``: The version of this Boilerplate (**must** be compatible with ``LooseVersion``)
+* ``description``: A description of your Boilerplate
 * ``author``: An object with the the following keys:
     * ``name``: Your name!
     * ``url``: URL to your website (optional)
@@ -142,7 +142,7 @@ It requires at least the following keys:
 Including initial data
 ======================
 
-To include initial data in your boilerplate, add ``aldryn_client`` to your installed apps in your project and call
+To include initial data in your Boilerplate, add ``aldryn_client`` to your installed apps in your project and call
 the management command ``aldryn_dumpdata <outfile> <language>``. ``<outfile>`` must be a file named ``data.yaml``
 located next to your ``boilerplate.yaml`` file. ``<language>`` is the language code of the language you want to include
 ('en' is a good default choice). Only one language can be included.
@@ -159,8 +159,8 @@ If your plugins include relationships to other models that need to be included, 
 Commands
 ========
 
-The client has two commands to work with your boilerplates: ``boilerplate validate``, which checks the
-``boilerplate.yaml`` config and ``boilerplate upload`` which uploads your boilerplate.
+The client has two commands to work with your Boilerplates: ``boilerplate validate``, which checks the
+``boilerplate.yaml`` config and ``boilerplate upload`` which uploads your Boilerplate.
 
 
 

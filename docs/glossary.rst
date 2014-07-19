@@ -34,9 +34,9 @@ Glossary
         https://github.com/aldryn/login.aldryn.com.
 
     Boilerplates
-        A set of templates, static files and optionally compass files. Similar to a
-        theme, but Aldryn does not allow changing of boilerplates, which is why
-        they're not named theme.
+        A set of default templates, static files and optionally `Compass
+        <http://compass-style.org>`_ files. Similar to a theme, but Aldryn does not allow changing
+        of Boilerplates, which is why they're not named theme.
 
     Staging
         Changes you make to your environment are applied to its **staged** version.

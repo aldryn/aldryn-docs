@@ -1,8 +1,8 @@
 Configuration
 =============
 
-A boilerplate requires a configuration file named ``boilerplate.json`` which follows the general json guidelines.
-This file is placed within the root/ of your boilerplate and can be validated using the **aldryn** clients command
+A Boilerplate requires a configuration file named ``boilerplate.json`` which follows the general json guidelines.
+This file is placed within the root/ of your Boilerplate and can be validated using the **aldryn** clients command
 ``aldryn boilerplate validate``.
 
 The following is an example of a configuration file using all options:
@@ -40,15 +40,15 @@ Options
 
 .. option:: name
 
-   The name of your boilerplate
+   The name of your Boilerplate
 
 .. option:: description
 
-   A description of your boilerplate
+   A description of your Boilerplate
 
 .. option:: version
 
-   The version of this boilerplate (must be compatible with LooseVersion)
+   The version of this Boilerplate (must be compatible with LooseVersion)
 
 .. option:: url
 
@@ -63,7 +63,7 @@ Options
 .. option:: protected
 
    A list of files that are protected.
-   Protected files will be upgraded when a user upgrades the boilerplate and has
+   Protected files will be upgraded when a user upgrades the Boilerplate and has
    not changed the file since the last upgrade.
 
 .. option:: author

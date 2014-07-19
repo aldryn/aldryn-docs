@@ -25,7 +25,8 @@ This is a rough overview of how to create and implement a theme:
 
 #. Copy and prepare all the files you need: **templates**, **static** and **private**
 
-#. Create symlinks for missing libs within sass or similar if there are shared within your boilerplate:
+#. Create symlinks for missing libs within sass or similar if there are shared within your
+Boilerplate:
 
    ``ln -s aldryn-boilerplate/private/sass/libs libs``
 
@@ -39,4 +40,4 @@ We recommend using a theme only if you use the same design/frontend within multi
 the design centrally and apply the change to all your sites.
 
 However, it does not make sense to create a theme for a single site/design, as the update process can be done either
-within the boilerplate alone or manually.
+within the Boilerplate alone or manually.
