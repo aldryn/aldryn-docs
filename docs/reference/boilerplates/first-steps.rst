@@ -105,45 +105,46 @@ You can also have multiple preprocessors so you would end up with a structure li
         └─ sass/
 
 .. WARNING::
-   Aldryn currently only supports **sass** / **compass**. Additional services like **less**, **haml** or **coffeescript**
-   will be added soon.
+   Aldryn currently only supports **sass**/`Compass <http://compass-style.org>`_. Additional
+   services like **less**, **haml** or **coffeescript** will be added soon.
 
 
-Boilerplate.json
+boilerplate.json
 ----------------
 
-Add a ``boilerplate.json`` configuration file so Aldryn can recognise your boilerplate, validate and upload
+Add a ``boilerplate.json`` configuration file so Aldryn can recognise your Boilerplate, validate and upload
 it to the market place. This file is described in more detail within the :doc:`configuration <configuration>` section.
 
 
 Upload
 ------
 
-As soon as everything is ready, you will have to upload the boilerplate to Aldryn. This requires the
+As soon as everything is ready, you will have to upload the Boilerplate to Aldryn. This requires the
 `aldryn client <http://www.aldryn.com/en/help/cloud-client/>`_ which will provide you with the following two commands
-for boilerplates:
+for Boilerplates:
 
 * ``aldryn boilerplate validate``
 * ``aldryn boilerplate upload``
 
 The first will validate your configuration file (``boilerplate.json``)
-and the second will upload your boilerplate to the marketplace.
+and the second will upload your Boilerplate to the marketplace.
 
 In short:
 *********
 
-#. Navigate to the root folder of your boilerplate using any **Shell** that is available to you
+#. Navigate to the root folder of your Boilerplate using any **Shell** that is available to you
 #. Ensure you are logged in to the aldryn_client running ``aldryn login``
-#. Validate the boilerplate running ``aldryn boilerplate validate``
-#. Upload the boilerplate running ``aldryn boilerplate upload``
+#. Validate the Boilerplate running ``aldryn boilerplate validate``
+#. Upload the Boilerplate running ``aldryn boilerplate upload``
 
-Now you can navigate to the `my boilerplates <https://control.aldryn.com/account/my-boilerplates/>`_
-and install your boilerplate.
+Now you can navigate to the `my Boilerplates <https://control.aldryn.com/account/my-Boilerplates/>`_
+and install your Boilerplate.
 
 .. WARNING::
-   All boilerplates are currently set to be private. As a result, only yourself and shared users can install or
-   modify the boilerplate. We will cahnge this setting in the future so you can define this state.
+   All Boilerplates are currently set to be private. As a result, only yourself and shared users
+   can install or modify the Boilerplate. We will change this setting in the future so you can
+   define this state.
 
 .. HINT::
-   You can update a boilerplate by increasing the **version** within the ``boilerplate.json``. To upload follow the
+   You can update a Boilerplate by increasing the **version** within the ``boilerplate.json``. To upload follow the
    "Upload" steps again.

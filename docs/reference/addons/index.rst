@@ -14,7 +14,7 @@ Todo:
 * multilingual rules
 * draft/publish rules
 * template naming and structure rules
-* boilerplate support rules
+* Boilerplate support rules
 * cms integration rules
     * plugin naming
     * toolbar integration guidelines
@@ -31,6 +31,7 @@ when available:
 .. toctree::
     :maxdepth: 2
 
+    first-steps
     packaging
     addon-configuration
     code-conventions

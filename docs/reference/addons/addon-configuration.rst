@@ -5,7 +5,7 @@ If you want to provide configuration (and a nice form) for your app, you may add
 ``aldryn_config.py`` to the root of your app (next to setup.py). This configuration form will
 then be displayed on the detail page of the installed addon on the controlpanel.
 
-.. image:: ../_static/addons/screenshot_addon_configuration.png
+.. image:: ../../_static/addons/screenshot_addon_configuration.png
 
 This file **must** contain a class named ``Form`` which **must** subclass ``aldryn_client.forms.BaseForm``.
 

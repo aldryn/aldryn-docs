@@ -7,11 +7,10 @@
    :width: 200 px
    :alt: Aldryn logo
 
-
 .. ATTENTION::
-   This guide is currently in development.
-   If you’d like to help, fork us on `GitHub <https://github.com/aldryn/aldryn-docs>`_!
-
+   This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
+   or even better, your contributions <improving>`. This documentation is on `GitHub
+   <https://github.com/aldryn/aldryn-docs>`_
 
 #################
 Welcome to Aldryn
@@ -36,8 +35,8 @@ The platform also provides:
 * automated deployment
 * hosting
 * shared team access
-* automated installation (including dependency management) and integration of third-party
-  :term:`Addons`
+* automated installation (including dependency management) and integration of
+  third-party :term:`Addon`
 * management via a web interface or desktop-based application
 
 
@@ -74,14 +73,10 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
-    sites/index
-    client/index
-    addons/index
-    boilerplates/index
-    themes/index
-    workflows_for_agencies/index
-    conventions/index
-    faq/index
+    introduction/index
+    how-to/index
+    reference/index
+    improving
     glossary
 
 .. _Aldryn: http://www.aldryn.com/

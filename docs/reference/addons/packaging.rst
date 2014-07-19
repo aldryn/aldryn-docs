@@ -18,7 +18,6 @@ The following is an example of a configuration file using all options:
     {
         "name": "My Addon",
         "description": "This is my custom application.",
-        "version": "1.0",
         "url": "https://github.com/aldryn",
         "package-name": "my-addon",
         "installed-apps": [
@@ -41,15 +40,15 @@ Options
 
 .. option:: name
 
-   The name of your boilerplate
+   The name of your Boilerplate
 
 .. option:: description
 
-   A description of your boilerplate
+   A description of your Boilerplate
 
 .. option:: version
 
-   The version of this boilerplate (must be compatible with LooseVersion)
+   The version of this Boilerplate (must be compatible with LooseVersion)
 
 .. option:: url
 
@@ -83,7 +82,7 @@ Options
 Source Repository Guidelines
 ----------------------------
 
-Use our cookie cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
+Use our cookie-cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
 
 The Source should contain:
 
