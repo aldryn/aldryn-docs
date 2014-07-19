@@ -1,17 +1,18 @@
-#########################################
-Introduction to key features & components
-#########################################
+############
+Introduction
+############
 
 Aldryn is a cloud-based platform for Django-based websites.
 
 .. toctree::
     :maxdepth: 1
 
-    concepts
-    tools
+    Key concepts <concepts>
+    Key tools <tools>
 
-There are a number of similar services available, so it's worth taking a moment to describe some of
-the basics.
+================
+Aldryn's purpose
+================
 
 Aldryn is designed to meet the needs of three distinct groups of web professionals:
 

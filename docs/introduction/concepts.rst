@@ -16,7 +16,8 @@ that site, the site will reflect the changes have been made.
 A site's Boilerplate is *essential* to it. It's not merely an attribute of the site; it's what
 defines it.
 
-In the Aldryn platform, you can an existing Boilerplates to define a new site, or create and curate your own Boilerplates that suit your purposes.
+In the Aldryn platform, you can an existing Boilerplates to define a new site, or create and curate
+your own Boilerplates that suit your purposes.
 
 ======
 Themes
