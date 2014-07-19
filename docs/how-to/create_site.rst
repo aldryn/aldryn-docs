@@ -2,6 +2,9 @@
 Create your site
 #################
 
+.. ATTENTION::
+   You'll need an Aldryn account before start!
+
 Login to the `Aldryn Control Panel <https://control.aldryn.com/control/>`_.
 
 If you haven't already taken the **Aldryn tour**, do that now by selecting the

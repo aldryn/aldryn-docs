@@ -3,8 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. image:: _static/aldryn-logo-main.png
+   :width: 200 px
+   :alt: Aldryn logo
 
-
+.. ATTENTION::
+   This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
+   or even better, your contributions <improving>`. This documentation is on `GitHub
+   <https://github.com/aldryn/aldryn-docs>`_
 
 #################
 Welcome to Aldryn
@@ -67,14 +73,10 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
+    introduction
     how-to/index
-    sites/index
-    client/index
-    addons/index
-    boilerplates/index
-    themes/index
-    workflows_for_agencies/index
-    general
+    reference/index
+    improving
     glossary
 
 .. _Aldryn: http://www.aldryn.com/

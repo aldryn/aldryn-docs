@@ -1,3 +1,8 @@
+.. ATTENTION::
+   This documentation is currently in development. We'd be delighted to have your feedback, or even
+   better, your contributions. If you’d like to help by contributing, fork us on `GitHub
+   <https://github.com/aldryn/aldryn-docs>`_!
+
 #############
 How-to guides
 #############
@@ -8,5 +13,5 @@ The aim of the documents in this section is not to provide a comprehensive refer
 .. toctree::
     :maxdepth: 1
 
-    create_a_site
+    create_site
     local_development

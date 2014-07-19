@@ -9,6 +9,11 @@ can be deployed to Aldryn. It does however have some specific requirements. In o
 your code will run as expected in the Aldryn enviroment, the platform gives you a way to set it up
 locally to test it.
 
+.. ATTENTION::
+   This guide expects you to have already :doc:`created a site on Aldryn <create_site>`.
+   You should also have some basic experience creating Django applications.
+
+
 Replicate your Aldryn site locally
 ==================================
 
