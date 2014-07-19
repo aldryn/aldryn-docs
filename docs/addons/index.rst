@@ -31,6 +31,7 @@ when available:
 .. toctree::
     :maxdepth: 2
 
+    first-steps
     packaging
     addon-configuration
     code-conventions

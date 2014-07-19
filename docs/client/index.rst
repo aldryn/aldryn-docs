@@ -1,8 +1,8 @@
 .. _aldryn_client:
 
-============
-Aldryn Client
-============
+=================
+The Aldryn Client
+=================
 
 .. toctree::
     :maxdepth: 2
@@ -10,3 +10,5 @@ Aldryn Client
     installation
     usage
     commands
+    advanced
+    dump

@@ -3,14 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. image:: _static/aldryn-logo-main.png
-   :width: 200 px
-   :alt: Aldryn logo
 
-
-.. ATTENTION::
-   This guide is currently in development.
-   If you’d like to help, fork us on `GitHub <https://github.com/aldryn/aldryn-docs>`_!
 
 
 #################
@@ -36,8 +29,8 @@ The platform also provides:
 * automated deployment
 * hosting
 * shared team access
-* automated installation (including dependency management) and integration of third-party
-  :term:`Addons`
+* automated installation (including dependency management) and integration of
+  third-party :term:`Addon`
 * management via a web interface or desktop-based application
 
 
@@ -74,15 +67,14 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
+    how-to/index
     sites/index
     client/index
-    developing/index
     addons/index
     boilerplates/index
     themes/index
     workflows_for_agencies/index
-    conventions/index
-    faq/index
+    general
     glossary
 
 .. _Aldryn: http://www.aldryn.com/

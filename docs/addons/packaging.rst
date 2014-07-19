@@ -18,7 +18,6 @@ The following is an example of a configuration file using all options:
     {
         "name": "My Addon",
         "description": "This is my custom application.",
-        "version": "1.0",
         "url": "https://github.com/aldryn",
         "package-name": "my-addon",
         "installed-apps": [
