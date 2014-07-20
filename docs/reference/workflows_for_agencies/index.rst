@@ -1,14 +1,14 @@
+#####################
 Ownership and sharing
-=====================
+#####################
 
 
 Agencies will likely have their own Addons that are developed by multiple developers.
 We recommend to setup a shared agency account that owns all addons, Boilerplates and sites.
 Then share the addons with all the developers that need access.
 
-
 Sharing sites
--------------
+=============
 
 Sites can be shared from the controlpanel. Select "Share Site".
 
@@ -20,7 +20,7 @@ can be used.
 
 
 Sharing Addons
---------------
+==============
 
 Typically addons will be shared with all Employees of the agency.
 
@@ -29,7 +29,7 @@ Project Managers will need the "Can only use" Permission.
 
 
 Sharing Boilerplates
---------------------
+====================
 
 In most cases you will not need to build your own Boilerplate. If you do, developers will
 need full access and project managers read/use access.

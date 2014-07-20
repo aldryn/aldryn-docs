@@ -10,8 +10,8 @@ A **Boilerplate** defines the basic essence of an Aldryn site, through its defau
 staticfiles. All Aldryn sites are based upon a Boilerplate - even if it happens to be the absolutely
 minimal one possible, with no customisation.
 
-A site's Boilerplate can be updated; when the updated version of the Boilerplate is deployed for
-that site, the site will reflect the changes have been made.
+A Boilerplate can be updated; when the updated version of the Boilerplate is deployed for
+a site that uses it, the site will reflect the changes have been made.
 
 A site's Boilerplate is *essential* to it. It's not merely an attribute of the site; it's what
 defines it.

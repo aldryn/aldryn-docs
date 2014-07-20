@@ -1,5 +1,4 @@
 .. toctree::
-    :maxdepth: 2
 
     sites/index
     client/index

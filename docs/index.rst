@@ -34,9 +34,9 @@ The platform also provides:
 
 * automated deployment
 * hosting
-* shared team access
+* :doc:`shared team access </reference/workflows_for_agencies/index>`
 * automated installation (including dependency management) and integration of
-  third-party :term:`Addon`
+  third-party :term:`Addon` packages
 * management via a web interface or desktop-based application
 
 
@@ -73,9 +73,15 @@ Table of Contents
 .. toctree::
     :maxdepth: 1
 
+    self
     introduction/index
     how-to/index
-    reference/index
+    reference/sites/index
+    reference/client/index
+    reference/addons/index
+    reference/boilerplates/index
+    reference/themes/index
+    reference/workflows_for_agencies/index
     improving
     glossary
 
