@@ -21,7 +21,7 @@ replicates as far as possible the one your code will encounter when deployed.
 Replicate your Aldryn site locally
 ==================================
 
-You'll need the :ref:`Aldryn commandline client <aldryn_client>` installed, and a site - even the
+You'll need the :ref:`Aldryn command-line client <aldryn_client>` installed, and a site - even the
 most basic one will do - that's active on Aldryn.
 
 
