@@ -22,7 +22,7 @@ Installing
 Using the client
 ****************
 
-After installing, you'll have a command line tool called ``aldryn`` at your disposal. Running
+After installing, you'll have a command-line tool called ``aldryn`` at your disposal. Running
 it with no arguments will give you all possible commands.
 
 Logging in
