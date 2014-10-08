@@ -121,7 +121,7 @@ You need to activate this new virtualenv, and fire up the Django runserver::
 
 .. ATTENTION::
     Note that if you start the runserver, and try to visit a page on the site that
-    requires database access *before* you have suplied database settings, the process
+    requires database access *before* you have supplied database settings, the process
     won't exit when you quit the runserver. You'll need to find and kill the process
     manually before restarting it::
 
@@ -129,4 +129,4 @@ You need to activate this new virtualenv, and fire up the Django runserver::
         kill <process_number>
 
 You should see your site, or at least the "Your site is ready" message, and be
-able to log into it.
+able to log in to it.
