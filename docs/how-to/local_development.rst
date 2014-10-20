@@ -64,12 +64,17 @@ Aldryn uses Postgres, so you will need a `PostgreSQL <http://www.postgresql.org>
 locally too.
 
 In the Aldryn control panel, the *Manage this website* section offers options for
-downloading and restoring databases. Create a new backup of your site, refresh the
-page, and download the backup you have just created.
+downloading and restoring databases:
 
-Unpack the .tar file that has been downloaded. This contains the database, media files, and more.
-Using your local PostgreSQL database client, import the ``database.dump`` file, and make sure that
-the new database's name and any permissions match those in the local site's settings.
+#. create a new backup of your site
+#. refresh the page
+#. download the backup you have just created
+
+The .tar file that has been downloaded. This contains the database, media files, and more.
+
+#. unpack the .tar file that has been downloaded
+#. using your local PostgreSQL database client, import the ``database.dump`` file
+#. make sure that the new database's name and any permissions match those in the local site's ``settings.py``
 
 Use local settings
 ------------------
