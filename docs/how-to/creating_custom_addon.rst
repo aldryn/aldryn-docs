@@ -78,7 +78,7 @@ You'll need to package your application in the usual Python way, and test that i
 expected.
 
 .. WARNING::
-    One thing to be aware of is that your local environment may be slightly more forgiving that
+    One thing to be aware of is that your local environment may be slightly more forgiving than
     Aldryn's; for example, depending upon where you're keeping your work in progress, you may find
     that some of your Addon's components are available to Django not because you've packaged them
     correctly, but simply in virtue of where you have put them while working on them!
