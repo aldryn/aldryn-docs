@@ -103,6 +103,7 @@ MANIFEST.in
 -----------
 
 ::
+
     recursive-include hello_plugin/templates *
 
 LICENCE.txt
