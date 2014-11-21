@@ -63,7 +63,7 @@ You'll need to get a local copy of your Aldryn database running.
 Aldryn uses Postgres, so you will need a `PostgreSQL <http://www.postgresql.org>`_ server running
 locally too.
 
-In the Aldryn control panel, the *Manage this website* section offers options for
+In the Aldryn control panel, the *Manage project* section offers options for
 downloading and restoring databases. Create a new backup of your site, refresh the
 page, and download the backup you have just created.
 
@@ -114,9 +114,10 @@ installed in the project on Aldryn)::
 Let's go
 --------
 
-You need to activate this new virtualenv, and fire up the Django runserver::
+You need to activate this new virtualenv, install the requirements and fire up the Django runserver::
 
     source .virtualenv/bin/activate
+    pip install -r .site/requirements.txt
     python .site/manage.py runserver
 
 .. ATTENTION::
