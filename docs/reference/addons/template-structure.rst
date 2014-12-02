@@ -45,7 +45,7 @@ added html file should represent the functionality of the addon. Here an example
 
     templates/
     ├─ aldryn_blog/
-    │  ├─ addons
+    │  ├─ plugins
     │  │  └─ latest_posts.html
     │  └─ base.html
     └─ base.html
@@ -58,7 +58,7 @@ there would be something like:
 
     templates/
     ├─ aldryn_gallery/
-    │  └─ addons
+    │  └─ plugins
     │    ├─ base.html
     │    ├─ feature/
     │    │  └─ gallery.html
@@ -67,6 +67,6 @@ there would be something like:
     └─ base.html
 
 In this case the gallery provides two kind of templates, a standard version and a feature version. Both gallery.html
-files extend ``aldryn_gallery/addons/base.html`` in order to keep some common elements in one file. Yet that base.html
+files extend ``aldryn_gallery/plugins/base.html`` in order to keep some common elements in one file. Yet that base.html
 is nowhere called from within the addon. The backend just picks standard/gallery.html or feature/gallery.html according
 to the settings within the plugin.
