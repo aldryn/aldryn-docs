@@ -79,6 +79,7 @@ Inline markup
     * the names of available options in the Admin
     * values in or of fields
 * use strong emphasis - ``**Control Panel**`` for:
+    * buttons that perform an action
     * the names of key Aldryn components when they are first used in a page or section
 
 .. _Sphinx: http://sphinx.pocoo.org/
