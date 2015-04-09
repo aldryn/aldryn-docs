@@ -5,10 +5,11 @@ Create a custom Addon
 In the :doc:`/introduction/index` we got an Aldryn site running in a local environment. If you haven't got to that
 stage yet, you should follow that tutorial first before returning here to continue.
 
-An Addon must conform to certain standards, but apart from some minor additional configuration
-required for Aldryn, as long as your Addon is well-packaged you should not encounter any difficulty. The good news is that Aldryn even helps package it.
+An Addon must conform to certain standards, but apart from some minor additional configuration required for Aldryn, as
+long as your Addon is well-packaged you should not encounter any difficulty. The good news is that Aldryn even helps
+package it.
 
-If you already have a plugin or other Addon to upload, you can skip to the next section.
+If you already have a plugin or other Addon to upload, you can :ref:`skip to the next section <package_your_addon>`.
 
 Otherwise, for the purposes of this walkthrough, we'll create a basic plugin that greets the logged-in user by name.
 
@@ -65,6 +66,8 @@ In ``local_settings.py``, we  import all the names from ``settings``, and append
         ]
 
 Try it out: start the runserver, and add your plugin to a page
+
+.. _package_your_addon:
 
 Package your Addon
 ==================
