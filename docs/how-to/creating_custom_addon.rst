@@ -16,9 +16,8 @@ Otherwise, for the purposes of this walkthrough, we'll create a basic plugin tha
 Create a simple django CMS plugin
 =================================
 
-See `custom
-plugins <http://docs.django-cms.org/en/latest/extending_cms/custom_plugins.html>`_ in the django CMS documentation
-for more information about plugins.
+See `custom plugins <http://docs.django-cms.org/en/latest/extending_cms/custom_plugins.html>`_ in the django CMS
+documentation for more information about plugins.
 
 We'll create a new Django application for the plugin::
 
