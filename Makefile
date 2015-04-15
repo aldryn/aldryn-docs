@@ -13,7 +13,7 @@ BRANCH = master
 run:
 	. $(VENV); sphinx-autobuild docs docs/_build/html
 
-init:
+installi:
 	##### setup virtualenv
 	test -d $(VENV) || virtualenv env --prompt="(`basename \`pwd\``)"
 	$(PIP) install -r requirements.txt
