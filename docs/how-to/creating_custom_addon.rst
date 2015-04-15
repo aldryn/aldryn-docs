@@ -9,12 +9,12 @@ An Addon must conform to certain standards, but apart from some minor additional
 long as your Addon is well-packaged you should not encounter any difficulty. The good news is that Aldryn even helps
 package it.
 
-If you already have a plugin or other Addon to upload, you can :ref:`skip to the next section <package_your_addon>`.
-
-Otherwise, for the purposes of this walkthrough, we'll create a basic plugin that greets the logged-in user by name.
-
 Create a simple django CMS plugin
 =================================
+
+For the purposes of this walkthrough, we'll create a basic plugin that greets the logged-in user by name.
+
+If you already have a plugin or other Addon to upload, you can :ref:`skip to the next section <package_your_addon>`.
 
 See `custom plugins <http://docs.django-cms.org/en/latest/extending_cms/custom_plugins.html>`_ in the django CMS
 documentation for more information about plugins.
