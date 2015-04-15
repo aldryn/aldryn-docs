@@ -8,7 +8,7 @@ See the online version at http://docs.aldryn.com/
 Setup
 ===============
 
-#. run ``make init``
+#. run ``make install``
 #. run ``cd docs`` and ``make html``
 
 
