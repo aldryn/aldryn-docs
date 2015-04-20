@@ -63,24 +63,39 @@ We use Python documentation conventions for section marking:
 
 * ``#`` with overline, for parts
 * ``*`` with overline, for chapters
-* ``=``, for sections
-* ``-``, for subsections
-* ``^``, for subsubsections
-* ``"``, for paragraphs
+* ``=`` for sections
+* ``-`` for subsections
+* ``^`` for subsubsections
+* ``"`` for paragraphs
 
 Inline markup
 -------------
 
-* use double backticks - ````settings.py```` - for:
-    * literals
-    * filenames
-    * names of fields and other items in the Admin interface:
-* use emphasis - ``*Home*`` for:
-    * the names of available options in the Admin
-    * values in or of fields
-* use strong emphasis - ``**Control Panel**`` for:
-    * buttons that perform an action
-    * the names of key Aldryn components when they are first used in a page or section
+* use backticks - `````` - for:
+    * literals - ````cms.models.pagemodel````
+    * filenames - ``edit ``settings.py````
+    * names of fields and other specific items in the Admin interface - ``edit ``Redirect````
+* use emphasis - ``*Home*`` - around:
+    * the names of available options in or parts of the Admin - ``the *Toolbar*``
+    * the names of important modes or states - ``switch to *Edit mode*``
+    * values in or of fields - ``enter *Home*``
+* use strong emphasis - ``**`` - around:
+    * buttons that perform an action - ``hit **Save and close**``
+
+Rules for using technical words
+-------------------------------
+
+There should be one consistent way of rendering any technical word, depending on its context.
+Please follow these rules:
+
+* when introducing a key term for the the first time, or for the first time in a document,
+  highlight it to draw attention to it: "**Placeholders** are special model fields"
+* in general use, simply use the word as if it were any ordinary word, with no capitalisation or
+  highlighting: "Your placeholder can now be used." However, use "the Marketplace", "the Network" etc
+* at the start of sentences or titles, capitalise in the usual way: "Placeholder management guide"
+* when the word refers specifically to an object in the code, highlight it as a literal:
+  "``Placeholder`` methods can be overwritten as required" - when appropriate, link the term to
+  further reference documentation as well as simply highlighting it
 
 .. _Sphinx: http://sphinx.pocoo.org/
 .. _restructuredText: http://docutils.sourceforge.net/docs/ref/rst/introduction.html
@@ -88,5 +103,6 @@ Inline markup
 Internal links
 --------------
 
-Please use absolute link paths - `/packaging` - rather than relative paths - `packaging`. It makes
-it much easier to update them with a search & replace when files are moved.
+Use absolute links to other documentation pages - ``:doc:`/how_to/toolbar``` -
+rather than relative links - ``:doc:`/../toolbar```. This makes it easier to
+run search-and-replaces when items are moved in the structure.
