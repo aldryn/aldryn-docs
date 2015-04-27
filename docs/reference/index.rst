@@ -1,8 +1,10 @@
-.. toctree::
+#########
+Reference
+#########
 
-    sites/index
-    client/index
+Technical reference material.
+
+.. toctree::
+    :maxdepth: 2
+
     addons/index
-    boilerplates/index
-    themes/index
-    workflows_for_agencies/index

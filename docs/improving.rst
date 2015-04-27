@@ -21,10 +21,10 @@ documentation. In fact if you're not an expert, your opinion is especially impor
 Documentation structure
 ***********************
 
-The documentation's structure reflects its three chief functions:
+Our documentation is divided into the following main sections:
 
-* :doc:`introduction/index` to introduce concepts and explain basic aspects of the technology
-* :doc:`how-to/index` to take the user step-by-step through some key processes
+* :doc:`/introduction/index` (``introduction``): step-by-step tutorials to get
+  you up and running
 * :doc:`Reference <reference/index>` to provide in-depth technical reference material
 
 As far as possible when writing documentation it should be aimed at a place in one of these

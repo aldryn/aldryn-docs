@@ -1,6 +1,6 @@
-======================================
+######################################
 Aldryn's local development environment
-======================================
+######################################
 
 If your code works with django CMS, you can expect it to work with Aldryn.
 
@@ -17,22 +17,22 @@ replicates as far as possible the one your code will encounter when deployed.
    or even better, your contributions </improving>`. This documentation is on `GitHub
    <https://github.com/aldryn/aldryn-docs>`_
 
-
+**********************************
 Replicate your Aldryn site locally
-==================================
+**********************************
 
 You'll need the :ref:`Aldryn command-line client <aldryn_client>` installed, and a site - even the
 most basic one will do - that's active on Aldryn.
 
 The Aldryn client
------------------
+=================
 
 The client's available from PyPI::
 
     pip install aldryn-client
 
 Replicate your Aldryn site locally
-----------------------------------
+==================================
 
 Login to your Aldryn account::
 
@@ -56,7 +56,7 @@ created. Within it you'll find:
 * ``dev`` - a directory that Aldryn puts on the Python path for your convenience
 
 Set up the local database
--------------------------
+=========================
 
 You'll need to get a local copy of your Aldryn database running.
 
@@ -72,7 +72,7 @@ Using your local PostgreSQL database client, import the ``database.dump`` file, 
 the new database's name and any permissions match those in the local site's settings.
 
 Use local settings
-------------------
+==================
 
 You're going to need to adjust the settings for your local version of the project, so that it can
 use your local database.
@@ -112,7 +112,7 @@ installed in the project on Aldryn)::
         ]
 
 Let's go
---------
+========
 
 You need to activate this new virtualenv, install the requirements and fire up the Django runserver::
 

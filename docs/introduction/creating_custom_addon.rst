@@ -1,6 +1,6 @@
-=====================
+#####################
 Create a custom Addon
-=====================
+#####################
 
 In the :doc:`/introduction/index` we got an Aldryn site running in a local environment. If you haven't got to that
 stage yet, you should follow that tutorial first before returning here to continue.
@@ -9,8 +9,9 @@ An Addon must conform to certain standards, but apart from some minor additional
 long as your Addon is well-packaged you should not encounter any difficulty. The good news is that Aldryn even helps
 package it.
 
+*********************************
 Create a simple django CMS plugin
-=================================
+*********************************
 
 For the purposes of this walkthrough, we'll create a basic plugin that greets the logged-in user by name.
 
@@ -68,8 +69,9 @@ Try it out: start the runserver, and add your plugin to a page
 
 .. _package_your_addon:
 
+******************
 Package your Addon
-==================
+******************
 
 Creating packages, especially if you've not done it before, can be tricky and frustrating to get right. The Aldryn
 Control Panel takes much of the hard work out of the process for you, automatically generating several of the files
@@ -91,7 +93,7 @@ your Addon.
 Let's download and look at these files one-by-one.
 
 ``addon.json``
---------------
+==============
 
 The special requirements for Addon packaging are dealt with in an ``addon.json`` file containing information about the
 Addon. They are are in discussed in further detail in :ref:`addon-packaging`, but in brief it contains a dictionary
@@ -106,32 +108,32 @@ know how to use Python's packaging to ensure that they're actually installed alo
 In fact all these files can be edited to meet more complex needs.
 
 ``setup.py``
-------------
+============
 
 An Addon needs to be packaged in the usual Python way, starting with the ``setup.py`` file.
 
 Again, Aldryn provides a minimal but adequate file ready for you to use.
 
 ``MANIFEST.in``
----------------
+===============
 
 The ``MANIFEST.in`` file lists the locations of resources such as templates that need to be included in an installation.
 
 ``LICENSE.txt``
----------------
+===============
 
 A licence file is required. This may not matter very much if you're just using your application on
 your own sites, but if you plan to put it on the Aldryn Marketplace you should think carefully
 about appropriate licence terms.
 
 ``README.rst``
---------------
+==============
 
 Your ``README.rst`` will be empty until you provide a ``Description`` and **Save** the Addon - but of course you can
 edit the README file manually too.
 
 ``__init.py__``
----------------
+===============
 
 Finally, you have an ``__init.py__`` that provides a ``__version__`` (that starts at "0.0.1" by default).
 
@@ -151,8 +153,9 @@ like::
             views.py
             templates
 
+********
 Test it!
-========
+********
 
 The Aldryn client includes a validation tool, that will report on problems it finds in your Addon.
 
@@ -168,8 +171,9 @@ Now check, in your local development environment, that your newly-packaged Addon
     that some of your Addon's components are available to Django not because you've packaged them
     correctly, but simply in virtue of where you have put them while working on them!
 
+***********************
 Add further information
-=======================
+***********************
 
 If your Addon's only for private use, you don't need to add more. If you'd like other people to make use of it, add
 some more information about it. ``Additional information`` is particularly aimed at other developers who may be
@@ -179,8 +183,9 @@ browsing the Aldryn Marketplace.
 ``Publish on django-cms.org`` will mean that it's also listed amongst the `django CMS Addons
 <https://www.django-cms.org/en/add-ons/>`_.
 
+*******
 Upload
-======
+*******
 
 When you're satisfied that all is correct, you're ready to upload your Addon to Aldryn::
 
@@ -191,8 +196,9 @@ Your Addon is now in the Aldryn Marketplace and ready to be installed.
 Once it has been uploaded, you have the option to make your Addon publicly available in its configuration settings,
 from the Control Panel. Note that once made public, an Addon can't be made private again.
 
+******************
 Install and deploy
-==================
+******************
 
 In an Aldryn project Control Panel, install the Addon now as you'd install any other, and deploy your changes. A few
 minutes later, you should be up and running and able to use your application in Aldryn.

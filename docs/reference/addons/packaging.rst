@@ -1,120 +1,101 @@
+#######################
+Packaging Aldryn Addons
+#######################
+
+An Addon is a re-usable Django appplication with some extra metadata that allows it to be deployed
+in an Aldryn project.
+
 .. _addon-packaging:
 
-Packaging and Sourcecode
-========================
+*********
+Packaging
+*********
 
-If you want to write an addon, write a standard Django app (including working setup.py!).
+See :ref:`package_your_addon` for step-by-step instructions on packaging a Django application as
+an Addon.
 
-An addon requires a configuration file named ``addon.json`` which follows the general json guidelines.
-Place this file next to your setup.py and you should be ready to run ``aldryn addon validate``.
+In general though, an Addon needs to be a standard Python application with a ``setup.py`` and so on.
 
-All addons **must** have a valid license file. Preferably called ``LICENSE.txt`` in the root
-of the Project.
+addon.json
+==========
 
-The following is an example of a configuration file using all options:
+In addition, it requires a configuration file named ``addon.json`` which follows the general json
+guidelines.
+
+
+``addon.json`` has two required keys, ``package-name`` and ``installed-apps``:
 
 .. code-block:: json
 
     {
-        "name": "My Addon",
-        "description": "This is my custom application.",
-        "url": "https://github.com/aldryn",
         "package-name": "my-addon",
         "installed-apps": [
             "my_addon"
         ],
-        "author": {
-            "name": "Divio",
-            "url": "https://www.aldryn.com"
-        },
-        "license": {
-            "name": "BSD"
-        }
     }
-
-.. NOTE:: Please follow a strict :ref:`Versioning Scheme <versioning>`!
-
 
 Options
 -------
 
-.. option:: name
-
-   The name of your Boilerplate
-
-.. option:: description
-
-   A description of your Boilerplate
-
-.. option:: version
-
-   The version of this Boilerplate (must be compatible with LooseVersion)
-
-.. option:: url
-
-   The url to your repository or website
-
 .. option:: package—name
 
-   The **package** name of your app (the thing you have in the setup.py under ``name``)
+   The **package** name of your app. Generally it makes sense to use the name of your package given
+   its the setup.py under ``name``, but it doesn't have to be the same - this is Aldryn's internal
+   name for the package.
 
 .. option:: installed—apps
 
-   A list of apps that needs to be added to the ``INSTALLED_APPS`` to make your app work.
+   A list of apps that needs to be added to the ``INSTALLED_APPS`` of the project's ``settings.py``
+   to make your app work.
 
-.. option:: author
+``setup.py``
+============
 
-   .. option:: name:
+A standard ``setup.py``.
 
-      Your name!
+You are **strongly advised** to download the one Aldryn provides automatically and use that, making
+any amendments (for example to ``install_requires``) as necessary.
 
-   .. option:: url:
-
-      URL to your website (optional)
-
-.. option:: license
-
-   .. option:: name:
-
-      Type of the license, e.g. BSD, MIT
-
-
-Source Repository Guidelines
-----------------------------
-
-Use our cookie-cutter template for addons: https://github.com/divio/cookiecutter-aldryn-addon
-
-The Source should contain:
-
-``README.rst``
-~~~~~~~~~~~~~~
-
-A short introduction what the package is about. Installation instructions (non-aldryn, like with any other package)
-
-.. TODO:: more guidelines. link to someplace where this is well described.
-
-Include a link back to aldryn
-
-* rst: ``This package is compatible with `Aldryn <http://www.aldryn.com>`_.``
-* markdown: ``This package is compatible with [Aldryn](http://www.aldryn.com).``
+``setup()`` **must** provide a version number. Aldryn relies on this to provide information about
+updates, so it must be incremented properly. The Aldryn-provided version of ``setup.py`` follows
+the convention of getting the version number from ``__init__.py``.
 
 ``LICENSE.txt``
-~~~~~~~~~~~~~~~
+===============
 
-.. TODO:: links/description of common licenses
+All Addons that are to be shared **must** have a valid license file, called ``LICENSE.txt``, in the
+root of the Project. You can upload an Addon without a license file, but you won't be able to share
+it.
 
-http://en.wikipedia.org/wiki/List_of_software_licenses
+When :ref:`creating your Addon in the Aldryn interface <package_your_addon>` creating your Addon
+in the Aldryn interface, you can choose a suitable licence from the list available and download a
+suitable one, or you can create your own.
 
+``README.rst``
+==============
+
+Note that this file **must** be called ``README.rst``.
+
+Please include:
+
+* a short introduction what the package is about
+* installation instructions for non-Aldryn users
+* information about Aldryn compatibility
+* links to Aldryn, documentation, the official source repository
 
 ``MANIFEST.in``
-~~~~~~~~~~~~~~~
+===============
 
-::
+A standard manifest file.
 
-    include LICENSE.txt
-    include README.rst
-    recursive-include mypackage/templates *
-    recursive-include mypackage/static *
-    recursive-include mypackage/locale *
-    recursive-exclude * *.pyc
+Aldryn provides one for download that will work for most packages.
 
+``__init__.py``
+===============
+
+You are recommended to use the ``__init__.py`` provided by Aldryn for download (see the note about
+version numbering above).
+
+We recommend a version number in the format::
+
+    __version__ = "0.0.1"

@@ -16,19 +16,34 @@
 Welcome to Aldryn
 #################
 
-`Aldryn`_ is an easy-to-use and developer-friendly content management platform.
-
-Aldryn has been designed to meet the needs of:
-
-* **web content creators**, who require an efficient and reliable way to produce content
-
-* **agencies**, who work with multiple clients and content creators, and need to manage them all
-
-* **web developers**, who implement designs and create applications, and need a low-friction
-  workflow for their deployment
+`Aldryn`_ is a cloud-based platform for Django-based websites.
 
 At the heart of Aldryn is `django CMS`_, a powerful and extensible open-source web content
-management system, and a large - and growing - ecosystem of compatible applications.
+management system, and a large and growing ecosystem of compatible applications.
+
+Aldryn has been designed to meet the needs of three distinct groups of web professionals.
+
+
+**Content creators**, who require an efficient and reliable way to produce content.
+
+django CMS and the numerous Addons that can be installed make Aldryn a powerful content creation
+platform. A number of Addons already exist in the Aldryn Marketplace, while developers can readily
+develop and deploy their own, from new or existing Django packages.
+
+**Web agencies and designers**, who work with multiple clients and content creators, and need to manage them all.
+
+Typically they need to provide their clients with a site that the client can subsequently manage on
+their own. Aldryn provides flexible and effective ways of setting up sites so that an agency can
+then hand the, over to clients, while still being able to retain oversight if necessary. Future - or
+indeed continuous - development is possible, because Aldryn has been designed to be a platform as
+much for hosting and site management as for development.
+
+**Web application developers**, who implement designs and create applications, and need a
+low-friction workflow for their deployment.
+
+Aldryn provides a fully-featured Django environment that can easily be recreated locally for
+development.
+
 
 The platform also provides:
 
@@ -75,15 +90,8 @@ Table of Contents
 
     self
     introduction/index
-    how-to/index
-    reference/sites/index
-    reference/client/index
-    reference/addons/index
-    reference/boilerplates/index
-    reference/themes/index
-    reference/workflows_for_agencies/index
+    reference/index
     improving
-    glossary
 
 .. _Aldryn: http://www.aldryn.com/
 .. _django CMS: http://django-cms.org/
