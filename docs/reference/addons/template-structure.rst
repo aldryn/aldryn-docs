@@ -91,7 +91,11 @@ etc.::
     </div>
 
 This allows frontend developers to customise your templates using css alone
-without changing the templates structure.
+without changing the templates structure. The ``aldryn`` identifier would serve
+as entry point to overwrite Bootstrap components within all aldryn addons for
+example, whereas ``aldryn-events`` targets the specific events addon and
+``aldryn-events-latest`` the plugin used and so on. ``aldryn`` could also be
+``cmsplugin`` or ``djangocms`` depending on your package name and setup.
 
 Finally use the ``js-`` prefix to separate styling from JavaScript
 functionality::
