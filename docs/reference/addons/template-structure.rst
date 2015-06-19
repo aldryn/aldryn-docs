@@ -114,4 +114,6 @@ duplicated entries for file injections::
     {% addtoblock "css" %}<link href="{% static 'css/theme.css' %}" rel="stylesheet">{% endaddtoblock %}
     {% addtoblock "js" %}<script src="{% static 'libs/jquery.min.js' %}"></script>{% endaddtoblock %}
 
-Inline JavaScript should be avoided at all.
+Inline JavaScript should be avoided at all. There is
+`additional reading material <http://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/codestyle/javascript.html#passing-data-to-components>`_
+available if you want to get more examples of hwo to achieve this.
