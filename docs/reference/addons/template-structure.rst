@@ -26,7 +26,7 @@ look something like:
 
     {% extends "base.html" %}
     {% block content %}
-        <div class="addon-blog">
+        <div class="aldryn aldryn-blog">
             {% block blog_content %}{% endblock %}
         </div>
     {% endblock content %}
@@ -38,7 +38,7 @@ have a common ground.
 Addons
 ------
 
-To structure addons (plugins), we recommend using a separate folder **addons** within your app. The name of the
+To structure addons (plugins), we recommend using a separate folder **plugins** within your app. The name of the
 added html file should represent the functionality of the addon. Here an example of our previous structure:
 
 .. code-block:: text
@@ -70,3 +70,54 @@ In this case the gallery provides two kind of templates, a standard version and 
 files extend ``aldryn_gallery/plugins/base.html`` in order to keep some common elements in one file. Yet that base.html
 is nowhere called from within the addon. The backend just picks standard/gallery.html or feature/gallery.html according
 to the settings within the plugin.
+
+Naming
+------
+
+Ideally use the prefix of your package name as a class name followed by the
+addon name, for example::
+
+    <div class="aldryn aldryn-events">
+        ...
+    </div>
+
+In addition you can nest further if you are rendering a plugin or a list view
+etc.::
+
+    <div class="aldryn aldryn-events aldryn-events-latest">
+        <ul>
+            <li>...</li>
+        </ul>
+    </div>
+
+This allows frontend developers to customise your templates using css alone
+without changing the templates structure. The ``aldryn`` identifier would serve
+as entry point to overwrite Bootstrap components within all aldryn addons for
+example, whereas ``aldryn-events`` targets the specific events addon and
+``aldryn-events-latest`` the plugin used and so on. ``aldryn`` could also be
+``cmsplugin`` or ``djangocms`` depending on your package name and setup.
+
+Finally use the ``js-`` prefix to separate styling from JavaScript
+functionality::
+
+    <div class="aldryn aldryn-calendar js-aldryn-calendar">
+        ...
+    </div>
+
+All mentioned conventions are further illustrated within the
+`aldryn-boilerplate-bootstrap3 <https://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/>`_
+documentation.
+
+Sekizai
+-------
+
+It is recommended to use single-line sekizai declarations in order to merge
+duplicated entries for file injections::
+
+    {% load sekizai_tags %}
+    {% addtoblock "css" %}<link href="{% static 'css/theme.css' %}" rel="stylesheet">{% endaddtoblock %}
+    {% addtoblock "js" %}<script src="{% static 'libs/jquery.min.js' %}"></script>{% endaddtoblock %}
+
+Inline JavaScript should be avoided at all. There is
+`additional reading material <http://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/codestyle/javascript.html#passing-data-to-components>`_
+available if you want to get more examples of how to achieve this.
