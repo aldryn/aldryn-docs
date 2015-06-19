@@ -1,9 +1,11 @@
 Code Conventions
 ================
 
-There are many Boilerplates and equally as many code conventions and styleguides. We will not go as far as to
-command you to use tabs over spaces, camelCase over under_score, but we might want you to redirect to our
-`aldryn-boilerplate-bootstrap3 <https://github.com/aldryn/aldryn-boilerplate-bootstrap3>`_'s README.rst which offers some advice.
+There are many Boilerplates and equally as many code conventions and
+styleguides. We will not go as far as to command you to use tabs over spaces,
+camelCase over under_score, but we might want you to redirect to our
+`aldryn-boilerplate-bootstrap3 <https://github.com/aldryn/aldryn-boilerplate-bootstrap3>`_'s
+README.rst which offers some advice.
 
 When it all comes down, you can use whatever coding style you wish. There are though, some restrictions concerning
 the folder structure:
