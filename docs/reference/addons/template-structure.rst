@@ -26,7 +26,7 @@ look something like:
 
     {% extends "base.html" %}
     {% block content %}
-        <div class="addon-blog">
+        <div class="aldryn aldryn-blog">
             {% block blog_content %}{% endblock %}
         </div>
     {% endblock content %}
@@ -38,7 +38,7 @@ have a common ground.
 Addons
 ------
 
-To structure addons (plugins), we recommend using a separate folder **addons** within your app. The name of the
+To structure addons (plugins), we recommend using a separate folder **plugins** within your app. The name of the
 added html file should represent the functionality of the addon. Here an example of our previous structure:
 
 .. code-block:: text
@@ -70,3 +70,23 @@ In this case the gallery provides two kind of templates, a standard version and 
 files extend ``aldryn_gallery/plugins/base.html`` in order to keep some common elements in one file. Yet that base.html
 is nowhere called from within the addon. The backend just picks standard/gallery.html or feature/gallery.html according
 to the settings within the plugin.
+
+Naming
+------
+
+Ideally use the prefix of your package name as a class name followed by the
+addon name, for example::
+
+    <div class="aldryn aldryn-events"></div>
+
+In addition you can nest further if you are rendering a plugin or a listview
+etc.::
+
+    <div class="aldryn aldryn-events aldryn-events-latest">
+        <ul>
+            <li>...</li>
+        </ul>
+    </div>
+
+This allows frontend developers to customize your templates using css alone
+without changing the templates structure
