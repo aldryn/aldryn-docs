@@ -79,7 +79,7 @@ addon name, for example::
 
     <div class="aldryn aldryn-events"></div>
 
-In addition you can nest further if you are rendering a plugin or a listview
+In addition you can nest further if you are rendering a plugin or a list view
 etc.::
 
     <div class="aldryn aldryn-events aldryn-events-latest">
@@ -88,5 +88,17 @@ etc.::
         </ul>
     </div>
 
-This allows frontend developers to customize your templates using css alone
+This allows frontend developers to customise your templates using css alone
 without changing the templates structure
+
+Sekizai
+-------
+
+It is recommended to use single-line sekizai declarations in order to merge
+duplicated entries for file injections::
+
+    {% load sekizai_tags %}
+    {% addtoblock "css" %}<link href="{% static 'css/theme.css' %}" rel="stylesheet">{% endaddtoblock %}
+    {% addtoblock "js" %}<script src="{% static 'libs/jquery.min.js' %}"></script>{% endaddtoblock %}
+
+Inline JavaScript should be avoided at all.
