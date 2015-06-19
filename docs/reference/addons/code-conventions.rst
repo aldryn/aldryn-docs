@@ -61,3 +61,11 @@ For full-page caching.
 .. TODO:: figure out some good rules for avoiding anonymous sessions.
           Should Apps be "certified" that they don't require anonymous sessions?
           Configurable with setting? csrf_cookie? current language cookie?
+
+Frontend
+--------
+
+There are many Boilerplates and equally as many code conventions and styleguides. We will not go as far as to
+command you to use tabs over spaces, camelCase over under_score, but we might want you to redirect to our
+`aldryn-boilerplate-bootstrap3 <https://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/>`_'s
+documentation which offers some advice.
