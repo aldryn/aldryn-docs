@@ -116,4 +116,4 @@ duplicated entries for file injections::
 
 Inline JavaScript should be avoided at all. There is
 `additional reading material <http://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/codestyle/javascript.html#passing-data-to-components>`_
-available if you want to get more examples of hwo to achieve this.
+available if you want to get more examples of how to achieve this.
