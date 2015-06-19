@@ -100,6 +100,9 @@ functionality::
         ...
     </div>
 
+All mentioned conventions are further illustrated within the
+`aldryn-boilerplate-bootstrap3 <https://aldryn-boilerplate-bootstrap3.readthedocs.org/en/latest/>`_
+documentation.
 
 Sekizai
 -------
