@@ -77,7 +77,9 @@ Naming
 Ideally use the prefix of your package name as a class name followed by the
 addon name, for example::
 
-    <div class="aldryn aldryn-events"></div>
+    <div class="aldryn aldryn-events">
+        ...
+    </div>
 
 In addition you can nest further if you are rendering a plugin or a list view
 etc.::
@@ -89,7 +91,15 @@ etc.::
     </div>
 
 This allows frontend developers to customise your templates using css alone
-without changing the templates structure
+without changing the templates structure.
+
+Finally use the ``js-`` prefix to separate styling from JavaScript
+functionality::
+
+    <div class="aldryn aldryn-calendar js-aldryn-calendar">
+        ...
+    </div>
+
 
 Sekizai
 -------
