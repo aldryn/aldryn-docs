@@ -67,7 +67,8 @@ extended work. For this, you need to work with your files locally, using tools d
 complex file structures. This is what the **Aldryn Desktop** client application is for.
 
 Install the Aldryn Desktop client. Once it's running you can login using your email address and
-password, or simply copy the **access token** from the Aldryn Control Panel.
+password, or simply copy the `access token
+<https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn Control Panel.
 
 One final configuration step is required; you need to specify a local folder where the application
 will store your Aldryn files.

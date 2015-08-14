@@ -39,9 +39,9 @@ The platform also provides:
 Getting started
 ===============
 
-New users should start with the :doc:`tutorial`. It's designed to give you the quickest possible
-start with Aldryn, introducing you to key components and concepts of the system, so that you feel
-comfortable and familiar with it and are ready to use it in earnest.
+New users should start with the :doc:`tutorial/index`. It's designed to give you the quickest
+possible start with Aldryn, introducing you to key components and concepts of the system, so that
+you feel comfortable and familiar with it and are ready to use it in earnest.
 
 The tutorial takes you from first registration to publishing your site.
 
