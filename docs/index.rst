@@ -1,7 +1,6 @@
-.. aldryn-docs documentation master file, created by
-   sphinx-quickstart on Tue Dec 10 09:03:53 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+#################
+Welcome to Aldryn
+#################
 
 .. image:: _static/aldryn-logo-main.png
    :width: 200 px
@@ -11,10 +10,6 @@
    This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
    or even better, your contributions <improving>`. This documentation is on `GitHub
    <https://github.com/aldryn/aldryn-docs>`_
-
-#################
-Welcome to Aldryn
-#################
 
 `Aldryn`_ is an easy-to-use and developer-friendly content management platform.
 
@@ -40,9 +35,19 @@ The platform also provides:
 * management via a web interface or desktop-based application
 
 
-############
+===============
+Getting started
+===============
+
+New users should start with the :doc:`tutorial`. It's designed to give you the quickest possible
+start with Aldryn, introducing you to key components and concepts of the system, so that you feel
+comfortable and familiar with it and are ready to use it in earnest.
+
+The tutorial takes you from first registration to publishing your site.
+
+============
 Getting Help
-############
+============
 
 Having trouble? We'd like to help!
 
@@ -66,14 +71,15 @@ Having trouble? We'd like to help!
 .. _issue tracker: https://github.com/aldryn/aldryn/issues
 
 
-#################
+=================
 Table of Contents
-#################
+=================
 
 .. toctree::
     :maxdepth: 1
 
     self
+    tutorial/index
     introduction/index
     how-to/index
     reference/sites/index
