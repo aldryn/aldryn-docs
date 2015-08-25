@@ -8,6 +8,9 @@ You can sign up for Aldryn using your GitHub account, or your email address.
 
 Select *Sign up* from the menu, or visit the `registration page <http://www.aldryn.com/en/sign/>`_.
 
+.. image:: images/signup.png
+   :alt: The sign up link in the menu bar
+
 
 =======================
 To sign up using GitHub
