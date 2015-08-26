@@ -6,10 +6,16 @@ In the Control Panel, select **Add a new Project**.
 
 You'll be invited to choose what kind of new project you'd like to create.
 
+.. image:: images/project_type.png
+   :alt: The project types
+
 You can start with a blank project but for this tutorial choose the second option, **Start with a
 theme and content**.
 
 This will duplicate our demonstration *Explorer site* for you.
+
+.. image:: images/project_name.png
+   :alt: Fill in the project name
 
 Give the project a name (note that Aldryn projects must have unique names, so if you choose a name
 that already exists you'll need to choose another). Don't worry about the *Organisation* field for
