@@ -24,11 +24,14 @@ Using Draft mode
 
 You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar.
 
+.. todo:: an image for the toolbar with the live/draft mode switch highlighted
+
 In *Draft mode*, you're able to change much of the site's content simply by double-clicking on it.
 
 When you're hovering over editable content, a *Double-click to edit* pop-up will appear alongside
 your pointer, along with the name of the content type involved.
 
+.. todo:: an image of the "double-click to edit" hover
 
 ==============
 Edit some text
@@ -39,6 +42,8 @@ window containing an editor will appear.
 
 For text, this will generally be the default **rich text editor**, which includes formatting and
 other editing controls.
+
+.. todo:: an image of a rich text editor popup
 
 Change some text and hit **Save**.
 
@@ -51,6 +56,7 @@ This allows you to keep editing and refining your page until you are satisfied w
 
 Switch back to *Draft mode* once more, and **Publish** your changes.
 
+.. todo:: an image for the toolbar with the Publish button highlighted
 
 ===============
 Further editing
@@ -60,6 +66,8 @@ The same principle of double-clicking to edit applies throughout the system, for
 **Aldryn News & Blog** application too.
 
 From the navigation menu in the Explorer site, choose *Blog*, to go to the home page of the weblog.
+
+.. todo:: an image for the navigation menu with Blog highlighted
 
 The *Blog* page lists a number of articles, including a snippet of introductory text from each,
 along with a publishing date and the author's name, and a link to the full article.
@@ -73,11 +81,17 @@ Double-clicking on its *title* on the other hand (whether on the article page, o
 page) will open a different editor in the pop-up. In this case it's the *Edit article form*, where
 you can change settings such as the title, date of publication and so on.
 
-You'll notice that some content appears differently when double-clicked to edit it, or even when
-you simply switch to *Draft mode*. For example, a collection of slides in a carousel will display
-each slide individually, to make them easier to edit.
+.. todo:: an image for the "double-click to edit" hover for the Title
 
-Note also that weblog articles don't exist in draft and live forms, so any changes you make are
+.. todo:: an image for the Edit Article popup with the Title field highlighted
+
+.. note::
+
+   You'll notice that some content appears differently when double-clicked to edit it, or even when
+   you simply switch to *Draft mode*. For example, a collection of slides in a carousel will
+   display each slide individually, to make them easier to edit.
+
+Unlike pages, weblog articles don't exist in draft and live forms, so any changes you make are
 published immediately.
 
 
@@ -90,9 +104,13 @@ Structure and content editing modes
 We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mode switch** to
 change to *structure editing mode*.
 
+.. todo:: an image for the toolbar with the edit mode switch highlighted
+
 The content you were looking at will be replaced by a representation of its structure. Each block
 of rows represents a **Placeholder**, and each row represents a **Plugin** that has been inserted
 into a Placeholder.
+
+.. todo:: an image for a placeholder block/rows
 
 When you edited text in the rich text editor, what you edited was one of these plugins.
 
@@ -105,8 +123,12 @@ Add a plugin
 ============
 
 Find the *NEWSBLOG_ARTICLE_CONTENT* block. Select its **Edit menu**, and scroll down through the
-list of available plugin options until you find *Text*. When you select *Text*, the text editor
-will pop up as before. Enter some new text, and **Save** the plugin.
+list of available plugin options until you find *Text*.
+
+.. todo:: an image for "Text" in the available plugin options
+
+When you select *Text*, the text editor will pop up as before. Enter some new text, and **Save**
+the plugin.
 
 You'll see your new text plugin and its content showing in the list of plugins. Switch back to
 *content mode*; now you'll see that the content appears on the page.
@@ -123,6 +145,8 @@ Create a new page
 
 In the *Toolbar*, select *Page > Add Page*. Give the page a ``Title`` (you can ignore the other
 options for now) and hit **Save** .
+
+.. todo:: an image for Page > Add Page from the toolbar
 
 Your new - and so far content-free - page will appear in right-hand pane.
 

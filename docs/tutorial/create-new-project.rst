@@ -42,6 +42,7 @@ Go to *General settings* in the project's Dashboard, and set:
   account, you'll be able to publish the site from your own domain.
 * *Base Project Release Channel Settings*: leave this set to *Stable*.
 
+.. todo:: an image for Dashboard > General settings
 
 ===================
 Deploy your project
@@ -53,6 +54,8 @@ First you deploy a private version for testing, and then later you can publish a
 all the world to see.
 
 Back in your project's Dashboard, hit **Test it** to deploy the site to the *Test server*.
+
+.. todo:: an image for Test it button
 
 .. NOTE::
    For the moment, we will work only with the Test server; later, we'll look at the Live server
@@ -75,3 +78,5 @@ Occasionally, a deployment will fail. This can happen for various reasons. The p
 will be unaffected. Repeat the deployment. If it fails again, contact the Aldryn team for support,
 either `by email <mailto:support@aldryn.com>`_ or by using the *Intercom tool* on any page on the
 Aldryn website.
+
+.. todo:: an image for the Intercom widget

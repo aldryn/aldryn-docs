@@ -16,6 +16,8 @@ The quickest way to explore your project's frontend files is through the Control
 In the Dashboard, hit **Edit Project files** and select *Edit files with the online editor*. The
 online editor will open, listing your project's files.
 
+.. todo:: an image for Edit project files > Edit files with the online editor
+
 
 ==================================
 Edit a file with the online editor
@@ -23,9 +25,13 @@ Edit a file with the online editor
 
 Find the file ``private/SASS/settings/_bootstrap.scss``, and open it by double-clicking.
 
+.. todo:: an image for the file in the file list
+
 In the file, find the line::
 
     $text-color: #666;
+
+.. todo:: an image of the file editor with about seven lines listed and the appropriate line highlighetd
 
 and change ``#666`` to ``red``. Hit **Save**.
 
@@ -40,6 +46,8 @@ When you save a change in the online editor, Aldryn recognises it. You'll notice
 ON* in the Toolbar of your website. In this case, we changed a value that controls the default text
 colour in the site, and that change was recognised, and showed up when the page was automatically
 reloaded.
+
+.. todo:: an image for Live reload is ON in the toolbar
 
 This site uses ***SASS***, a CSS processing language. SASS saves you building complex CSS by hand,
 and instead processes your rules - ``.scss`` files in the ``private`` directory - and creates
@@ -66,9 +74,17 @@ Using the online editor is suitable for very minor quick changes, but it's not i
 extended work. For this, you need to work with your files locally, using tools designed to manage
 complex file structures. This is what the **Aldryn Desktop** client application is for.
 
-Install the Aldryn Desktop client. Once it's running you can login using your email address and
-password, or simply copy the `access token
-<https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn Control Panel.
+Install the Aldryn Desktop client.
+
+.. todo:: an image to show link from Dahsboard to download app, *once* the new app is available
+
+Once it's running you can login using your email address and password, or simply copy the `access
+token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn Control
+Panel and paste it into the field in the client.
+
+.. todo:: an image to show access code in Dashboard
+
+.. todo:: an image to show access code being pasted into the client
 
 One final configuration step is required; you need to specify a local folder where the application
 will store your Aldryn files.
@@ -82,8 +98,12 @@ specified earlier).
 Hit **Auto-sync this project**. A few moments later you'll find all your project's files available
 on your local drive.
 
+.. todo:: an image to show Auto-sync this project
+
 As you did before, find the file ``private/SASS/settings/_bootstrap.scss``, and once again change
 the ``$text-color`` value.
+
+.. todo:: an image to show file in the OS X Finder and in a text editor
 
 Save the file, and in a few moments later you'll see the change reflected on your site - as long as
 *Auto-sync* is turned on, changes will be synchronised in both directions between your site and

@@ -19,6 +19,8 @@ the deployed website for each.
 
 Use the **open site** link of your Test server to access the website.
 
+.. todo:: an image of the two panes (test and live) with the open site link highlighted
+
 
 ===============
 The test server
@@ -27,6 +29,8 @@ The test server
 The *Test Server* pane displays information about the System and Boilerplate versions, and
 indicators to show whether they can be updated, in which case a button to apply the updates will be
 available.
+
+.. todo:: an image for the test server pane with the apply updates button higlighted
 
 At any time, you can use the **Test it** button to deploy the current configuration, whether it has
 been previously deployed or not.
@@ -62,6 +66,8 @@ Go live
 When you're ready to publish your site, hit **Go live**. Your site will go through the familiar
 deployment process, but this time on the live rather than the test server.
 
+.. todo:: an image for the Go live button
+
 Once complete, your site will be publicly available, and not just to people your are collaborating
 with.
 
@@ -89,11 +95,13 @@ Copying test data to live
 As well as applying your *Test* server's *configuration* to the *Live* server, you can also copy
 its *data* - the actual site content, using the **Copy test data to live** button.
 
+.. todo:: an image for the Copy test data to live button
+
 This allows you to work on site content on a completely private server, and then to publish it all
 at once when you are ready.
 
 Create and publish some new pages on the test server, then copy your test content to live by using
-the **Copy test data** to live button.
+the **Copy test data to live** button.
 
 Check that the live server now also features the new pages.
 
@@ -103,6 +111,8 @@ Copying test data to live
 
 The **Copy live data to test** button will copy all site content in the other direction, so that
 you can test new configurations with existing data.
+
+.. todo:: an image for the Copy live data to test button
 
 Typically, you will use this when testing an updated version of software, such as an *Addon*, to
 ensure that it will work correctly when later deployed to the live server.
