@@ -18,6 +18,9 @@ To sign up using GitHub
 
 Select the **Sign up with GitHub** button.
 
+.. image:: images/btn_github.png
+   :alt: The github button
+
 You will need to authorise Aldryn to obtain your email address, and basic information about people
 in your GitHub organisations, from GitHub.
 
