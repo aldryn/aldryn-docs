@@ -20,6 +20,7 @@ Select the **Sign up with GitHub** button.
 
 .. image:: images/btn_github.png
    :alt: The github button
+   :align: right
 
 You will need to authorise Aldryn to obtain your email address, and basic information about people
 in your GitHub organisations, from GitHub.
@@ -41,6 +42,10 @@ Once you have logged in to your account, you'll see the Aldryn **Control Panel**
 for all your Aldryn projects. Once created, all your projects will appear here.
 
 Select the **Tour** icon to take the tour.
+
+.. image:: images/icon_tour.png
+   :alt: The tour icon
+   :align: right
 
 You'll be introduced to key parts of the Aldryn interface, and invited to create your first
 project. The tour is always available to refresh your memory later.
