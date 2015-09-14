@@ -22,16 +22,22 @@ If not, add ``/?edit`` to the end of the URL to trigger the login prompt.
 Using Draft mode
 ================
 
-You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar.
+You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar. 
 
-.. todo:: an image for the toolbar with the live/draft mode switch highlighted
+.. image:: images/live.png
+   :alt: live
 
 In *Draft mode*, you're able to change much of the site's content simply by double-clicking on it.
+
+.. image:: images/draft.png
+   :alt: draft
 
 When you're hovering over editable content, a *Double-click to edit* pop-up will appear alongside
 your pointer, along with the name of the content type involved.
 
-.. todo:: an image of the "double-click to edit" hover
+.. image:: images/hover_edit.png
+   :alt: hover
+   
 
 ==============
 Edit some text
@@ -43,7 +49,8 @@ window containing an editor will appear.
 For text, this will generally be the default **rich text editor**, which includes formatting and
 other editing controls.
 
-.. todo:: an image of a rich text editor popup
+.. image:: images/text_edit.png
+   :alt: text_edit
 
 Change some text and hit **Save**.
 
@@ -56,7 +63,8 @@ This allows you to keep editing and refining your page until you are satisfied w
 
 Switch back to *Draft mode* once more, and **Publish** your changes.
 
-.. todo:: an image for the toolbar with the Publish button highlighted
+.. image:: images/publish.png
+   :alt: publish
 
 ===============
 Further editing
@@ -67,7 +75,8 @@ The same principle of double-clicking to edit applies throughout the system, for
 
 From the navigation menu in the Explorer site, choose *Blog*, to go to the home page of the weblog.
 
-.. todo:: an image for the navigation menu with Blog highlighted
+.. image:: images/blog.png
+   :alt: blog
 
 The *Blog* page lists a number of articles, including a snippet of introductory text from each,
 along with a publishing date and the author's name, and a link to the full article.
@@ -81,9 +90,11 @@ Double-clicking on its *title* on the other hand (whether on the article page, o
 page) will open a different editor in the pop-up. In this case it's the *Edit article form*, where
 you can change settings such as the title, date of publication and so on.
 
-.. todo:: an image for the "double-click to edit" hover for the Title
+.. image:: images/title_blog.png 
+   :alt: title_blog
 
-.. todo:: an image for the Edit Article popup with the Title field highlighted
+.. image:: images/blog_popup.png
+   :alt: blog_popup
 
 .. note::
 
@@ -104,13 +115,15 @@ Structure and content editing modes
 We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mode switch** to
 change to *structure editing mode*.
 
-.. todo:: an image for the toolbar with the edit mode switch highlighted
+.. image:: images/content_mode.png
+   :alt: content_mode
 
 The content you were looking at will be replaced by a representation of its structure. Each block
 of rows represents a **Placeholder**, and each row represents a **Plugin** that has been inserted
 into a Placeholder.
 
-.. todo:: an image for a placeholder block/rows
+.. image:: images/placeholder.png
+   :alt: placeholder
 
 When you edited text in the rich text editor, what you edited was one of these plugins.
 
@@ -125,7 +138,8 @@ Add a plugin
 Find the *NEWSBLOG_ARTICLE_CONTENT* block. Select its **Edit menu**, and scroll down through the
 list of available plugin options until you find *Text*.
 
-.. todo:: an image for "Text" in the available plugin options
+.. image:: images/text_plugin.png
+   :alt: text_plugin
 
 When you select *Text*, the text editor will pop up as before. Enter some new text, and **Save**
 the plugin.
@@ -146,7 +160,8 @@ Create a new page
 In the *Toolbar*, select *Page > Add Page*. Give the page a ``Title`` (you can ignore the other
 options for now) and hit **Save** .
 
-.. todo:: an image for Page > Add Page from the toolbar
+.. image:: images/add_page.png
+   :alt: add_page
 
 Your new - and so far content-free - page will appear in right-hand pane.
 

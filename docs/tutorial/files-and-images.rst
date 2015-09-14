@@ -21,7 +21,8 @@ To explore the basic use of Django Filer, we'll start by changing an existing im
 in a page, and hover over it in *Draft mode* - you'll see the indicator that shows this is an
 *Image*.
 
-.. todo:: an image for the indicator over an image
+.. image:: images/image_hover.png
+   :alt: image_hover
 
 Double-click to open the plugin.
 
@@ -30,11 +31,13 @@ You can change such things as the image's ``Title``, but you can also change the
 Select the **search** icon (the magnifying glass) next to the thumbnail image. Navigate through the
 folder structure to find a suitable image. You can also search for files by name.
 
-.. todo:: an image for the search icon
+.. image:: images/search.png
+   :alt: search
 
 When you have found a file you'd like to use, hit the **Select this file** icon on its left.
 
-.. todo:: an image for the Select this file
+.. image:: images/select_file.png
+   :alt: select file
 
 **Save**, and the new image will be used in place of the existing one.
 
@@ -47,7 +50,8 @@ If a suitable image does not already exist in the Filer, you can add a new one.
 
 Open the plugin as before, hit the **search** icon, and then the **Upload** button.
 
-.. todo:: an image for the Upload button
+.. image:: images/upload.png
+   :alt: upload
 
 Chose an image - or multiple images - from your local drive. After a few moments for processing,
 they will appear on the *Clipboard*.
@@ -56,9 +60,11 @@ Navigate to the folder where you want to place these files, then hit the **Paste
 them from the *Clipboard* to the folder. (You can also move items to the clipboard using the Move
 to clipboard icon, and also discard items from the Clipboard if required.)
 
-.. todo:: an image for clipboard with Paste icon highlighted
+.. image:: images/past_image.png
+   :alt: image past
 
-.. todo:: an image for clipboard with Move to clipboard icon highlighted
+.. image:: images/move_clipboard.png
+   :alt: move_clipboard
 
 Now you can select the image to use for the plugin as you did before, and **Save** the plugin.
 
@@ -72,14 +78,18 @@ directly.
 
 In the Toolbar, select the *Site menu* and choose *Administration*.
 
-.. todo:: an image for Toolbar > Site menu > Adminstration
+.. image:: images/admin_nav.png
+   :alt: admin navigation
 
-.. todo:: an image for Admin view
+
+.. image:: images/admin_site.png
+   :alt: admin sidebar
 
 Expand the Admin view by hitting the sidepane's **Zoom button**. In the *Filer* section select
 *Folders*, where you can explore the folder structure, and use the Filer interface as before.
 
-.. todo:: an image for sidepane's zoom buttons
+.. image:: images/zoom_panel.png
+   :alt: zoom
 
 
 =============================

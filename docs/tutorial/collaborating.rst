@@ -14,7 +14,8 @@ This is managed in your project's *Sharing settings*.
 
 Go to your project's Dashboard and choose *Sharing settings*.
 
-.. todo:: an image for Dashboard > sharing settings
+.. image:: images/sharing_settings.png
+   :alt: sharing_settings
 
 
 =====================
@@ -27,7 +28,8 @@ Enable a visitor to see it too, by copying the special link and sending it to th
 anyone who has this link will also be able to see your site. None of them will be able to edit your
 site though, or see unpublished content.
 
-.. todo:: an image of the Test site pane
+.. image:: images/sharing_testsite.png
+   :alt: testsite
 
 
 .. _sharing-with-clients:
@@ -43,7 +45,8 @@ update content on a day-to-day basis.
 
 To invite *Clients (CMS-only users)*, provide their email addresses, separated by spaces.
 
-.. todo:: an image of the Invite CMS-only users field with fake @example.com email addresses in it
+.. image:: images/cms_user_field.png
+   :alt: cms_user_field
 
 You can give them access to the **Live** or **Test** versions of the project or both, as required.
 
@@ -65,7 +68,8 @@ provide such access to trusted users.
 Choose another user and set their access to *On* (note that Admin members of your Organisation will
 have already have access rights).
 
-.. todo:: an image of the list of users with the access switch of one of them highlighted. If using real email addresses/names, make sure to blur them
+.. image:: images/collabrators.png
+   :alt: collabrators
 
 They will now be able to use the Control Panel to install software, deploy the site and make other
 changes.
