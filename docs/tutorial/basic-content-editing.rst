@@ -22,21 +22,23 @@ If not, add ``/?edit`` to the end of the URL to trigger the login prompt.
 Using Draft mode
 ================
 
-You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar.
 
-.. image:: images/live.png
-   :alt: live
+You're in *Live mode* - see the |live| button in the toolbar. Switch to *Draft mode*, by hitting
+the button.
 
-In *Draft mode*, you're able to change much of the site's content simply by double-clicking on it.
+.. |live| image:: images/live.png
+   :alt: Live mode indicator
 
-.. image:: images/draft.png
-   :alt: draft
+Now you're in *Draft mode* |draft|, you're able to change much of the site's content simply by double-clicking on it.
+
+.. |draft| image:: images/draft.png
+   :alt: Draft mode indicator
 
 When you're hovering over editable content, a *Double-click to edit* pop-up will appear alongside
 your pointer, along with the name of the content type involved.
 
 .. image:: images/hover_edit.png
-   :alt: hover
+   :alt: The double-click to edit pop-up
 
 
 ==============
@@ -46,11 +48,11 @@ Edit some text
 Choose some text to amend; double-click on it. Whatever the content type, an appropriate pop-up
 window containing an editor will appear.
 
+.. image:: images/text_edit.png
+   :alt: The rich text editor
+
 For text, this will generally be the default **rich text editor**, which includes formatting and
 other editing controls.
-
-.. image:: images/text_edit.png
-   :alt: text_edit
 
 Change some text and hit **Save**.
 
@@ -61,10 +63,10 @@ until you hit **Publish changes**.
 This allows you to keep editing and refining your page until you are satisfied with your changes in
 *Draft mode*, while leaving the live content undisturbed.
 
-Switch back to *Draft mode* once more, and **Publish** your changes.
-
 .. image:: images/publish.png
-   :alt: publish
+   :alt: Publishing changes
+
+Switch back to *Draft mode* once more, and **Publish** your changes.
 
 ===============
 Further editing
@@ -73,10 +75,12 @@ Further editing
 The same principle of double-clicking to edit applies throughout the system, for example in the
 **Aldryn News & Blog** application too.
 
-From the navigation menu in the Explorer site, choose *Blog*, to go to the home page of the weblog.
-
 .. image:: images/blog.png
-   :alt: blog
+   :alt: The navigation menu
+   :align: right
+   :width: 40%
+
+From the navigation menu in the Explorer site, choose *Blog*, to go to the home page of the weblog.
 
 The *Blog* page lists a number of articles, including a snippet of introductory text from each,
 along with a publishing date and the author's name, and a link to the full article.
@@ -86,15 +90,17 @@ and switch to *Draft mode*, you'll see that double-click-to-edit works here too.
 
 Double-clicking in an article's main body of text will open the text editor as before.
 
+.. image:: images/title_blog.png
+   :alt: Double-click on a title to edit it
+   :align: right
+   :width: 50%
+
 Double-clicking on its *title* on the other hand (whether on the article page, or the weblog's home
 page) will open a different editor in the pop-up. In this case it's the *Edit article form*, where
 you can change settings such as the title, date of publication and so on.
 
-.. image:: images/title_blog.png
-   :alt: title_blog
-
 .. image:: images/blog_popup.png
-   :alt: blog_popup
+   :alt: The Edit article form
 
 .. note::
 
@@ -116,14 +122,16 @@ We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mod
 change to *structure editing mode*.
 
 .. image:: images/content_mode.png
-   :alt: content_mode
+   :alt: The edit mode switch
+
+.. image:: images/placeholder.png
+   :alt: The block of Placeholders
+   :align: right
+   :width: 25%
 
 The content you were looking at will be replaced by a representation of its structure. Each block
 of rows represents a **Placeholder**, and each row represents a **Plugin** that has been inserted
 into a Placeholder.
-
-.. image:: images/placeholder.png
-   :alt: placeholder
 
 When you edited text in the rich text editor, what you edited was one of these plugins.
 
@@ -135,11 +143,13 @@ see that it's the same kind of thing.
 Add a plugin
 ============
 
+.. image:: images/text_plugin.png
+   :alt: The text plugin
+   :align: right
+   :width: 25%
+
 Find the *NEWSBLOG_ARTICLE_CONTENT* block. Select its **Edit menu**, and scroll down through the
 list of available plugin options until you find *Text*.
-
-.. image:: images/text_plugin.png
-   :alt: text_plugin
 
 When you select *Text*, the text editor will pop up as before. Enter some new text, and **Save**
 the plugin.
@@ -157,11 +167,13 @@ double-click.
 Create a new page
 =================
 
+.. image:: images/add_page.png
+   :alt: Choose 'Add Page' in the menu
+   :align: right
+   :width: 50%
+
 In the *Toolbar*, select *Page > Add Page*. Give the page a ``Title`` (you can ignore the other
 options for now) and hit **Save** .
-
-.. image:: images/add_page.png
-   :alt: add_page
 
 Your new - and so far content-free - page will appear in right-hand pane.
 

@@ -20,19 +20,21 @@ the deployed website for each.
 Use the **open site** link of your Test server to access the website.
 
 .. image:: images/open_testsite.png
-   :alt: opentestside
+   :alt: The 'open site' link
 
 
 ===============
 The test server
 ===============
 
+.. image:: images/panel_testsite.png
+   :alt: Apply changes to the Test server
+   :align: right
+   :width: 50%
+
 The *Test Server* pane displays information about the System and Boilerplate versions, and
 indicators to show whether they can be updated, in which case a button to apply the updates will be
 available.
-
-.. image:: images/panel_testsite.png
-   :alt: apply testsite
 
 At any time, you can use the **Test it** button to deploy the current configuration, whether it has
 been previously deployed or not.
@@ -65,11 +67,12 @@ Go live
 =======
 
 
-When you're ready to publish your site, hit **Go live**. Your site will go through the familiar
+When you're ready to publish your site, hit **Go live** - |go-live|. Your site will go through the familiar
 deployment process, but this time on the live rather than the test server.
 
-.. image:: images/golive.png
-   :alt: go live
+.. |go-live| image:: images/golive.png
+   :alt: The 'Go live' button
+   :width: 15%
 
 Once complete, your site will be publicly available, and not just to people your are collaborating
 with.
@@ -99,7 +102,9 @@ As well as applying your *Test* server's *configuration* to the *Live* server, y
 its *data* - the actual site content, using the **Copy test data to live** button.
 
 .. image:: images/copy_live.png
-   :alt: copy live
+   :alt: The 'Copy test data to live' button
+   :align: right
+   :width: 25%
 
 
 This allows you to work on site content on a completely private server, and then to publish it all
@@ -118,7 +123,9 @@ The **Copy live data to test** button will copy all site content in the other di
 you can test new configurations with existing data.
 
 .. image:: images/copy_test.png
-   :alt: copy test
+   :alt: The 'Copy live data to test' button
+   :align: right
+   :width: 25%
 
 Typically, you will use this when testing an updated version of software, such as an *Addon*, to
 ensure that it will work correctly when later deployed to the live server.

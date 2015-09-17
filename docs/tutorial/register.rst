@@ -19,6 +19,7 @@ To sign up using GitHub
 .. image:: images/btn_github.png
    :alt: Sign up with GitHub
    :align: right
+   :width: 25%
 
 You will need to authorise Aldryn to obtain your email address, and basic information about people
 in your GitHub organisations, from GitHub.
@@ -42,6 +43,7 @@ for all your Aldryn projects. Once created, all your projects will appear here.
 .. image:: images/icon_tour.png
    :alt: The tour icon
    :align: right
+   :width: 50%
 
 Select the **Tour** icon to take the tour.
 
