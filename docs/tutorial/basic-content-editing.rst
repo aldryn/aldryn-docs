@@ -22,7 +22,7 @@ If not, add ``/?edit`` to the end of the URL to trigger the login prompt.
 Using Draft mode
 ================
 
-You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar. 
+You're in *Live mode*. Switch to *Draft mode*, using the button in the Toolbar.
 
 .. image:: images/live.png
    :alt: live
@@ -37,7 +37,7 @@ your pointer, along with the name of the content type involved.
 
 .. image:: images/hover_edit.png
    :alt: hover
-   
+
 
 ==============
 Edit some text
@@ -90,7 +90,7 @@ Double-clicking on its *title* on the other hand (whether on the article page, o
 page) will open a different editor in the pop-up. In this case it's the *Edit article form*, where
 you can change settings such as the title, date of publication and so on.
 
-.. image:: images/title_blog.png 
+.. image:: images/title_blog.png
    :alt: title_blog
 
 .. image:: images/blog_popup.png

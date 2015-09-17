@@ -15,7 +15,7 @@ Give the project a name (note that Aldryn projects must have unique names, so if
 that already exists you'll need to choose another). Don't worry about the *Organisation* field for
 now.
 
-Select the **Duplicate Project** button. 
+Select the **Duplicate Project** button.
 
 Your new project's **Dashboard** will open, and will display a *Duplicating website’s data* message.
 
@@ -38,7 +38,7 @@ Go to *General settings* in the project's Dashboard, and set:
 
 .. image:: images/general_settings.png
    :alt: settings
-   
+
 
 ===================
 Deploy your project
