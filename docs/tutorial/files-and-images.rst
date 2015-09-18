@@ -91,14 +91,14 @@ Expand the Admin view by hitting the sidepane's **Zoom button**. In the *Filer* 
 .. image:: images/zoom_panel.png
    :alt: zoom
 
-
 =============================
 Editing an image in the Filer
 =============================
 
 Locate the image you added to the Filer earlier, and hit its thumbnail icon there.
 
-.. todo:: an image for the file's thumbnail icon in the Filer
+.. image:: images/thumbnail-photo.png
+   :alt: thumbnail
 
 Now you can edit the file's settings, such as ``Name``, ``Description`` and ``Author`` - change
 them appropriately.
@@ -106,7 +106,8 @@ them appropriately.
 Choose the image's *focus point* - the point around which any cropping will occur - by dragging the
 red circle in the image pane.
 
-.. todo:: an image for the focus point
+.. image:: images/red-dot.png
+   :alt: red focus dot
 
 This helps ensure for example that however a portrait is cropped, the subject's head will not be
 chopped off. If your image doesn't have a particular focus point, leave the circle in the middle of
@@ -131,6 +132,7 @@ The *Add Filer image* dialog will open.
 You can add an optional caption, or set some of the additional options, and when ready, hit **OK**
 to insert the image into the text plugin.
 
-.. todo:: an image for an Image plugin in a text plugin
+.. image:: images/text-image-plugin.png
+   :alt: image in text-plugin
 
 Once you **Save** the text plugin, you'll be able to see the image in your page.

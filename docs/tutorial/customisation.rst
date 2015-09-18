@@ -82,9 +82,11 @@ Once it's running you can login using your email address and password, or simply
 token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn Control
 Panel and paste it into the field in the client.
 
-.. todo:: an image to show access code in Dashboard
+.. image:: images/access-token.png
+   :alt: access-token-dashboard
 
-.. todo:: an image to show access code being pasted into the client
+.. image:: images/access-token-client.png
+   :alt: access-token-client
 
 One final configuration step is required; you need to specify a local folder where the application
 will store your Aldryn files.
@@ -98,7 +100,9 @@ specified earlier).
 Hit **Auto-sync this project**. A few moments later you'll find all your project's files available
 on your local drive.
 
-.. todo:: an image to show Auto-sync this project
+.. image:: images/auto-sync.png
+   :alt: auto-sync
+
 
 As you did before, find the file ``private/SASS/settings/_bootstrap.scss``, and once again change
 the ``$text-color`` value.
