@@ -51,9 +51,9 @@ on your local drive.
 .. todo:: an image to show Auto-sync this project
 
 
-==================================
-Edit a file with the online editor
-==================================
+========================
+Edit a file with locally
+========================
 
 .. todo:: an image showing the link to open site files locally
 
