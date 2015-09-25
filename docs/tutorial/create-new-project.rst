@@ -80,10 +80,6 @@ Failed deployments
    :align: right
    :width: 50%
 
-   ..
-
-   The Intercom tool
-
 Occasionally, a deployment will fail. This can happen for various reasons. The previous version
 will be unaffected. Repeat the deployment. If it fails again, contact the Aldryn team for support,
 either `by email <mailto:support@aldryn.com>`_ or by using the *Intercom tool* on any page on the
