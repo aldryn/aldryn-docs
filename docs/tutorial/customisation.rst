@@ -8,22 +8,63 @@ development using Aldryn.
 Aldryn has been designed to be developer-friendly, and to reflect the fact that content managers
 and developers work together in the same teams, and often on the same projects at the same time. In
 particular, Aldryn puts your project's frontend files - HTML, CSS and JavaScript - at your
-fingertips for easy management, in various different ways.
-
-The quickest way to explore your project's frontend files is through the Control Panel's built-in
-**online editor**.
-
-In the Dashboard, hit **Edit Project files** and select *Edit files with the online editor*. The
-online editor will open, listing your project's files.
-
-.. todo:: an image for Edit project files > Edit files with the online editor
+fingertips for easy management, through the **Aldryn Desktop** client application.
 
 
-==================================
-Edit a file with the online editor
-==================================
+=============================================
+Install the Aldryn Desktop client application
+=============================================
 
-Find the file ``private/SASS/settings/_bootstrap.scss``, and open it by double-clicking.
+.. todo:: an image to show link from Dashboard to download app
+
+Download the Aldryn Desktop client, and follow the instructions to install it.
+
+
+===============
+Getting started
+===============
+
+Once the application is running you can login using your email address and password, or simply copy
+the `access token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn
+Control Panel and paste it into the field in the client.
+
+.. todo:: an image to show access code in Dashboard
+
+.. todo:: an image to show access code being pasted into the client
+
+Select a workspace folder (a folder on your computer where you'd like to keep all the Aldryn
+files), then select **Continue**.
+
+At this point you can take the Aldryn Desktop application tour if you wish, though you will
+probably find most of its interface and functionality quite familiar, as it's very similar to that of the Control
+Panel.
+
+.. todo:: show tour icon
+
+Select the project you created in the Control Panel earlier.
+
+.. todo:: show the user's Aldryn project in the list on the left
+
+Hit **Auto-sync this project**. A few moments later you'll find all your project's files available
+on your local drive.
+
+.. todo:: an image to show Auto-sync this project
+
+
+========================
+Edit a file with locally
+========================
+
+.. todo:: an image showing the link to open site files locally
+
+Open the site files.
+
+.. todo:: an image for the list of files in Finder
+
+These are all the frontend - HTML, CSS and JavaScript - files for your site, and can be edited
+using your preferred plain-text editor.
+
+Find and open the file ``private/SASS/settings/_bootstrap.scss``.
 
 .. todo:: an image for the file in the file list
 
@@ -31,25 +72,31 @@ In the file, find the line::
 
     $text-color: #666;
 
-.. todo:: an image of the file editor with about seven lines listed and the appropriate line highlighetd
+.. todo:: an image of the file editor with about seven lines listed and the appropriate line
+   highlighted
 
-and change ``#666`` to ``red``. Hit **Save**.
+and change ``#666`` to ``red``, then save the file.
 
-Switch back to your website, and in a few seconds the page will reload, and body text will now be
-red.
+Switch back to your website, and in a few seconds the page will reload, with the body text now
+red to reflect your changes.
+
+This works for any file: save it, and in a few moments later you'll see the change reflected on
+your site - as long as *Auto-sync* is turned on, changes will be synchronised in both directions
+between your site and your local files.
 
 
 How this works
 ==============
 
-When you save a change in the online editor, Aldryn recognises it. You'll notice *Live reload is
-ON* in the Toolbar of your website. In this case, we changed a value that controls the default text
-colour in the site, and that change was recognised, and showed up when the page was automatically
-reloaded.
+When you save a change to any of the local files, Aldryn Desktop recognises this, and sends the
+changes to your Aldryn site, along with a signal that files have changed.
 
 .. todo:: an image for Live reload is ON in the toolbar
 
-This site uses ***SASS***, a CSS processing language. SASS saves you building complex CSS by hand,
+You'll notice *Live reload is *ON* in the Toolbar of your website, which means that your site will
+recompile the files, and reload the page to display the changes,
+
+This site uses **SASS**, a CSS processing language. SASS saves you building complex CSS by hand,
 and instead processes your rules - ``.scss`` files in the ``private`` directory - and creates
 standard CSS files as output.
 
@@ -65,58 +112,12 @@ one - are built around it.
 
 You can edit templates and JavaScript in just the same way as you edited the CSS.
 
-
-===========================================
-Using the Aldryn Desktop client application
-===========================================
-
-Using the online editor is suitable for very minor quick changes, but it's not intended for more
-extended work. For this, you need to work with your files locally, using tools designed to manage
-complex file structures. This is what the **Aldryn Desktop** client application is for.
-
-Install the Aldryn Desktop client.
-
-.. todo:: an image to show link from Dahsboard to download app, *once* the new app is available
-
-Once it's running you can login using your email address and password, or simply copy the `access
-token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn Control
-Panel and paste it into the field in the client.
-
-.. image:: images/access-token.png
-   :alt: access-token-dashboard
-
-.. image:: images/access-token-client.png
-   :alt: access-token-client
-
-One final configuration step is required; you need to specify a local folder where the application
-will store your Aldryn files.
-
-Like the Control Panel, the Aldryn Desktop client lists your projects, and offers much of the same
-functionality, so it should look very familiar.
-
-Select your project, and set a ``Destination`` folder for its files (create this inside the one you
-specified earlier).
-
-Hit **Auto-sync this project**. A few moments later you'll find all your project's files available
-on your local drive.
-
-.. image:: images/auto-sync.png
-   :alt: auto-sync
-
-
-As you did before, find the file ``private/SASS/settings/_bootstrap.scss``, and once again change
-the ``$text-color`` value.
-
-.. todo:: an image to show file in the OS X Finder and in a text editor
-
-Save the file, and in a few moments later you'll see the change reflected on your site - as long as
-*Auto-sync* is turned on, changes will be synchronised in both directions between your site and
-your local files.
-
 Having these project files available to you locally, with a seamless connection to the site, means
 you don't need to work with tools like FTP, or develop locally and then apply changes to your site
 when they're complete - you can work locally using your preferred tools and environment and see the
 results immediately online.
 
 You can even collaborate with others on the same site, at the same time, and immediately see the
-results of their work.
+results of their work. If another developer makes a change to a site file, that will be
+synchronised to *your* local files too, as long as your Aldryn Desktop is running and the project
+is set to *Auto-sync*.

@@ -10,12 +10,14 @@ can choose to share it with:
 * **Clients (CMS-only users)**, who have access only to the CMS
 * **Collaborators**, who will have access to the control panel as well as the CMS
 
+.. image:: images/sharing_settings.png
+   :alt: Aldryn project settings
+   :align: right
+   :width: 25%
+
 This is managed in your project's *Sharing settings*.
 
 Go to your project's Dashboard and choose *Sharing settings*.
-
-.. image:: images/sharing_settings.png
-   :alt: sharing_settings
 
 
 =====================
@@ -29,7 +31,7 @@ anyone who has this link will also be able to see your site. None of them will b
 site though, or see unpublished content.
 
 .. image:: images/sharing_testsite.png
-   :alt: testsite
+   :alt: Sharing the test site
 
 
 .. _sharing-with-clients:
@@ -46,7 +48,7 @@ update content on a day-to-day basis.
 To invite *Clients (CMS-only users)*, provide their email addresses, separated by spaces.
 
 .. image:: images/cms_user_field.png
-   :alt: cms_user_field
+   :alt: Inviting a CMS-only user
 
 You can give them access to the **Live** or **Test** versions of the project or both, as required.
 
@@ -69,7 +71,7 @@ Choose another user and set their access to *On* (note that Admin members of you
 have already have access rights).
 
 .. image:: images/collabrators.png
-   :alt: collabrators
+   :alt: Managing collaborators
 
 They will now be able to use the Control Panel to install software, deploy the site and make other
 changes.
