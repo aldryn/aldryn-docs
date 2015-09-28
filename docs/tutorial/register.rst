@@ -40,12 +40,10 @@ Take the Tour
 Once you have logged in to your account, you'll see the Aldryn **Control Panel**, the command centre
 for all your Aldryn projects. Once created, all your projects will appear here.
 
+Select the **Tour** icon to take the tour.
+
 .. image:: images/icon_tour.png
    :alt: The tour icon
-   :align: right
-   :width: 50%
-
-Select the **Tour** icon to take the tour.
 
 You'll be introduced to key parts of the Aldryn interface, and invited to create your first
 project. The tour is always available to refresh your memory later.
