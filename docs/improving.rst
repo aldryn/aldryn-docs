@@ -23,9 +23,9 @@ Documentation structure
 
 The documentation's structure reflects its three chief functions:
 
-* :doc:`introduction/index` to introduce concepts and explain basic aspects of the technology
-* :doc:`how-to/index` to take the user step-by-step through some key processes
-* :doc:`Reference <reference/index>` to provide in-depth technical reference material
+* :doc:`/tutorial/index`: step-by-step guides for the new user
+* :doc:`/how-to/index`: more advanced guides for developers
+* :doc:`Reference </reference/index>` to provide in-depth technical reference material
 
 As far as possible when writing documentation it should be aimed at a place in one of these
 sections (which can always themselves be expanded or restructured to accommodate new material).

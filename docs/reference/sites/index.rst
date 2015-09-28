@@ -5,4 +5,7 @@ Sites
 .. toctree::
     :maxdepth: 1
 
-    custom-domains
+    activity-stream
+    settings
+    management
+    local-development

@@ -13,6 +13,5 @@ The aim of the documents in this section is not to provide a comprehensive refer
 .. toctree::
     :maxdepth: 1
 
-    create_site
     local_development
     creating_custom_addon

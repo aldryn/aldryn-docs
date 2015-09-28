@@ -1,4 +1,12 @@
+#########
+Reference
+#########
+
+Reference pages
+
+
 .. toctree::
+    :maxdepth: 1
 
     sites/index
     client/index

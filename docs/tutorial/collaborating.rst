@@ -1,3 +1,5 @@
+.. _collaborating:
+
 ###############################
 Sharing and working with others
 ###############################
