@@ -15,41 +15,43 @@ Install Aldryn Events
 You'll find these Addons in the `Aldryn Marketplace <http://www.aldryn.com/en/marketplace>`_. You
 can browse the list there, or install them directly from your Aldryn Control Panel.
 
-In the Dashboard for your site, select *Manage Addons* . You'll see that you have a number
-installed already, with others available for installation.
-
 .. image:: images/manage-addons.png
-   :alt: the manage addons
+   :alt: Select 'Manage Addons' from the menu
    :align: right
    :width: 30%
+
+In the Dashboard for your site, select *Manage Addons* . You'll see that you have a number
+installed already, with others available for installation.
 
 We'll install Aldryn Events, an application for publishing calendars of events on your site.
 
 Find Aldryn Events in the list, and hit **Install for Free**. Don't worry about any installation or
-configuration options in the dialoge that appears next, just select **Install Aldryn Events**.
+configuration options in the dialogue that appears next, just select **Install Aldryn Events**.
 
 .. image:: images/install-events.png
-   :alt: the install event button
+   :alt: Aldryn Events ready to be installed
 
 A few seconds later, you'll be returned to the list of Addons, now showing which version of Aldryn
 Events that you have installed.
 
 .. image:: images/installed-events.png
-   :alt: showing installed events
+   :alt: Aldryn Events installed
 
 Installing an Addon is a change that requires redeployment of your site. In the Dashboard, hit the
-**Apply changes and test** button.
+**Apply changes** button.
 
 .. image:: images/apply-changes.png
-   :alt: the apply changes button
+   :alt: the 'Apply Changes' button
    :width: 50%
+   :align: center
 
 Once the site has redeployed, the new Events application will be
 available - you can see it in the admin, as you did with the Filer.
 
 .. image:: images/events-admin.png
-   :alt: admin page showing aldryn
+   :alt: Aldryn Events in the admin
    :width: 50%
+   :align: center
 
 =============================
 Create an Events landing page
@@ -69,6 +71,7 @@ In your new page's *Advanced settings*, set its ``Application`` to *Events* and 
 .. image:: images/apphook-setup.png
    :alt: the apphook setup
    :width: 50%
+   :align: center
 
 This page is now hooked into to the Aldryn Events application.
 
@@ -96,10 +99,12 @@ It now exists in the database and will be listed on the *Events* page. Notice th
 also indicates that something’s on.
 
 .. image:: images/event-sample.png
-   :alt: an aldryn event-sample
+   :alt: an published Event
+   :align: center
+   :width: 50%
 
 .. image:: images/calender.png
-   :alt: the aldryn event calender
+   :alt: the calendar
    :align: center
    :width: 50%
 
@@ -119,18 +124,15 @@ placeholder, and scroll down through the list of available plugin options until 
 *Event* plugins. Choose *Upcoming or past events*.
 
 .. image:: images/events-plugin.png
-   :alt: the event-plugins
+   :alt: Aldryn Events plugins
 
 Check the plugin's settings, and **Save**.
 
 The plugin will be inserted at the bottom of the list of plugins in the *CONTENT* placeholder
 block, but you can drag it to any position you like (even to another placeholder block).
 
-.. image:: images/plugin-drag-and-drop.png
-   :alt: drag and drop of the event plugin
-
 When you return to *Content* mode, you'll see that on the *Home* page the plugin now automatically
 lists the event you created.
 
 .. image:: images/homepage-event.png
-   :alt: homepage-event
+   :alt: The plugin at work in the home page
