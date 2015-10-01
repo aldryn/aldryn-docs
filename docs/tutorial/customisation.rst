@@ -18,7 +18,7 @@ Install the Aldryn Desktop client application
 .. image:: images/download_desktop.png
    :alt: Download Aldryn Desktop
    :align: right
-   :width: 25%
+   :width: 50%
 
 Download the Aldryn Desktop client, and follow the instructions to install it.
 
