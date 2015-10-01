@@ -78,7 +78,7 @@ The same principle of double-clicking to edit applies throughout the system, for
 .. image:: images/blog.png
    :alt: The navigation menu
    :align: right
-   :width: 40%
+   :width: 50%
 
 From the navigation menu in the Explorer site, choose *Blog*, to go to the home page of the weblog.
 
@@ -118,11 +118,13 @@ published immediately.
 Structure and content editing modes
 ===================================
 
-We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mode switch** to
-change to *structure editing mode*.
-
 .. image:: images/content_mode.png
    :alt: The edit mode switch
+   :align: right
+   :width: 50%
+
+We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mode switch** to
+change to *structure editing mode*.
 
 .. image:: images/placeholder.png
    :alt: The block of Placeholders

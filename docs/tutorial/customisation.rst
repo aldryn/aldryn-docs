@@ -16,7 +16,7 @@ Install the Aldryn Desktop client application
 =============================================
 
 .. image:: images/download_desktop.png
-   :alt: the download desktop button
+   :alt: Download Aldryn Desktop
    :align: right
    :width: 25%
 
@@ -31,50 +31,45 @@ Once the application is running you can login using your email address and passw
 the `access token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn
 Control Panel and paste it into the field in the client.
 
-.. image:: images/access-token.png
-   :alt: the access token
-
-.. image:: images/access-token-client.png
-   :alt: the access token pasted in the client
-   :align: center
-      :width: 50%
-
 Select a workspace folder (a folder on your computer where you'd like to keep all the Aldryn
 files), then select **Continue**.
+
+
+The Tour
+========
 
 At this point you can take the Aldryn Desktop application tour if you wish, though you will
 probably find most of its interface and functionality quite familiar, as it's very similar to that of the Control
 Panel.
 
 .. image:: images/tour_client.png
-   :alt: the tour button of the client
+   :alt: Take the Aldryn Desktop Tour
+
+
+===================
+Select your project
+===================
 
 .. image:: images/list-project.png
-   :alt: The project list sidebar
+   :alt: The project list
    :align: right
-   :width: 40%
+   :width: 25%
 
 Select the project you created in the Control Panel earlier.
 
 Hit **Auto-sync this project**. A few moments later you'll find all your project's files available
-on your local drive.
+on your local drive, in the folder you specified above.
 
 .. image:: images/auto-sync.png
    :alt: the auto-sync button
+   :align: center
+   :width: 40%
 
-========================
-Edit a file with locally
-========================
+===================
+Edit a file locally
+===================
 
-.. image:: images/path-link.png
-   :alt: showing location of the path
-   :width: 30%
-
-Open the site files.
-
-.. image:: images/finder_files.png
-   :alt: showing files in the finder
-   :width: 50%
+Open the local site files.
 
 These are all the frontend - HTML, CSS and JavaScript - files for your site, and can be edited
 using your preferred plain-text editor.
@@ -82,14 +77,11 @@ using your preferred plain-text editor.
 Find and open the file ``private/SASS/settings/_bootstrap.scss``. bootstrap-file-path.png
 
 .. image:: images/bootstrap-file-path.png
-   :alt: showing path of the _bootstrap.scss file
+   :alt: Path to the _bootstrap.scss file
 
 In the file, find the line::
 
     $text-color: #666;
-
-.. todo:: an image of the file editor with about seven lines listed and the appropriate line
-   highlighted
 
 and change ``#666`` to ``red``, then save the file.
 
@@ -112,7 +104,7 @@ changes to your Aldryn site, along with a signal that files have changed.
    :align: right
    :width: 50%
 
-You'll notice *Live reload is *ON* in the Toolbar of your website, which means that your site will
+You'll notice *Live reload* is *ON* in the Toolbar of your website, which means that your site will
 recompile the files, and reload the page to display the changes,
 
 This site uses **SASS**, a CSS processing language. SASS saves you building complex CSS by hand,
