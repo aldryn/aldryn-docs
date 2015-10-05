@@ -8,6 +8,7 @@ This section covers the very basics to help you get started.
 Aldryn runs `django CMS <http://django-cms.org>`_. If you're already familiar with django CMS you
 can skip this section.
 
+.. _cms_login:
 
 ====================
 Log in as a CMS user
