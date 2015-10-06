@@ -74,7 +74,7 @@ Open the local site files.
 These are all the frontend - HTML, CSS and JavaScript - files for your site, and can be edited
 using your preferred plain-text editor.
 
-Find and open the file ``private/SASS/settings/_bootstrap.scss``. bootstrap-file-path.png
+Find and open the file ``private/SASS/settings/_bootstrap.scss``.
 
 .. image:: images/bootstrap-file-path.png
    :alt: Path to the _bootstrap.scss file

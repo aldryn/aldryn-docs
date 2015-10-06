@@ -1,6 +1,6 @@
-======================================
+######################################
 Aldryn's local development environment
-======================================
+######################################
 
 If your code works with django CMS, you can expect it to work with Aldryn.
 
@@ -12,122 +12,215 @@ can be deployed to Aldryn. It does however have some specific requirements. In o
 that your code will run as expected on our cloud-based servers, the local environment it provides
 replicates as far as possible the one your code will encounter when deployed.
 
-.. ATTENTION::
-   This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
-   or even better, your contributions </improving>`. This documentation is on `GitHub
-   <https://github.com/aldryn/aldryn-docs>`_
+
+*********************
+Software installation
+*********************
+
+You'll need to have two key pieces of software installed, Docker Toolbox and the Aldryn
+command-line client.
 
 
-Replicate your Aldryn site locally
-==================================
+Install Docker Toolbox
+======================
 
-You'll need the :ref:`Aldryn command-line client <aldryn_client>` installed, and a site - even the
-most basic one will do - that's active on Aldryn.
+Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
+installer for your system (this is a fairly large download, so you can move on to the next step
+while waiting for it to complete).
 
-The Aldryn client
------------------
+Once downloaded, follow the instructions to run the installer.
 
-The client's available from PyPI::
+You'll be using the *Docker Quickstart Terminal* when working with Aldryn, so you can launch that
+when invited.
+
+Docker Quickstart Terminal is installed as application. When launched, it will :ref:`open a new shell <launch-docker-quickstart-terminal>`.
+
+
+Install the Aldryn command-line client
+======================================
+
+Install the client::
 
     pip install aldryn-client
 
-Replicate your Aldryn site locally
-----------------------------------
+If you already have an older version of the client installed, use the ``--update`` option::
 
-Login to your Aldryn account::
+    pip install --update aldryn-client
 
-    aldryn login
 
-Now you need to replicate your Aldryn site in a local workspace::
+.. _launch-docker-quickstart-terminal:
 
-    aldryn workspace create --sitename=<sitename> # substitute your actual site
-    name
+*********************************
+Launch Docker Quickstart Terminal
+*********************************
 
-It'll take a few minutes to download and install all the dependencies. What you'll
-see unfolding in your terminal is just what happens on the Aldryn server when you
-create a new site.
+If you haven't already done so, launch a new shell using Docker Quickstart Terminal. This creates a
+new virtual machine (``default``) and starts it up::
 
-Your Aldryn environment is in the ``<sitename>`` directory that has just been
-created. Within it you'll find:
+    Creating Machine default...
+    Creating VirtualBox VM...
+    Creating SSH key...
+    Starting VirtualBox VM...
+    Starting VM...
+    To see how to connect Docker to this machine, run: docker-machine env default
+    Starting machine default...
+    Started machines may have new IP addresses. You may need to re-run the
+    `docker-machine env` command.
+    Setting environment variables for machine default...
 
-* ``.site`` - the Django project, complete with `manage.py`, settings, site static
-  files and so on
-* ``.virtualenv`` - the virtualenv for the Aldryn environment
-* ``dev`` - a directory that Aldryn puts on the Python path for your convenience
+                          ##         .
+                      ## ## ##        ==
+                   ## ## ## ## ##    ===
+               /"""""""""""""""""\___/ ===
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+               \______ o           __/
+                 \    \         __/
+                  \____\_______/
 
-Set up the local database
--------------------------
 
-You'll need to get a local copy of your Aldryn database running.
+    docker is configured to use the default machine with IP 192.168.99.101
+    For help getting started, check out the docs at https://docs.docker.com
 
-Aldryn uses Postgres, so you will need a `PostgreSQL <http://www.postgresql.org>`_ server running
-locally too.
+This can take a couple of minutes to complete, but the next time will be much quicker.
 
-In the Aldryn control panel, the *Manage project* section offers options for
-downloading and restoring databases. Create a new backup of your site, refresh the
-page, and download the backup you have just created.
+Run the command ``aldryn check-system``, which should confirm that all is correct::
 
-Unpack the .tar file that has been downloaded. This contains the database, media files, and more.
-Using your local PostgreSQL database client, import the ``database.dump`` file, and make sure that
-the new database's name and any permissions match those in the local site's settings.
+    Verifying your system's setup
+     ✓ git client
+     ✓ docker client
+     ✓ docker server connection
+     ✓ docker-compose
 
-Use local settings
-------------------
 
-You're going to need to adjust the settings for your local version of the project, so that it can
-use your local database.
+**********************************
+Configure Aldryn login credentials
+**********************************
 
-.. ATTENTION::
-    Note that any changes you make locally to ``settings.py`` will not only not have any affect on
-    Aldryn, the next time you synchronise your local project with the Aldryn version, those local
-    changes will be lost. Try to avoid such changes altogether - mostly, they shouldn't be needed.
+In order for the Aldryn cloud and your local machine to communicate securely, you need to provide
+security credentials to both sides.
 
-Rather than make changes to ``settings.py``, override the ``DATABASE_URL`` by setting an an
-*environment variable*.
 
-Create a file ``.env`` in the root of your site directory, containing::
+Upload your public key to Aldryn
+================================
 
-    DATABASE_URL=postgres://postgres:@127.0.0.1:5432/<database_name>
+Visit https://control.aldryn.com/account/ssh-keys/ to check whether you have uploaded your public
+key to Aldryn. If you haven't already done so, you'll need to copy your public key from your
+computer and add it to the Aldryn Control Panel. You'll only need to do this once.
 
-Obviously, ``<database_name>`` needs to match the one you have created.
+.. note::
 
-If you need to do anything more complex, you can use an environment variable to point to a local
-`settings file <https://docs.djangoproject.com/en/dev/topics/settings/#designating-the-settings>`_.
+    If you need help with setting up, finding or using your SSH keys, use the excellent GitHub
+    `guide to generating SSH keys <https://help.github.com/articles/generating-ssh-keys/>`_.
 
-In your ``.env`` file::
 
-    DJANGO_SETTINGS_MODULE=local_settings
+Log in with the client
+======================
 
-And in ``dev/local_settings.py`` import all the settings from the settings file from Aldryn, overriding
-the ones you need to::
+The next step is to log in to Aldryn using the client::
 
-    from settings import *
-    # override settings as required
+    ✗ aldryn login
+    Your browser has been opened to visit: https://control.aldryn.com/account/desktop-app/access-token/
+    Please copy the access token and paste it here:
 
-For example to add a new application to ``INSTALLED_APPS`` (if the application has not already been
-installed in the project on Aldryn)::
+This will open https://control.aldryn.com/account/desktop-app/access-token/, from where you can
+copy the access token, to paste into the shell.
 
-    INSTALLED_APPS += [
-        'my_new_plugin',
-        ]
+You're now properly authenticated with Aldryn.
 
-Let's go
---------
 
-You need to activate this new virtualenv, install the requirements and fire up the Django runserver::
+****************************
+Working with Aldryn projects
+****************************
 
-    source .virtualenv/bin/activate
-    pip install -r .site/requirements.txt
-    python .site/manage.py runserver
+List your projects
+==================
 
-.. ATTENTION::
-    Note that if you start the runserver, and try to visit a page on the site that
-    requires database access *before* you have supplied database settings, the process
-    won't exit when you quit the runserver. You'll need to find and kill the process
-    manually before restarting it::
+Get a list of your Aldryn projects::
 
-        ps aux | grep manage  # returns a list of matching processes
-        kill <process_number>
+     ✗ aldryn project list
+     Slug                                Name                               Organisation
+     ----------------------------------  ---------------------------------  ---------------
+     acme-website                        ACME Website                       ACME
 
-You should see your site, or at least the "Your site is ready" message, and be
-able to log in to it.
+.. note::
+
+    The output of ``aldryn project list`` is piped through ``less``, so you can scroll up and down
+    through it, and leave it with ``q`` for 'quit'.
+
+
+Replicate a project locally
+===========================
+
+Choose a project to work on locally, and issue the ``workon`` command to download it and build it
+locally::
+
+    aldryn project workon acme-website  # use the appropriate slug for your project
+
+.. note::
+
+    Your project must be updated to a recent version (3.x) of the Aldryn *Base Project*. This will
+    be indicated in your project's dashboard. If your project is not up-to-date, the Aldryn client
+    will report::
+
+        Error: Aldryn local development only works with projects using baseproject
+        version 3 and have a valid 'docker-compose.yml' file.
+
+    In such a case, update the Base Project using the Control Panel and try again.
+
+ If successful, the process will take a few minutes to pull down the complete set of project files::
+
+     ➜  ~  aldryn project workon acme-website
+     Creating workspace...
+
+     cloning project repository
+     Cloning into 'acme-website'...
+     Locking the website...
+     Unlocking the website...
+     downloading remote docker images
+     building local docker images
+     creating new database container
+     fetching database dump
+     inserting database dump
+     sync and migrate database
+
+
+     Finished setting up your project's workspace!
+     To start the project, please:
+      - change directory into acme-website
+      - run aldryn project up
+
+
+Launch the project
+==================
+
+``workon`` builds the project and only needs to be run once. From now onwards, you can launch it at
+any time from within the directory ``workon`` created with the ``up`` command::
+
+    cd acme-website
+    aldryn project up
+
+``up`` starts the Docker containers (and for convenience) also opens your browser to show the site
+running locally.
+
+``aldryn project stop`` shuts them down, and is roughly the opposite of ``up``.
+
+When the container is running, you can use ``aldryn project open`` to open the site in your web
+browser.
+
+To check whether the container is running, use ``aldryn project status``.
+
+
+Making changes to the project
+=============================
+
+You're now ready to work on your project's code, which you'll find in the same directory. The
+project directory is in fact a Git repository, so you can work on it just as you'd work with any
+Git-based project.
+
+Find and open the file ``private/SASS/settings/_bootstrap.scss``, and in change the line::
+
+    $text-color: #666;
+
+to ``red``::
+
+    $text-color: red;
