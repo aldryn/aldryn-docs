@@ -41,16 +41,16 @@ Install the Aldryn command-line client
 
 Install the client::
 
-    $ pip install aldryn-client
+    pip install aldryn-client
 
 If you already have an older version of the client installed, use the ``--update`` option::
 
-    $ pip install --update aldryn-client
+    pip install --update aldryn-client
 
 You can check the currently installed version by running the following command. If it doesn't exist, you're using an old version and should upgrade::
 
-    $ aldryn version
-    
+    aldryn version
+
 
 
 
@@ -160,7 +160,7 @@ Replicate a project locally
 Choose a project to work on locally, and issue the ``workon`` command to download it and build it
 locally::
 
-    $ aldryn project workon acme-website  # use the appropriate slug for your project
+    aldryn project workon acme-website  # use the appropriate slug for your project
 
 .. note::
 
@@ -202,8 +202,8 @@ Launch the project
 ``workon`` builds the project and only needs to be run once. From now onwards, you can launch it at
 any time from within the directory ``workon`` created with the ``up`` command::
 
-    $ cd acme-website
-    $ aldryn project up
+    cd acme-website
+    aldryn project up
 
 ``up`` starts the Docker containers (and for convenience) also opens your browser to show the site
 running locally.
