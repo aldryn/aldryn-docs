@@ -41,11 +41,17 @@ Install the Aldryn command-line client
 
 Install the client::
 
-    pip install aldryn-client
+    $ pip install aldryn-client
 
 If you already have an older version of the client installed, use the ``--update`` option::
 
-    pip install --update aldryn-client
+    $ pip install --update aldryn-client
+
+You can check the currently installed version by running the following command. If it doesn't exist, you're using an old version and should upgrade::
+
+    $ aldryn version
+    
+
 
 
 .. _launch-docker-quickstart-terminal:
@@ -118,7 +124,7 @@ Log in with the client
 
 The next step is to log in to Aldryn using the client::
 
-    ✗ aldryn login
+    $ aldryn login
     Your browser has been opened to visit: https://control.aldryn.com/account/desktop-app/access-token/
     Please copy the access token and paste it here:
 
@@ -137,7 +143,7 @@ List your projects
 
 Get a list of your Aldryn projects::
 
-     ✗ aldryn project list
+     $ aldryn project list
      Slug                                Name                               Organisation
      ----------------------------------  ---------------------------------  ---------------
      acme-website                        ACME Website                       ACME
@@ -154,7 +160,7 @@ Replicate a project locally
 Choose a project to work on locally, and issue the ``workon`` command to download it and build it
 locally::
 
-    aldryn project workon acme-website  # use the appropriate slug for your project
+    $ aldryn project workon acme-website  # use the appropriate slug for your project
 
 .. note::
 
@@ -169,7 +175,7 @@ locally::
 
  If successful, the process will take a few minutes to pull down the complete set of project files::
 
-     ➜  ~  aldryn project workon acme-website
+     $ aldryn project workon acme-website
      Creating workspace...
 
      cloning project repository
@@ -196,8 +202,8 @@ Launch the project
 ``workon`` builds the project and only needs to be run once. From now onwards, you can launch it at
 any time from within the directory ``workon`` created with the ``up`` command::
 
-    cd acme-website
-    aldryn project up
+    $ cd acme-website
+    $ aldryn project up
 
 ``up`` starts the Docker containers (and for convenience) also opens your browser to show the site
 running locally.
