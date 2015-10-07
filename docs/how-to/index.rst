@@ -15,4 +15,5 @@ The aim of the documents in this section is not to provide a comprehensive refer
 
     create_site
     local_development
+    working_locally
     creating_custom_addon

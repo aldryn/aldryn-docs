@@ -1,6 +1,8 @@
-######################################
-Aldryn's local development environment
-######################################
+.. _run_locally:
+
+###############################
+Run your Aldryn project locally
+###############################
 
 If your code works with django CMS, you can expect it to work with Aldryn.
 
@@ -12,13 +14,21 @@ can be deployed to Aldryn. It does however have some specific requirements. In o
 that your code will run as expected on our cloud-based servers, the local environment it provides
 replicates as far as possible the one your code will encounter when deployed.
 
+.. important::
+
+    This how-to requires an up-to-date Aldryn project. Choose an Aldryn project to work with, and
+    check that:
+
+    * the *Base Project* is on version 3 or later
+    * its *System* Addons (listed as ``[System] Aldryn SSO`` etc in the Control Panel) have been updated to the latest version
+    * you have logged into the CMS for this project at least once
 
 *********************
 Software installation
 *********************
 
-You'll need to have two key pieces of software installed, Docker Toolbox and the Aldryn
-command-line client.
+You'll need to have two key pieces of software installed, **Docker Toolbox** and the **Aldryn
+command-line client**.
 
 
 Install Docker Toolbox
@@ -33,7 +43,8 @@ Once downloaded, follow the instructions to run the installer.
 You'll be using the *Docker Quickstart Terminal* when working with Aldryn, so you can launch that
 when invited.
 
-Docker Quickstart Terminal is installed as application. When launched, it will :ref:`open a new shell <launch-docker-quickstart-terminal>`.
+Docker Quickstart Terminal is installed as application. When launched, it will :ref:`open a new
+shell <launch-docker-quickstart-terminal>`.
 
 
 Install the Aldryn command-line client
@@ -50,8 +61,6 @@ If you already have an older version of the client installed, use the ``--update
 You can check the currently installed version by running the following command. If it doesn't exist, you're using an old version and should upgrade::
 
     aldryn version
-
-
 
 
 .. _launch-docker-quickstart-terminal:
@@ -157,10 +166,10 @@ Get a list of your Aldryn projects::
 Replicate a project locally
 ===========================
 
-Choose a project to work on locally, and issue the ``workon`` command to download it and build it
+Choose a project to work on locally, and issue the ``setup`` command to download it and build it
 locally::
 
-    aldryn project workon acme-website  # use the appropriate slug for your project
+    aldryn project setup acme-website  # use the appropriate slug for your project
 
 .. note::
 
@@ -175,7 +184,7 @@ locally::
 
  If successful, the process will take a few minutes to pull down the complete set of project files::
 
-     $ aldryn project workon acme-website
+     $ aldryn project setup acme-website
      Creating workspace...
 
      cloning project repository
@@ -199,8 +208,8 @@ locally::
 Launch the project
 ==================
 
-``workon`` builds the project and only needs to be run once. From now onwards, you can launch it at
-any time from within the directory ``workon`` created with the ``up`` command::
+``setup`` builds the project and only needs to be run once. From now onwards, you can launch it at
+any time from within the directory ``setup`` created with the ``up`` command::
 
     cd acme-website
     aldryn project up
@@ -216,17 +225,25 @@ browser.
 To check whether the container is running, use ``aldryn project status``.
 
 
-Making changes to the project
-=============================
+Login locally
+=============
 
-You're now ready to work on your project's code, which you'll find in the same directory. The
-project directory is in fact a Git repository, so you can work on it just as you'd work with any
-Git-based project.
+With the site in your browser, select the *edit mode* link (or simply add ``?edit`` to the URL),
+and and you will be presented with login options in the tool bar. Choose **Login as...**, select a
+user from the menu and sign in.
 
-Find and open the file ``private/SASS/settings/_bootstrap.scss``, and in change the line::
+You're now in front of a replica of your Aldryn project, running in exactly the same environment,
+with the same applications, styling and content.
 
-    $text-color: #666;
+.. note::
 
-to ``red``::
+    If you haven't logged in to the project's website on the Aldryn Control Panel, your local
+    database will lack the user information required to present you with a pre-configured user.
 
-    $text-color: red;
+    In this case you have two options:
+
+    * go back to the site on the Control Panel and login, then issue ``aldryn project pull db``
+      locally and try again
+    * select **Create user** to set up an admin user locally
+
+Explore the site locally. When you're ready, you can go on to :ref:`work_locally`.
