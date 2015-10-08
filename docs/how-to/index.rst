@@ -14,15 +14,6 @@ For these operations you need to have some basic familiarity with the command-li
 
 You also need to have a number of packages installed on your local computer. See :ref:`local_development_installation` for more information.
 
-
-*********************
-Software requirements
-*********************
-
-For these operations you need to have some basic familiarity with the command-line on your system.
-
-You also need to have a number of packages installed on your local computer. They include:
-
 .. toctree::
     :maxdepth: 1
 
