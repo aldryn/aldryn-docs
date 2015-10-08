@@ -19,7 +19,11 @@ the ``aldryn`` command, and you can also invoke it manually for some operations.
     Download Git for your system from `the official Git downloads page
     <http://git-scm.com/downloads>`_.
 
-    In your terminal, provide some basic configuration (supply your name and email address)::
+    Macintosh and Windows users can also download the `GitHub Desktop <https://desktop.github.com>`_
+    application, which also installs the Git command-line application you will need.
+
+    Once installed, in your terminal, provide some basic configuration (supply your name and email
+    address)::
 
         git config --global user.name "<your name>"
         git config --global user.email "<your email address>"
@@ -60,20 +64,20 @@ Install the client::
 
 .. note:: Installation problems
 
-    Depending on your operating system and even the version of your operating system, you may find
-    that ``pip install aldryn-client`` doesn't work.
+     Depending on your operating system and even the version of your operating system, you may find
+     that ``pip install aldryn-client`` doesn't work.
 
-    In this case your options include:
+     In this case your options include:
 
-    * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
-    * if ``pip`` is not installed, try one of:
+     * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
+     * if ``pip`` is not installed, try one of:
 
-        * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
-        * run ``sudo easy_install pip``
+         * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
+           ``sudo easy_install pip``
 
-        then try again
+    then try again
 
-    * create a new ``virtualenv``; pip will be available within that
+     * create a new ``virtualenv``; pip will be available within that
 
 
 If you already have an older version of the client installed, use the ``--update`` option::

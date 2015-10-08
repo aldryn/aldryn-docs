@@ -24,8 +24,6 @@ replicates as far as possible the one your code will encounter when deployed.
     * you have logged into the CMS for this project at least once
 
 
-
-
 .. _launch-docker-quickstart-terminal:
 
 *********************************

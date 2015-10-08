@@ -27,6 +27,7 @@ You also need to have a number of packages installed on your local computer. The
     :maxdepth: 1
 
     create_site
-    local_development
+    installation
+    local_project_setup
     working_locally
     creating_custom_addon
