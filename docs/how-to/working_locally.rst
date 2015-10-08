@@ -10,12 +10,17 @@ Work on your Aldryn project locally
     that's not the case, you should follow the steps in :ref:`run_locally` first and then return
     here to continue.
 
+If your project is set up locally, just run::
+
+    aldryn project up
+
+to start the container and server and open your browser with the site, and :ref:`login_locally`.
 
 ******************
 Working on content
 ******************
 
-
+Make some local changes to content - for example, create and publish a new django CMS page.
 
 
 Making changes to the project
@@ -33,3 +38,11 @@ to ``red``::
 
     $text-color: red;
 
+
+
+ping index.docker.io
+
+docker-machine ssh
+
+10177  VBoxManage modifyvm "default" --natdnshostresolver1 off
+10178  VBoxManage modifyvm "default" --natdnsproxy1 on

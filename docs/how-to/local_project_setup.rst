@@ -23,44 +23,7 @@ replicates as far as possible the one your code will encounter when deployed.
     * its *System* Addons (listed as ``[System] Aldryn SSO`` etc in the Control Panel) have been updated to the latest version
     * you have logged into the CMS for this project at least once
 
-*********************
-Software installation
-*********************
 
-You'll need to have two key pieces of software installed, **Docker Toolbox** and the **Aldryn
-command-line client**.
-
-
-Install Docker Toolbox
-======================
-
-Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
-installer for your system (this is a fairly large download, so you can move on to the next step
-while waiting for it to complete).
-
-Once downloaded, follow the instructions to run the installer.
-
-You'll be using the *Docker Quickstart Terminal* when working with Aldryn, so you can launch that
-when invited.
-
-Docker Quickstart Terminal is installed as application. When launched, it will :ref:`open a new
-shell <launch-docker-quickstart-terminal>`.
-
-
-Install the Aldryn command-line client
-======================================
-
-Install the client::
-
-    pip install aldryn-client
-
-If you already have an older version of the client installed, use the ``--update`` option::
-
-    pip install --update aldryn-client
-
-You can check the currently installed version by running the following command. If it doesn't exist, you're using an old version and should upgrade::
-
-    aldryn version
 
 
 .. _launch-docker-quickstart-terminal:
@@ -224,6 +187,8 @@ browser.
 
 To check whether the container is running, use ``aldryn project status``.
 
+
+.. _login_locally:
 
 Login locally
 =============
