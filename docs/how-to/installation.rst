@@ -16,6 +16,9 @@ the ``aldryn`` command, and you can also invoke it manually for some operations.
 
 .. note:: **If you don't already have Git installed**
 
+    First, check whether Git is indeed installed. If you type ``git`` in your terminal and it tells
+    you about how to use it, it's installed.
+
     Download Git for your system from `the official Git downloads page
     <http://git-scm.com/downloads>`_.
 
@@ -39,6 +42,8 @@ The Aldryn command-line client is built in Python. The current versions requires
 Python 2.7 installed on your system.
 
 
+.. _docker_toolbox:
+
 Install Docker Toolbox
 ======================
 
@@ -51,7 +56,7 @@ Once downloaded, follow the instructions to run the installer.
 You'll be using the *Docker Quickstart Terminal* when working with Aldryn, so you can launch that
 when invited.
 
-Docker Quickstart Terminal is installed as application. When launched, it will :ref:`open a new
+Docker Quickstart Terminal is installed as an application. When launched, it will :ref:`open a new
 shell <launch-docker-quickstart-terminal>`.
 
 

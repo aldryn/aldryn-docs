@@ -65,6 +65,8 @@ on your local drive, in the folder you specified above.
    :align: center
    :width: 40%
 
+.. _edit_a_file_locally:
+
 ===================
 Edit a file locally
 ===================
