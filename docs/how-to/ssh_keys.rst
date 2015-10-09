@@ -99,6 +99,6 @@ modification, to your clipboard.
 
         ``clip < ~/.ssh/id_rsa.pub``
 
-Now you can go on to :ref:`upload_key`. Microsoft Windows users should proceed to
-:ref:`upload_key_windows`.
+Now you can go on to :ref:`upload_key`. Microsoft Windows users should proceed to the
+:ref:`upload instructions for Windows <upload_key_windows>`.
 
