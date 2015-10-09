@@ -14,67 +14,69 @@ Installing the required software on Windows requires some special steps.
 
     Please use the :ref:`standard installation instructions <local_development_installation>`.
 
-Git
-===
-
-* how to install git (enable "add git to path")
 
 Python 2.7
 ==========
 
-* How to install Python (enable "add python exe to path")
+Download the latest version of **Python 2.7** (note that Python 3 is currently not suitable) from
+the `official Python website <https://www.python.org/downloads/windows/>`_ and run the installer.
+
+During the installation step "Customize Python", make sure that you have selected the option "Add
+Python to Path".
+
+.. image:: images/add-python-to-path.png
+   :alt: Add Python to Path
+   :width: 50%
+
+
+Git
+===
+
+Download the latest version of Git for Windows from the `Git downloads page
+<https://git-scm.com/download/win>`_ and run the installer.
+
+During the installation, make sure you select the option to "Use Git from the Windows Command
+Prompt" like shown below:
+
+.. image:: images/add-git-to-path.png
+   :alt: Add Git to Path
+   :width: 50%
 
 
 .. _docker_toolbox_windows:
 
-Install Docker Toolbox
-======================
+Docker Toolbox
+==============
 
-* install via pip docker compose
-* docker toolbox (including kitematic)
-* start docker quick terminal
-* start kitematic, skip connect docker hub
-* use "docker cli" button from there
-
-Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
-installer for your system (this is a fairly large download, so you can move on to the next step
-while waiting for it to complete).
-
-Once downloaded, follow the instructions to run the installer.
-
-You'll be using the *Docker Quickstart Terminal* when working with Aldryn, so you can launch that
-when invited.
-
-Docker Quickstart Terminal is installed as an application. When launched, it will :ref:`open a new
-shell <launch-docker-quickstart-terminal>`.
+Download the latest version of `Docker Toolbox <https://www.docker.com/toolbox>`_ and run the
+installer. This will configure VirtualBox (which will run the virtual machines your local Aldryn
+enviroment requires) and Kitematic (a Docker machine controller).
 
 
-Install the Aldryn command-line client
-======================================
+Docker Compose
+==============
 
-* install via pip aldryn client
+Install the latest version of ``docker-compose``, a command-line tool for managing Docker containers, using pip.
 
-Install the client::
+In your terminal (typically, the ``cmd.exe`` application) run::
+
+    pip install git+git://github.com/docker/compose.git
+
+This will obtain the latest version from the official Docker Compose Git repository, and install it.
+
+
+Aldryn command-line client
+==========================
+
+Install the Aldryn command line client::
 
     pip install aldryn-client
 
-.. note:: Installation problems
+.. note::
 
-     Depending on your operating system and even the version of your operating system, you may find
-     that ``pip install aldryn-client`` doesn't work.
+    until this is formally released on PyPI, use::
 
-     In this case your options include:
-
-     * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
-     * if ``pip`` is not installed, try one of:
-
-         * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
-           ``sudo easy_install pip``
-
-    then try again
-
-     * create a new ``virtualenv``; pip will be available within that
-
+        pip install -e git+git://github.com/aldryn/aldryn-client.git@v2#egg=aldryn_client
 
 If you already have an older version of the client installed, use the ``--update`` option::
 

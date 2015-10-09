@@ -50,8 +50,8 @@ Python 2.7 installed on your system.
 
 .. _docker_toolbox:
 
-Install Docker Toolbox
-======================
+Docker Toolbox
+==============
 
 Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
 installer for your system (this is a fairly large download, so you can move on to the next step
@@ -66,12 +66,18 @@ Docker Quickstart Terminal is installed as an application. When launched, it wil
 shell <launch-docker-quickstart-terminal>`.
 
 
-Install the Aldryn command-line client
-======================================
+Aldryn command-line client
+==========================
 
 Install the client::
 
     pip install aldryn-client
+
+.. note::
+
+    until this is formally released on PyPI, use::
+
+        pip install -e git+git://github.com/aldryn/aldryn-client.git@v2#egg=aldryn_client
 
 .. note:: Installation problems
 
