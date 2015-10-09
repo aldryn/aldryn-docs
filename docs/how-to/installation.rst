@@ -1,12 +1,18 @@
 .. _local_development_installation:
 
-*********************
-Software installation
-*********************
+****************
+Install software
+****************
 
 You'll need to have two key pieces of software installed, **Docker Toolbox** and the **Aldryn
 command-line client**. But first, you need to ensure that you have **Git** and an appropriate
 version of **Python** installed.
+
+.. attention:: **Microsoft Windows users**
+
+    The process for installing these components on Microsoft Windows is substantially different,
+    and can be more difficult. We have a separate :ref:`software installation guide for Windows
+    <local_development_installation_windows>`, with simple instructions, to help those users.
 
 Git
 ===
