@@ -24,85 +24,9 @@ replicates as far as possible the one your code will encounter when deployed.
     * you have logged into the CMS for this project at least once
 
 
-.. _launch-docker-quickstart-terminal:
-
-*********************************
-Launch Docker Quickstart Terminal
-*********************************
-
-If you haven't already done so, launch a new shell using Docker Quickstart Terminal. This creates a
-new virtual machine (``default``) and starts it up::
-
-    Creating Machine default...
-    Creating VirtualBox VM...
-    Creating SSH key...
-    Starting VirtualBox VM...
-    Starting VM...
-    To see how to connect Docker to this machine, run: docker-machine env default
-    Starting machine default...
-    Started machines may have new IP addresses. You may need to re-run the
-    `docker-machine env` command.
-    Setting environment variables for machine default...
-
-                          ##         .
-                      ## ## ##        ==
-                   ## ## ## ## ##    ===
-               /"""""""""""""""""\___/ ===
-          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
-               \______ o           __/
-                 \    \         __/
-                  \____\_______/
-
-
-    docker is configured to use the default machine with IP 192.168.99.101
-    For help getting started, check out the docs at https://docs.docker.com
-
-This can take a couple of minutes to complete, but the next time will be much quicker.
-
-Run the command ``aldryn check-system``, which should confirm that all is correct::
-
-    Verifying your system's setup
-     ✓ git client
-     ✓ docker client
-     ✓ docker server connection
-     ✓ docker-compose
-
-
-**********************************
-Configure Aldryn login credentials
-**********************************
-
-In order for the Aldryn cloud and your local machine to communicate securely, you need to provide
-security credentials to both sides.
-
-
-.. _upload_key:
-
-Upload your public key to Aldryn
-================================
-
-Visit https://control.aldryn.com/account/ssh-keys/ to check whether you have uploaded your public
-key to Aldryn. Any keys already uploaded to Aldryn will be listed there.
-
-If you haven't already done so, you'll need to copy your SSH public key from your
-computer and add it to the Aldryn Control Panel. You'll only need to do this once.
-
-.. note:: **If you need help with SSH keys**
-
-    If you need help with setting up, finding or using your SSH keys, use our
-    :ref:`guide to setting up SSH keys for Aldryn <setting_up_ssh_keys>` before
-    returning to this section.
-
-Having copied your public key to your clipboard, open https://control.aldryn.com/account/ssh-keys/
-and paste your key to the *Public key* field. Add a name to the *Title* field to remind you which
-computer this key belongs to.
-
-Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
-encrypted communication for command-line operations between the two.
-
-
+**********************
 Log in with the client
-======================
+**********************
 
 The next step is to log in to Aldryn using the client::
 

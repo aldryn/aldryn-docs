@@ -170,7 +170,7 @@ local changes to the Aldyn cloud, you simply push them to the server.
 .. note:: **What on earth is Git?**
 
     If you've never used Git, or hadn't even had to install it before you read the
-    :ref:`local_development_installation` section, don't worry, you don't need to know much about
+    :ref:`local_dev_install_configure` section, don't worry, you don't need to know much about
     it. All you need to know are some very basic commands to use it.
 
     If you do know Git, the following will be very familiar.

@@ -18,6 +18,10 @@ remote login and other network services to operate securely over an insecure net
 Check for existing keys
 ***********************
 
+.. important:: **For Microsoft Windows users**
+
+    In the operations below, Windows users should use the *Git Bash* terminal installed by Git.
+
 In your terminal, list any existing keys::
 
     ls -al ~/.ssh
@@ -81,12 +85,20 @@ and add your key to the agent activate it::
     ssh-add ~/.ssh/id_rsa  # don't forget to use the actual name of the chosen key
 
 
-*************
-Copy your SSH
-*************
+************************
+Copy your SSH public key
+************************
 
 Copy your key. Open the **public** key file (the one ending with ``.pub``, **not** its counterpart,
 which must remain private) in your text editor, and copy the entire contents of the file, without
 modification, to your clipboard.
 
-Now you can go on to :ref:`upload_key`.
+.. note::
+
+    Windows users can use the ``clip`` command to do this::
+
+        ``clip < ~/.ssh/id_rsa.pub``
+
+Now you can go on to :ref:`upload_key`. Microsoft Windows users should proceed to
+:ref:`upload_key_windows`.
+

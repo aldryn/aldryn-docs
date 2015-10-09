@@ -12,7 +12,7 @@ you through the steps of some of the key processes you'll need to work through w
 
 For these operations you need to have some basic familiarity with the command-line on your system.
 
-You also need to have a number of packages installed on your local computer. See :ref:`local_development_installation` for more information.
+You also need to have a number of packages installed on your local computer. See :ref:`local_dev_install_configure` for more information.
 
 .. toctree::
     :maxdepth: 1
@@ -20,7 +20,7 @@ You also need to have a number of packages installed on your local computer. See
     create_site
     installation
     installation_windows
-    local_project_setup
     ssh_keys
+    local_project_setup
     working_locally
     creating_custom_addon

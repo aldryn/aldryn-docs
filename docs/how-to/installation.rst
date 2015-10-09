@@ -1,21 +1,23 @@
-.. _local_development_installation:
+.. _local_dev_install_configure:
 
-****************
-Install software
-****************
-
-You'll need to have two key pieces of software installed, **Docker Toolbox** and the **Aldryn
-command-line client**. But first, you need to ensure that you have **Git** and an appropriate
-version of **Python** installed.
+##############################
+Installation and configuration
+##############################
 
 .. attention:: **Microsoft Windows users**
 
     The process for installing these components on Microsoft Windows is substantially different,
     and can be more difficult. We have a separate :ref:`software installation guide for Windows
-    <local_development_installation_windows>`, with simple instructions, to help those users.
+    <local_dev_install_configure_windows>`, with simple instructions, to help those users.
 
+You'll need to have two special pieces of software installed, **Docker Toolbox** and the **Aldryn
+command-line client**. But first, you need to ensure that you have **Git** and an appropriate
+version of **Python** installed. This document will help you install and configure all of them.
+
+
+***
 Git
-===
+***
 
 Git is used to push and pull changes to and from the Aldryn cloud. It's used behind the scenes by
 the ``aldryn`` command, and you can also invoke it manually for some operations.
@@ -41,8 +43,9 @@ If you're not already familiar with Git, the commands you will use with Aldryn w
 these how-to guides.
 
 
+**********
 Python 2.7
-==========
+**********
 
 The Aldryn command-line client is built in Python. The current versions requires that you have
 Python 2.7 installed on your system.
@@ -50,8 +53,9 @@ Python 2.7 installed on your system.
 
 .. _docker_toolbox:
 
+**************
 Docker Toolbox
-==============
+**************
 
 Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
 installer for your system (this is a fairly large download, so you can move on to the next step
@@ -66,8 +70,9 @@ Docker Quickstart Terminal is installed as an application. When launched, it wil
 shell <launch-docker-quickstart-terminal>`.
 
 
+**************************
 Aldryn command-line client
-==========================
+**************************
 
 Install the client::
 
@@ -85,7 +90,7 @@ Install the client::
      that ``pip install aldryn-client`` doesn't work.
 
      In this case your options include:
-
+     * (OS X users, if you have trouble with pip): ``pip install --upgrade --no-use-wheel setuptools``
      * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
      * if ``pip`` is not installed, try one of:
 
@@ -105,3 +110,83 @@ You can check the currently installed version by running ``aldryn version``. If 
 
 It is strongly advised to keep the client up-to-date by running ``pip install aldryn-client``
 regularly.
+
+
+.. _launch-docker-quickstart-terminal:
+
+*********************************
+Launch Docker Quickstart Terminal
+*********************************
+
+If you haven't already done so, launch a new shell using Docker Quickstart Terminal. This creates a
+new virtual machine (``default``) and starts it up::
+
+    Creating Machine default...
+    Creating VirtualBox VM...
+    Creating SSH key...
+    Starting VirtualBox VM...
+    Starting VM...
+    To see how to connect Docker to this machine, run: docker-machine env default
+    Starting machine default...
+    Started machines may have new IP addresses. You may need to re-run the
+    `docker-machine env` command.
+    Setting environment variables for machine default...
+
+                          ##         .
+                      ## ## ##        ==
+                   ## ## ## ## ##    ===
+               /"""""""""""""""""\___/ ===
+          ~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+               \______ o           __/
+                 \    \         __/
+                  \____\_______/
+
+
+    docker is configured to use the default machine with IP 192.168.99.101
+    For help getting started, check out the docs at https://docs.docker.com
+
+This can take a couple of minutes to complete, but the next time will be much quicker.
+
+Run the command ``aldryn check-system``, which should confirm that all is correct::
+
+    Verifying your system's setup
+     ✓ git client
+     ✓ docker client
+     ✓ docker server connection
+     ✓ docker-compose
+
+.. note::
+
+    If you do find yourself encountering problems with Docker, as indicated by ``aldryn
+    check-system``, running ``docker-machine restart default`` will usually help.
+
+
+.. _upload_key:
+
+********************************
+Upload your public key to Aldryn
+********************************
+
+In order for the Aldryn cloud and your local machine to communicate securely, Aldryn needs to
+know your public key to verify your identity.
+
+Visit https://control.aldryn.com/account/ssh-keys/ to check whether you have uploaded your public
+key to Aldryn. Any keys already uploaded to Aldryn will be listed there.
+
+If you haven't already done so, you'll need to copy your SSH public key from your
+computer and add it to the Aldryn Control Panel. You'll only need to do this once.
+
+.. note:: **If you need help with SSH keys**
+
+    If you need help with setting up, finding or using your SSH keys, use our
+    :ref:`guide to setting up SSH keys for Aldryn <setting_up_ssh_keys>` before
+    returning to this section.
+
+Having copied your public key to your clipboard, open https://control.aldryn.com/account/ssh-keys/
+and paste your key to the *Public key* field. Add a name to the *Title* field to remind you which
+computer this key belongs to.
+
+Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
+encrypted communication for command-line operations between the two.
+
+You're now ready to login and :ref:`start working on a project <run_locally>`.
