@@ -21,5 +21,6 @@ You also need to have a number of packages installed on your local computer. See
     installation
     installation_windows
     local_project_setup
+    ssh_keys
     working_locally
     creating_custom_addon

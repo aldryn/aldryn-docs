@@ -76,17 +76,29 @@ In order for the Aldryn cloud and your local machine to communicate securely, yo
 security credentials to both sides.
 
 
+.. _upload_key:
+
 Upload your public key to Aldryn
 ================================
 
 Visit https://control.aldryn.com/account/ssh-keys/ to check whether you have uploaded your public
-key to Aldryn. If you haven't already done so, you'll need to copy your public key from your
+key to Aldryn. Any keys already uploaded to Aldryn will be listed there.
+
+If you haven't already done so, you'll need to copy your SSH public key from your
 computer and add it to the Aldryn Control Panel. You'll only need to do this once.
 
-.. note::
+.. note:: **If you need help with SSH keys**
 
-    If you need help with setting up, finding or using your SSH keys, use the excellent GitHub
-    `guide to generating SSH keys <https://help.github.com/articles/generating-ssh-keys/>`_.
+    If you need help with setting up, finding or using your SSH keys, use our
+    :ref:`guide to setting up SSH keys for Aldryn <setting_up_ssh_keys>` before
+    returning to this section.
+
+Having copied your public key to your clipboard, open https://control.aldryn.com/account/ssh-keys/
+and paste your key to the *Public key* field. Add a name to the *Title* field to remind you which
+computer this key belongs to.
+
+Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
+encrypted communication for command-line operations between the two.
 
 
 Log in with the client
