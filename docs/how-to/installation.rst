@@ -57,6 +57,14 @@ Python 2.7 installed on your system.
 Docker Toolbox
 **************
 
+.. note:: **Linux users**
+
+    Docker Toolbox is not currently available for Linux. Instead, follow the `instructions provided
+    by Liquid Web <http://www.liquidweb.com/kb/how-to-install-docker-on-ubuntu-14-04-lts/>`_.
+
+    Once you have completed the installation and linked and fixed paths as indicated, you can
+    continue to :ref:`install the Aldryn command-line client <install_command_line_client>`.
+
 Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
 installer for your system (this is a fairly large download, so you can move on to the next step
 while waiting for it to complete).
@@ -69,6 +77,7 @@ when invited.
 Docker Quickstart Terminal is installed as an application. When launched, it will :ref:`open a new
 shell <launch-docker-quickstart-terminal>`.
 
+.. _install_command_line_client:
 
 **************************
 Aldryn command-line client
@@ -146,6 +155,11 @@ new virtual machine (``default``) and starts it up::
     For help getting started, check out the docs at https://docs.docker.com
 
 This can take a couple of minutes to complete, but the next time will be much quicker.
+
+.. note:: **Linux users**
+
+    Linux users don't need to do this step, and can continue directly with ``aldryn check-system``
+    below.
 
 Run the command ``aldryn check-system``, which should confirm that all is correct::
 

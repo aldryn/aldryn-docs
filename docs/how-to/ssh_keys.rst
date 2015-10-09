@@ -97,8 +97,7 @@ modification, to your clipboard.
 
     Windows users can use the ``clip`` command to do this::
 
-        ``clip < ~/.ssh/id_rsa.pub``
+        clip < ~/.ssh/id_rsa.pub
 
 Now you can go on to :ref:`upload_key`. Microsoft Windows users should proceed to the
 :ref:`upload instructions for Windows <upload_key_windows>`.
-

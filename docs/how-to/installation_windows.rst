@@ -14,12 +14,13 @@ You'll need to have two special pieces of software installed, **Docker Toolbox**
 command-line client**. But first, you need to ensure that you have **Git** and an appropriate
 version of **Python** installed. This document will help you install and configure all of them.
 
-
 *******************
 System requirements
 *******************
 
 At minimum, you will need to be running *Windows 7 Professional 64bit*.
+
+Windows 10 is not yet supported.
 
 
 **********
@@ -99,6 +100,11 @@ It is strongly advised to keep the client up-to-date by running ``pip install al
 regularly.
 
 
+.. note::
+
+    This is a good point at which to restart your machine, to help ensure that it starts up with the
+    software you have installed ready to use.
+
 .. _upload_key_windows:
 
 **********************************
@@ -142,9 +148,13 @@ Then open up *Kitematic (Alpha)* from your Desktop. When asked to *Connect to Do
    :width: 50%
    :align: center
 
+.. note::
+
+    If you do find yourself encountering problems with Docker, running ``docker-machine restart
+    default`` will usually help.
 
 Once Kitematic is up and running, use the **Docker CLI** button to launch a PowerShell with all
-related environment variables pre-configured: https://db.tt/ haS79UKw
+related environment variables pre-configured.
 
 .. image:: images/launch-docker-cli.png
    :alt: Launch Docker CLI
@@ -184,10 +194,5 @@ In the shell, run the command ``aldryn check-system``, which should confirm that
      ✓ docker client
      ✓ docker server connection
      ✓ docker-compose
-
-.. note::
-
-    If you do find yourself encountering problems with Docker, as indicated by ``aldryn
-    check-system``, running ``docker-machine restart default`` will usually help.
 
 You're now ready to login and :ref:`start working on a project <run_locally>`.

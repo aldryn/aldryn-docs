@@ -15,6 +15,7 @@ It creates two Docker containers:
   * one to run Django (``projectname_web_1``)
   * another to host and serve the project's database (``projectname_db_1``)
 
+
 .. _local_project_directory:
 
 ***************************
@@ -38,6 +39,7 @@ for each Addon.
 * ping index.docker.io
 
 * docker-machine ssh
+::
 
-* 10177  VBoxManage modifyvm "default" --natdnshostresolver1 off
-* 10178  VBoxManage modifyvm "default" --natdnsproxy1 on
+    VBoxManage modifyvm "default" --natdnshostresolver1 off
+    VBoxManage modifyvm "default" --natdnsproxy1 on

@@ -23,6 +23,8 @@ replicates as far as possible the one your code will encounter when deployed.
     * its *System* Addons (listed as ``[System] Aldryn SSO`` etc in the Control Panel) have been updated to the latest version
     * you have logged into the CMS for this project at least once
 
+.. todo:: specify which boilerplate must be used
+
 
 **********************
 Log in with the client
@@ -79,7 +81,8 @@ locally::
 
     In such a case, update the Base Project using the Control Panel and try again.
 
- If successful, the process will take a few minutes to pull down the complete set of project files::
+If successful, the process will take a few minutes (depending on the project's configuration, this
+may take several minutes) pull down the complete set of project files::
 
      $ aldryn project setup acme-website
      Creating workspace...
@@ -110,6 +113,13 @@ any time from within the directory ``setup`` created with the ``up`` command::
 
     cd acme-website
     aldryn project up
+
+.. note:: **Microsoft Windows users**
+
+    If you are using Windows and Internet Explorer/Edge, you may find that the browser does display the page when running ``aldryn project up``. In this case, you either:
+
+    * copy the URL from IE/Edge to another browser such as Firefox or Chrome
+    * set Firefox or Chrome as your default browser
 
 ``up`` starts the Docker containers (and for convenience) also opens your browser to show the site
 running locally.
