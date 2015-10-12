@@ -53,6 +53,7 @@ You can check its status again::
 
 and :ref:`login_locally`.
 
+
 ******************
 Working on content
 ******************
@@ -87,16 +88,21 @@ filesystem has been specified. If your changes involve changes to *files* (typic
 files to the Filer, or moving or deleting them), then as well as transferring the database you will
 also need to perform a similar operation on your media files.
 
+Pulling and pushing media changes works in the same way, with the command ``aldryn project pull
+media`` and ``aldryn project push media``.
+
 Upload a new file to the Filer in your local project, and use a plugin to place it in a page.
 
-Once again, push the changes to Aldryn, not forgetting to push your database changes *also*::
+Once again, push the changes to Aldryn, not forgetting to push your database changes *also*,
+because in this case we have made changes to the database as well as media::
 
     aldryn project push media
     aldryn project push db
 
-and check on Aldryn that they are shown there too. Pulling changes works in just the same way::
+and check on Aldryn that they are shown there too. To do things the other way round, having made changes on Aldryn that you want locally::
 
     aldryn project pull media
+    aldryn project pull db
 
 .. warning:: The ``push`` and ``pull`` commands are **destructive operations**.
 
