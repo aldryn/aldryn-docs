@@ -132,6 +132,19 @@ browser.
 To check whether the container is running, use ``aldryn project status``.
 
 
+Build frontend files
+--------------------
+
+In fact if you are using a standard Aldryn project for this tutorial, you will need to build its
+frontend files before it displays correctly. (For other projects this may not be necessary, or they
+may use their own frontend framework requiring some other operation.)
+
+Run::
+
+    docker-compose run --rm web gulp sass
+
+to build the CSS and JavaScript files.
+
 .. _login_locally:
 
 Login locally

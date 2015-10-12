@@ -218,8 +218,3 @@ Finally, ``push`` the changes::
 
 Your changes are now on Aldryn. They will instantly be recognised and your site will automatically
 reload to show them.
-
-Backend
-=======
-
-.. todo:: backend changes, create an Addon

@@ -169,10 +169,18 @@ Run the command ``aldryn check-system``, which should confirm that all is correc
      ✓ docker server connection
      ✓ docker-compose
 
-.. note::
+.. note:: **If you have problems with Docker**
 
     If you do find yourself encountering problems with Docker, as indicated by ``aldryn
     check-system``, running ``docker-machine restart default`` will usually help.
+
+    OS X users who find that connections to Docker stop working after moving to a new network
+    location should run::
+
+        VBoxManage modifyvm "default" --natdnshostresolver1 off
+        VBoxManage modifyvm "default" --natdnsproxy1 on
+
+    to change the way the Virtual Box routes DNS requests.
 
 
 .. _upload_key:
