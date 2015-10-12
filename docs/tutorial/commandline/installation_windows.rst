@@ -20,8 +20,6 @@ System requirements
 
 At minimum, you will need to be running *Windows 7 Professional 64bit*.
 
-Windows 10 is not yet supported.
-
 
 **********
 Python 2.7

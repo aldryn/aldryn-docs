@@ -116,7 +116,8 @@ any time from within the directory ``setup`` created with the ``up`` command::
 
 .. note:: **Microsoft Windows users**
 
-    If you are using Windows and Internet Explorer/Edge, you may find that the browser does display the page when running ``aldryn project up``. In this case, you either:
+    If you are using Windows and Internet Explorer/Edge, you may find that the browser does display
+    the page when running ``aldryn project up``. In this case, you either:
 
     * copy the URL from IE/Edge to another browser such as Firefox or Chrome
     * set Firefox or Chrome as your default browser
