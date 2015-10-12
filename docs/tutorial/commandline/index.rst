@@ -7,7 +7,8 @@ Aldryn for backend developers
 This tutorial is a guide for users who want to learn how Aldryn works for web application
 developers.
 
-The tutorial takes you through steps from installing key software such as Docker to deploying ALdryn projects locally so that you can develop new software for them.
+The tutorial takes you through steps from installing key software such as Docker to deploying
+Aldryn projects locally so that you can develop new software for them.
 
 You don't need to know how to use Docker, Git or the other technologies we'll introduce, but you do
 need to have some basic familiarity with the command-line on your system.

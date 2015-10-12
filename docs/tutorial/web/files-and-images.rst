@@ -108,7 +108,7 @@ In the Toolbar, select the *Site menu* and choose *Administration*.
    :align: right
    :width: 10%
 
-Expand the Admin view by hitting the sidepane's **Zoom button**. In the *Filer* section select
+Expand the Admin view by hitting the side-pane's **Zoom button**. In the *Filer* section select
 *Folders*, where you can explore the folder structure, and use the Filer interface as before.
 
 .. image:: images/admin_site.png

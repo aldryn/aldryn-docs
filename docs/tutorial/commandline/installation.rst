@@ -65,7 +65,7 @@ Docker Toolbox
     Once you have completed the installation and linked and fixed paths as indicated, you can
     continue to :ref:`install the Aldryn command-line client <install_command_line_client>`.
 
-Vist the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
+Visit the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
 installer for your system (this is a fairly large download, so you can move on to the next step
 while waiting for it to complete).
 

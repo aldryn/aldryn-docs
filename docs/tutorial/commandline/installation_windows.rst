@@ -60,7 +60,7 @@ Docker Toolbox
 
 Download the latest version of `Docker Toolbox <https://www.docker.com/toolbox>`_ and run the
 installer. This will configure VirtualBox (which will run the virtual machines your local Aldryn
-enviroment requires) and Kitematic (a Docker machine controller).
+environment requires) and Kitematic (a Docker machine controller).
 
 
 *******

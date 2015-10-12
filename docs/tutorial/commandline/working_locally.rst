@@ -82,7 +82,7 @@ And then relaunch the local site to check that the changes are reflected locally
 Media
 =====
 
-django CMS stores media files (images and other document) separately from the dabatase in whichever
+django CMS stores media files (images and other document) separately from the database in whichever
 filesystem has been specified. If your changes involve changes to *files* (typically, uploading
 files to the Filer, or moving or deleting them), then as well as transferring the database you will
 also need to perform a similar operation on your media files.
@@ -164,8 +164,8 @@ You'll then see them the next time you refresh the page.
 Pushing changes to Aldryn
 -------------------------
 
-Your :ref:`local_project_directory` is a Git repository, and Aldryn runs a Git server. To push your
-local changes to the Aldyn cloud, you simply push them to the server.
+Your local project directory is a Git repository, and Aldryn runs a Git server. To push your
+local changes to the Aldryn cloud, you simply push them to the server.
 
 .. note:: **What on earth is Git?**
 
@@ -222,4 +222,4 @@ reload to show them.
 Backend
 =======
 
-.. todo:: backend changes, create an addon
+.. todo:: backend changes, create an Addon

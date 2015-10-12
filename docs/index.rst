@@ -29,9 +29,9 @@ The platform also provides:
 
 * automated deployment
 * hosting
-* :doc:`shared team access </reference/workflows_for_agencies/index>`
+* shared team access
 * automated installation (including dependency management) and integration of
-  third-party :term:`Addon` packages
+  third-party Addon packages
 * management via a web interface or desktop-based application
 
 
@@ -73,10 +73,7 @@ Table of Contents
 
     self
     tutorial/index
-    how-to/index
-    reference/index
     improving
-    glossary
 
 .. _Aldryn: http://www.aldryn.com/
 .. _django CMS: http://django-cms.org/
