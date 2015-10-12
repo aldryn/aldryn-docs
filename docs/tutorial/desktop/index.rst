@@ -1,14 +1,22 @@
-#####################
-Customising your site
-#####################
+.. _tutorial_frontend_developers:
 
-We'll move on now from basic project and content management to some of the basics of web
-development using Aldryn.
+##############################
+Aldryn for frontend developers
+##############################
+
+This tutorial is a guide for users who have used the Control Panel and django CMS to manage sites and content, and want to learn how Aldryn works for web designers and other frontend developers.
 
 Aldryn has been designed to be developer-friendly, and to reflect the fact that content managers
 and developers work together in the same teams, and often on the same projects at the same time. In
 particular, Aldryn puts your project's frontend files - HTML, CSS and JavaScript - at your
 fingertips for easy management, through the **Aldryn Desktop** client application.
+
+.. note::
+
+    We assume in this section of the tutorial that you are familiar with the material introduced
+    in the :ref:`tutorial_content_creators` tutorial, and have an Aldryn project ready to work with.
+
+    If not, please take a few minutes to work through that tutorial before returning here.
 
 
 =============================================
@@ -66,6 +74,7 @@ on your local drive, in the folder you specified above.
    :width: 40%
 
 .. _edit_a_file_locally:
+
 
 ===================
 Edit a file locally

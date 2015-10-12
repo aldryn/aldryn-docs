@@ -59,7 +59,7 @@ live server. See our `Aldryn pricing page <http://www.aldryn.com/en/pricing/>`_ 
 about these options.
 
 If your project does not belong to a paid-for account, the sections below will not apply, so skip
-to the next section, :doc:`/tutorial/files-and-images`.
+to the next section, :ref:`files-and-images`.
 
 
 =======

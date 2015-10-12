@@ -1,3 +1,5 @@
+.. _files-and-images:
+
 #############################
 Working with files and images
 #############################
@@ -148,7 +150,7 @@ change automatically.
 Insert an Image plugin in a Text plugin
 =======================================
 
-Open a Text plugin by double-clicking on it, as you did in :doc:`/tutorial/basic-content-editing`
+Open a Text plugin by double-clicking on it, as you did in :ref:`basic-content-editing`
 above. Place the cursor at the point where you want the image to be inserted, and select *Image*
 from the *CMS Plugins* menu.
 
