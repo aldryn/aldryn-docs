@@ -29,4 +29,3 @@ You also need to have a number of packages installed on your local computer. See
     ssh_keys
     local_project_setup
     working_locally
-    creating_custom_addon
