@@ -8,6 +8,7 @@ Backend
 backticks
 Blog
 CMS
+cryptographic
 Divio
 django
 etc
@@ -25,9 +26,11 @@ Placeholder
 placeholders
 plugins
 Postgres
+pre
 Quickstart
 shortcut
 Todo
 toolbar
 unstaged
 Versioning
+login

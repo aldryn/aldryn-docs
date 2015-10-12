@@ -73,6 +73,7 @@ Table of Contents
 
     self
     tutorial/index
+    reference/index
     improving
 
 .. _Aldryn: http://www.aldryn.com/

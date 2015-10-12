@@ -108,7 +108,7 @@ may take several minutes) pull down the complete set of project files::
 Launch the project
 ==================
 
-``setup`` builds the project and only needs to be run once. From now onwards, you can launch it at
+``setup`` builds the project and only needs to be run once. From now on, you can launch it at
 any time from within the directory ``setup`` created with the ``up`` command::
 
     cd acme-website
@@ -147,11 +147,11 @@ to build the CSS and JavaScript files.
 
 .. _login_locally:
 
-Login locally
-=============
+Log in locally
+==============
 
 With the site in your browser, select the *edit mode* link (or simply add ``?edit`` to the URL),
-and and you will be presented with login options in the tool bar. Choose **Login as...**, select a
+and and you will be presented with login options in the tool bar. Choose **Log in as...**, select a
 user from the menu and sign in.
 
 You're now in front of a replica of your Aldryn project, running in exactly the same environment,
@@ -164,7 +164,7 @@ with the same applications, styling and content.
 
     In this case you have two options:
 
-    * go back to the site on the Control Panel and login, then issue ``aldryn project pull db``
+    * go back to the site on the Control Panel and log in, then issue ``aldryn project pull db``
       locally and try again
     * select **Create user** to set up an admin user locally
 

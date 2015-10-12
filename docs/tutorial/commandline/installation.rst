@@ -211,4 +211,4 @@ computer this key belongs to.
 Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
 encrypted communication for command-line operations between the two.
 
-You're now ready to login and :ref:`start working on a project <run_locally>`.
+You're now ready to log in and :ref:`start working on a project <run_locally>`.

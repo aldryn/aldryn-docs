@@ -30,7 +30,7 @@ Python 2.7
 Download the latest version of **Python 2.7** (note that Python 3 is currently not suitable) from
 the `official Python website <https://www.python.org/downloads/windows/>`_ and run the installer.
 
-During the installation step "Customize Python", make sure that you have selected the option "Add
+During the installation step "Customise Python", make sure that you have selected the option "Add
 Python to Path".
 
 .. image:: images/add-python-to-path.png
@@ -94,7 +94,8 @@ If you already have an older version of the client installed, use the ``--update
 
     pip install --update aldryn-client
 
-You can check the currently installed version by running ``aldryn version``. If it reports a version lower than 2.0, you **must** update.
+You can check the currently installed version by running ``aldryn version``. If it reports a
+version lower than 2.0, you **must** update.
 
 It is strongly advised to keep the client up-to-date by running ``pip install aldryn-client``
 regularly.
@@ -195,4 +196,4 @@ In the shell, run the command ``aldryn check-system``, which should confirm that
      ✓ docker server connection
      ✓ docker-compose
 
-You're now ready to login and :ref:`start working on a project <run_locally>`.
+You're now ready to log in and :ref:`start working on a project <run_locally>`.
