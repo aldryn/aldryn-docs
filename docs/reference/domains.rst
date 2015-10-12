@@ -82,5 +82,7 @@ configuration.
     never to change. Using an ``A`` record means that you may in future need to edit your domain's
     zone file in response to infrastructure changes on Aldryn.
 
+    However, we will inform users should this ever be necessary.
+
     If possible, use an ``ALIAS`` rather than an ``A`` record for root domains, and a ``CNAME``
     rather an ``A`` record for sub-domains.
