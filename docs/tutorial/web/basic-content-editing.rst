@@ -1,3 +1,5 @@
+.. _basic-content-editing:
+
 #####################
 Basic content editing
 #####################
