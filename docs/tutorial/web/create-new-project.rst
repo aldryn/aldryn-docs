@@ -38,7 +38,7 @@ Go to *General settings* in the project's Dashboard, and set:
 
 * *International Settings*: select the languages in which you plan to publish your site.
 * *Domain Settings*: don't worry about this now, but later if you have a *Premium* account, you'll
-  be able to publish the site from your own domain.
+  be able to publish the site from your own domain. See :ref:`domain_names` for more.
 * *Base Project Release Channel Settings*: leave this set to *Stable*.
 
 

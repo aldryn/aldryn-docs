@@ -50,7 +50,7 @@ The *Test* server provides you with a complete Aldryn website, with all its func
 the site remains private, available only to you and :ref:`the people you have shared it with <sharing-with-clients>`. To publish your site for the world to see, you need a *Live* server.
 
 As well as giving you a public site, a *Live* server allows you to host it from your own domain
-domain name.
+domain name. (See :ref:`domain_names` for more.)
 
 In order to deploy a Live server, your project needs to belong to a paid-for Aldryn account. For
 each project you can choose between a *Personal* (suitable for lower-traffic sites) or

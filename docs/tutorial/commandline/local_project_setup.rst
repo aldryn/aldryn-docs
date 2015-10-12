@@ -82,7 +82,8 @@ locally::
     In such a case, update the Base Project using the Control Panel and try again.
 
 If successful, the process will take a few minutes (depending on the project's configuration, this
-may take several minutes) pull down the complete set of project files::
+may take as much as 20 minutes, though usually it will quicker) pull down the complete set of
+project files::
 
      $ aldryn project setup acme-website
      Creating workspace...
@@ -97,7 +98,6 @@ may take several minutes) pull down the complete set of project files::
      fetching database dump
      inserting database dump
      sync and migrate database
-
 
      Finished setting up your project's workspace!
      To start the project, please:
