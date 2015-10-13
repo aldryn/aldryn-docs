@@ -186,7 +186,7 @@ Your new shell will display::
     Docker version 1.8.2, build 0a8c2e3
     docker@default:~$
 
-In the shell, run the command ``aldryn check-system``, which should confirm that all is correct::
+In the shell, run the command ``aldryn doctor``, which should confirm that all is correct::
 
     Verifying your system's setup
      ✓ git client

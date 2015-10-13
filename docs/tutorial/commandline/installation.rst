@@ -163,9 +163,9 @@ This can take a couple of minutes to complete, but the next time will be much qu
 
         pip install docker-compose
 
-    and then continue directly with ``aldryn check-system`` below.
+    and then continue directly with ``aldryn doctor`` below.
 
-Run the command ``aldryn check-system``, which should confirm that all is correct::
+Run the command ``aldryn doctor``, which should confirm that all is correct::
 
     Verifying your system's setup
      ✓ git client
@@ -176,7 +176,7 @@ Run the command ``aldryn check-system``, which should confirm that all is correc
 .. note:: **If you have problems with Docker**
 
     If you do find yourself encountering problems with Docker, as indicated by ``aldryn
-    check-system``, running ``docker-machine restart default`` will usually help.
+    doctor``, running ``docker-machine restart default`` will usually help.
 
     OS X users who find that connections to Docker stop working after moving to a new network
     location should run::
