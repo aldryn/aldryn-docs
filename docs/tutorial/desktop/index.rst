@@ -19,6 +19,8 @@ fingertips for easy management, through the **Aldryn Desktop** client applicatio
     If not, please take a few minutes to work through that tutorial before returning here.
 
 
+.. _install_desktop_client:
+
 =============================================
 Install the Aldryn Desktop client application
 =============================================
@@ -38,6 +40,11 @@ Getting started
 Once the application is running you can login using your email address and password, or simply copy
 the `access token <https://control.aldryn.com/account/desktop-app/access-token/>`_ from the Aldryn
 Control Panel and paste it into the field in the client.
+
+.. note::
+
+    The automatic *copy-to-clipboard* function is currently known not to work on some
+    systems, including various versions of Linux, so copy the string manually if necessary.
 
 Select a workspace folder (a folder on your computer where you'd like to keep all the Aldryn
 files), then select **Continue**.

@@ -59,10 +59,10 @@ Docker Toolbox
 
 .. note:: **Linux users**
 
-    Docker Toolbox is not currently available for Linux. Instead, follow the `instructions provided
-    by Liquid Web <http://www.liquidweb.com/kb/how-to-install-docker-on-ubuntu-14-04-lts/>`_.
+    Docker Toolbox is not currently available for Linux. Instead, follow the `official Docker
+    installation guide <https://docs.docker.com/linux/step_one/>`_.
 
-    Once you have completed the installation and linked and fixed paths as indicated, you can
+    Once you have completed those steps, you can
     continue to :ref:`install the Aldryn command-line client <install_command_line_client>`.
 
 Visit the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
@@ -99,12 +99,13 @@ Install the client::
      that ``pip install aldryn-client`` doesn't work.
 
      In this case your options include:
-     * (OS X users, if you have trouble with pip): ``pip install --upgrade --no-use-wheel setuptools``
+     * (OS X users, if you have trouble with pip) ``pip install --upgrade --no-use-wheel setuptools``
      * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
      * if ``pip`` is not installed, try one of:
 
          * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
            ``sudo easy_install pip``
+         * (Debian/Ubuntu users) ``sudo apt-get install python-pip``
 
     then try again
 
@@ -158,8 +159,11 @@ This can take a couple of minutes to complete, but the next time will be much qu
 
 .. note:: **Linux users**
 
-    Linux users don't need to do this step, and can continue directly with ``aldryn check-system``
-    below.
+    Linux users should instead install Docker Compose::
+
+        pip install docker-compose
+
+    and then continue directly with ``aldryn check-system`` below.
 
 Run the command ``aldryn check-system``, which should confirm that all is correct::
 
