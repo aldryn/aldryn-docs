@@ -29,9 +29,9 @@ The platform also provides:
 
 * automated deployment
 * hosting
-* :doc:`shared team access </reference/workflows_for_agencies/index>`
+* shared team access
 * automated installation (including dependency management) and integration of
-  third-party :term:`Addon` packages
+  third-party Addon packages
 * management via a web interface or desktop-based application
 
 
@@ -50,13 +50,6 @@ Getting Help
 ============
 
 Having trouble? We'd like to help!
-
-* Try the :doc:`FAQ <faq/index>` -- it's got answers to many common questions.
-
-* Looking for specific information? Try the :ref:`genindex`, :ref:`modindex` or
-  the :doc:`detailed table of contents <index>`.
-
-* Search the archives of the `Aldryn email list`_, or post your own question.
 
 * Ask a question in the `#aldryn IRC channel`_.
 
@@ -80,16 +73,8 @@ Table of Contents
 
     self
     tutorial/index
-    introduction/index
-    how-to/index
-    reference/sites/index
-    reference/client/index
-    reference/addons/index
-    reference/boilerplates/index
-    reference/themes/index
-    reference/workflows_for_agencies/index
+    reference/index
     improving
-    glossary
 
 .. _Aldryn: http://www.aldryn.com/
 .. _django CMS: http://django-cms.org/

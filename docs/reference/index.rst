@@ -1,8 +1,10 @@
-.. toctree::
+#########
+Reference
+#########
 
-    sites/index
-    client/index
-    addons/index
-    boilerplates/index
-    themes/index
-    workflows_for_agencies/index
+.. toctree::
+    :maxdepth: 1
+
+    local_development_setup
+    domains
+    commandline_client

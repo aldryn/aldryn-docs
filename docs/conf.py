@@ -27,7 +27,7 @@ import sys, os
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.ifconfig', 'sphinx.ext.viewcode']
 
-todo_include_todos = False
+todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -257,3 +257,18 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # otherwise, readthedocs.org uses their theme by default, so no need to specify it
+
+# -- Options for spelling checks ----------------------------------------------
+
+# Spelling check needs an additional module that is not installed by default.
+# Add it only if spelling check is requested so docs can be generated without it.
+if 'spelling' in sys.argv:
+    extensions.append("sphinxcontrib.spelling")
+
+# Spelling language.
+spelling_lang = 'en_GB'
+
+# Location of word list.
+spelling_word_list_filename = 'spelling_wordlist'
+
+spelling_ignore_pypi_package_names = True
