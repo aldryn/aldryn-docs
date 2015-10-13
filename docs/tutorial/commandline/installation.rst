@@ -77,6 +77,7 @@ when invited.
 Docker Quickstart Terminal is installed as an application. When launched, it will :ref:`open a new
 shell <launch-docker-quickstart-terminal>`.
 
+
 .. _install_command_line_client:
 
 **************************
