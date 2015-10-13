@@ -224,3 +224,10 @@ Finally, ``push`` the changes::
 
 Your changes are now on Aldryn. They will instantly be recognised and your site will automatically
 reload to show them.
+
+
+Backend
+=======
+
+As well as your site's frontend code, you can also modify the Python code in the applications it
+runs.

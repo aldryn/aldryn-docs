@@ -7,3 +7,4 @@ Reference
 
     local_development_setup
     domains
+    commandline_client

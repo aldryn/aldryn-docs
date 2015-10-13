@@ -121,6 +121,9 @@ You can check the currently installed version by running ``aldryn version``. If 
 It is strongly advised to keep the client up-to-date by running ``pip install aldryn-client``
 regularly.
 
+Later, you will want to consult the :ref:`command-line client reference notes
+<command-line-client-reference>`, but in the meantime, all the operations you'll need to use are
+described in this tutorial.
 
 .. _launch-docker-quickstart-terminal:
 

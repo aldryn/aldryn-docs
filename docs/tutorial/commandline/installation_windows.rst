@@ -104,6 +104,11 @@ regularly.
     This is a good point at which to restart your machine, to help ensure that it starts up with the
     software you have installed ready to use.
 
+Later, you will want to consult the :ref:`command-line client reference notes
+<command-line-client-reference>`, but in the meantime, all the operations you'll need to use are
+described in this tutorial.
+
+
 .. _upload_key_windows:
 
 **********************************
