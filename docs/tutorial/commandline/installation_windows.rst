@@ -74,6 +74,8 @@ In your terminal (typically, the ``cmd.exe`` application) run::
 This will obtain the latest version from the official Docker Compose Git repository, and install it.
 
 
+.. _install_command_line_client_windows:
+
 **************************
 Aldryn command-line client
 **************************
