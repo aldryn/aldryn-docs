@@ -66,7 +66,7 @@ to the next section, :ref:`files-and-images`.
 Go live
 =======
 
-When you're ready to publish your site, hit **Go live** - |go-live|. Your site will go through the
+When you're ready to publish your site, hit **Go live** (|go-live|). Your site will go through the
 familiar deployment process, but this time on the live rather than the test server.
 
 .. |go-live| image:: images/golive.png

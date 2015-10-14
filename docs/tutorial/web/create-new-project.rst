@@ -51,16 +51,17 @@ Your new project needs to be deployed. This actually creates the website.
 First you deploy a private version for testing, and then later you can publish a live version for
 all the world to see.
 
-.. image:: images/test_it.png
+.. |test_it| image:: images/test_it.png
    :alt: The 'test it' button
-   :align: right
    :width: 15%
 
-Back in your project's Dashboard, hit **Test it** to deploy the site to the *Test server*.
+Back in your project's Dashboard, hit **Test it** (|test_it|) to deploy the site to the *Test
+server*.
 
-.. NOTE::
+.. note::
+
    For the moment, we will work only with the Test server; later, we'll look at the Live server
-   too. This should be a stand-out note of some sort.
+   too.
 
 You'll see a blue progress bar, and below it a timer. When the progress bar turns green, your
 site's ready for use.
