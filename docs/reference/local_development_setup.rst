@@ -2,6 +2,11 @@
 About the local development set-up
 ##################################
 
+.. note::
+
+    For a complete introduction to the local development environment, see the
+    :ref:`tutorial_backend_developers` tutorial.
+
 The :ref:`first time you launch the Docker Quickstart Terminal <docker_toolbox>`, it creates a
 virtual machine called ``default``. This will be the host for all the Docker containers you need
 to run for your local Aldryn projects.
