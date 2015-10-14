@@ -109,8 +109,8 @@ and check on Aldryn that they are shown there too. To do things the other way ro
     Pushing and pulling data and files will overwrite information. Check that this is what you
     intend before confirming the operation.
 
-    As you will note from the warning messaged displayed when you execute these commands, they both
-    create backups before completing their work, so even if you inadvertently overwrite
+    As you will note from the warning messaged displayed when you execute these commands, you should
+    create backups before running them, so even if you inadvertently overwrite
     information, you can recover it from a backup.
 
 

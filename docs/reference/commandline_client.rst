@@ -114,12 +114,14 @@ directory locally.
 ``push db``, ``pull db``
     Push and pull database changes to and from Aldryn.
 
-    Before pushing to Aldryn, a backup of the database on Aldryn will be made.
+    Before pushing to Aldryn, you should make a backup of the database using *Manage Project*
+    in the Aldryn Control Panel.
 
 ``push media``, ``pull media``
     Push and pull media file changes to and from Aldryn.
 
-    Before pushing to Aldryn, a backup of the files on Aldryn will be made.
+    Before pushing to Aldryn, you should make a backup of the files using *Manage Project*
+    in the Aldryn Control Panel.
 
 ``update``
     ``aldryn project update`` must be executed *within* a project directory.
