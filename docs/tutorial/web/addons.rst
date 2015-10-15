@@ -103,7 +103,6 @@ not excluded by dates that you entered.
 .. image:: images/job-example.png
    :alt: a published job
    :align: center
-   :width: 50%
 
 You can use the standard django CMS placeholder interface to add some more text content to your
 job openings, as you did in :ref:`structure-and-content` earlier.
