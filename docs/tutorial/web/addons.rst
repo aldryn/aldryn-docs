@@ -63,7 +63,7 @@ Create a Jobs landing page
 ==========================
 
 :ref:`As you did previously for Aldryn Events <create-events-apphook>`, create a *Jobs* landing
-page:
+page using an **Apphook**:
 
 * create a new page called *Jobs*
 * in its *Advanced settings*, set its ``Application`` to *Jobs* and **Save** again
