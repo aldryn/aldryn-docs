@@ -20,4 +20,5 @@ to get an introduction to the whole system.
     collaborating
     live-and-test-servers
     files-and-images
+    configuration-and-plugins
     addons
