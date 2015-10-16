@@ -30,3 +30,6 @@ You also need to have a number of packages installed on your local computer. See
     ssh_keys
     local_project_setup
     working_locally
+    working-on-content
+    working-on-frontend
+    working-on-backend

@@ -134,11 +134,24 @@ directory locally.
 ``dashboard``
     Opens the project's dashboard on the Aldryn website.
 
-``develop <package>``
-    Add a package ``package`` from the ``addons-dev`` to your local project.
-
 ``live``, ``test``
     Open the project's live and test sites on Aldryn.
 
 ``open``
     Opens a browser window with the locally-running project.
+
+``develop <package>``
+    Install a package ``package`` from the ``addons-dev`` directory to your local project, and
+    rebuild the ``web`` container. ``develop`` is the local equivalent of installing an Addon on
+    Aldryn, then redeploying the Test server.
+
+
+.. _addon-related-commands:
+
+Addon-related commands
+======================
+
+``validate``
+    Checks an Addon for validity. Note that it only checks that some basic configuration is in
+    place; it cannot detect whether the Addon's code works well, or even if the Addon will actually
+    work at all.
