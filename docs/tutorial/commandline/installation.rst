@@ -70,10 +70,10 @@ Docker Toolbox
 
     Since the Docker daemon runs as root, all activity happening inside Docker containers
     has root privileges. As a result, files and directories created in locally mounted
-    directories from within containers will always be owned by root. aldryn-client
+    directories from within containers will always be owned by root. The client
     attempts to overcome this when setting up new projects by changing the owner of
     the newly-created directories to the invoking user. To access files and directories
-    create later by your app, you'll need to change the ownership or permissions yourself
+    create later by your application, you'll need to change the ownership or permissions yourself
     using the ``chown`` or ``chmod`` commands.
 
 Visit the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
