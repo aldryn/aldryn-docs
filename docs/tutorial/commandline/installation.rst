@@ -59,11 +59,22 @@ Docker Toolbox
 
 .. note:: **Linux users**
 
-    Docker Toolbox is not currently available for Linux. Instead, follow the `official Docker
+    Docker runs as a native daemon on Linux. To install it, follow the `official Docker
     installation guide <https://docs.docker.com/linux/step_one/>`_.
 
     Once you have completed those steps, you can
     continue to :ref:`install the Aldryn command-line client <install_command_line_client>`.
+
+    Note that the Docker daemon always runs as root, though it is possible to access it using
+    a client running as an unprivileged user by adding that user to the docker group.
+
+    Since the Docker daemon runs as root, all activity happening inside Docker containers
+    has root privileges. As a result, files and directories created in locally mounted
+    directories from within containers will always be owned by root. The client
+    attempts to overcome this when setting up new projects by changing the owner of
+    the newly-created directories to the invoking user. To access files and directories
+    create later by your application, you'll need to change the ownership or permissions yourself
+    using the ``chown`` or ``chmod`` commands.
 
 Visit the `Docker Toolbox <https://www.docker.com/toolbox>`_ site to download the appropriate
 installer for your system (this is a fairly large download, so you can move on to the next step
