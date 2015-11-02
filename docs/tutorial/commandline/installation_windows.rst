@@ -80,26 +80,21 @@ This will obtain the latest version from the official Docker Compose Git reposit
 Aldryn command-line client
 **************************
 
-Install the Aldryn command line client::
+Install the client::
 
     pip install aldryn-client
 
 .. note::
 
-    until this is formally released on PyPI, use::
+    If you have an older version already installed, use::
 
-        pip install -e git+git://github.com/aldryn/aldryn-client.git@v2#egg=aldryn_client
-
-If you already have an older version of the client installed, use the ``--update`` option::
-
-    pip install --update aldryn-client
+        pip install --upgrade aldryn-client
 
 You can check the currently installed version by running ``aldryn version``. If it reports a
-version lower than 2.0, you **must** update.
+version lower than 2.0, you **must** upgrade it.
 
-It is strongly advised to keep the client up-to-date by running ``pip install aldryn-client``
-regularly.
-
+It is strongly advised to keep the client up-to-date by running ``pip install --upgrade
+aldryn-client`` regularly.
 
 .. note::
 
@@ -109,6 +104,15 @@ regularly.
 Later, you will want to consult the :ref:`command-line client reference notes
 <command-line-client-reference>`, but in the meantime, all the operations you'll need to use are
 described in this tutorial.
+
+.. note::
+
+    The client is `released as open-source software <https://github.com/aldryn/aldryn-client>`_, on
+    GitHub.
+
+    You can install the client directly from the GitHub repositotory with::
+
+        pip install -e git+git://github.com/aldryn/aldryn-client.git#egg=aldryn_client
 
 
 .. _upload_key_windows:

@@ -101,43 +101,49 @@ Install the client::
 
 .. note::
 
-    until this is formally released on PyPI, use::
+    If you have an older version already installed, use::
 
-        pip install -e git+git://github.com/aldryn/aldryn-client.git@v2#egg=aldryn_client
+        pip install --upgrade aldryn-client
 
-.. note:: Installation problems
+You can check the currently installed version by running ``aldryn version``. If it reports a
+version lower than 2.0, you **must** upgrade it.
 
-     Depending on your operating system and even the version of your operating system, you may find
-     that ``pip install aldryn-client`` doesn't work.
+It is strongly advised to keep the client up-to-date by running ``pip install --upgrade
+aldryn-client`` regularly.
 
-     In this case your options include:
-     * (OS X users, if you have trouble with pip) ``pip install --upgrade --no-use-wheel setuptools``
-     * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
-     * if ``pip`` is not installed, try one of:
+.. note:: **Installation problems**
 
-         * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
-           ``sudo easy_install pip``
-         * (Debian/Ubuntu users) ``sudo apt-get install python-pip``
+    Depending on your operating system and even the version of your operating system, you may find
+    that ``pip install aldryn-client`` doesn't work.
 
-    then try again
+    In this case your options include:
+    * (OS X users, if you have trouble with pip) ``pip install --upgrade --no-use-wheel setuptools``
+    * (OS X/Linux users, if permission is denied) try ``sudo pip install aldryn-client``
+    * if ``pip`` is not installed, try one of:
 
-     * create a new ``virtualenv``; pip will be available within that
+        * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
+        ``sudo easy_install pip``
+        * (Debian/Ubuntu users) ``sudo apt-get install python-pip``
 
+    then try again.
 
-If you already have an older version of the client installed, use the ``--update`` option::
-
-    pip install --update aldryn-client
-
-You can check the currently installed version by running ``aldryn version``. If it reports a version lower than 2.0, you **must** update.
-
-It is strongly advised to keep the client up-to-date by running ``pip install aldryn-client``
-regularly.
+        * create a new ``virtualenv``; pip will be available within that
 
 Later, you will want to consult the :ref:`command-line client reference notes
 <command-line-client-reference>`, but in the meantime, all the operations you'll need to use are
 described in this tutorial.
 
 .. _launch-docker-quickstart-terminal:
+
+.. note::
+
+    The client is `released as open-source software <https://github.com/aldryn/aldryn-client>`_, on
+    GitHub.
+
+    You can install the client directly from the GitHub repositotory with::
+
+        pip install -e git+git://github.com/aldryn/aldryn-client.git#egg=aldryn_client
+
 
 *********************************
 Launch Docker Quickstart Terminal
