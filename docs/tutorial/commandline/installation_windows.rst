@@ -139,6 +139,7 @@ computer this key belongs to.
 Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
 encrypted communication for command-line operations between the two.
 
+.. _docker_cli_windows:
 
 *************
 Set up Docker
