@@ -59,16 +59,16 @@ Run::
 .. important:: **About the ``package name``**
 
     The application name must match the one you provided in the :ref:`previous step
-    <prepare_aldryn_for_addon>` exactly.
+    <prepare_aldryn_for_addon>` **exactly**.
 
 This will create a new directory, ``hello_world-<your-name>``, containing a new Django application.
 You now need to:
 
-    * create another new directory, ``hello-world``
-    * place the ``hello_world-<your-name>`` application directory inside it
-    * place ``hello-world`` into ``addons-dev`` in your project
+* create another new directory, ``hello-world``
+* place the ``hello_world-<your-name>`` application directory inside it
+* place ``hello-world`` into ``addons-dev`` in your project
 
-In other words, in your Aldryn project you should find::
+In other words, in your Aldryn project you should have::
 
     addons-dev/hello-world-<your-name>/hello_world
 
@@ -86,14 +86,14 @@ Packaging the Addon
 The *Package information* page for your Addon on Aldryn list a number of files you need to package
 your Addon.
 
-Now download each of the files, putting them *outer* ``hello-world`` application directory.
+Now download each of the files, putting them in the *outer* ``hello-world`` application directory.
 
 The exception is ``hello_world/__init__.py``, which goes in the *inner* ``hello_world`` directory.
 
 .. note::
 
     Of these files, only ``addons.json`` is strictly required to get started, but it is strongly
-    recommended to supply all of them.some
+    recommended to supply all of them.
 
 In order to be used on Aldryn, the application must be packaged as an Addon and uploaded. Every
 Addon has an ``addon.json`` file containing key information about it. You'll find this in
@@ -115,7 +115,7 @@ See :ref:`addon-packaging` for more information.
     }
 
 This tells Aldryn what the package is called; the ``package-name`` is ``hello-world-<your-name>``,
-which should match exactly the name you provided on Aldryn.
+which should match *exactly* the name you provided on Aldryn.
 
 ``installed-apps`` tells Aldryn what it needs to add the the Django project's ``INSTALLED_APPS``
 setting in ``settings.py`` for this new application to work when it's installed.
@@ -196,6 +196,24 @@ To deploy the new application locally, run ``aldryn project develop hello-world-
 This installs the Addon, then redeploys the server - the same processes that unfolded on Aldryn.
 
 
+Add the addon to ``INSTALLED_APPS``
+-----------------------------------
+
+In the project's ``settings.py``, you'll find::
+
+    INSTALLED_APPS.extend([
+        # add your project specific apps here
+    ])
+
+Add the application name to the list::
+
+    INSTALLED_APPS.extend([
+        'hello_world',
+    ])
+
+.. note:: A future update to the Aldryn client will take of this step automatically.
+
+
 ***************************
 Make the Addon do something
 ***************************
@@ -222,7 +240,7 @@ Create a new ``cms_plugins.py`` file inside the application (that is, in
 
     plugin_pool.register_plugin(HelloWorld)
 
-And in ``addons-dev/hello-world-<your-name>/hello_world/templates/hello_world/hello.html`` (you
+And in ``addons-dev/hello-world-<your-name>/hello_world/templates/hello_plugin/hello.html`` (you
 will need to create the file and the directories along the path)::
 
     Hello
