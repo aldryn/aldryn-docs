@@ -1,3 +1,5 @@
+.. _reference:
+
 #########
 Reference
 #########
@@ -8,3 +10,8 @@ Reference
     local_development_setup
     domains
     commandline_client
+    addon-packaging
+    addon-configuration
+    addon-publishing
+    release-channels
+

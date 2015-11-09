@@ -6,10 +6,10 @@ Welcome to Aldryn
    :width: 200 px
    :alt: Aldryn logo
 
-.. ATTENTION::
-   This documentation is currently in development. We'd be delighted to have :doc:`your feedback,
-   or even better, your contributions <improving>`. This documentation is on `GitHub
-   <https://github.com/aldryn/aldryn-docs>`_
+.. note::
+
+   We'd be delighted to have :doc:`your feedback, or even better, your contributions <improving>`.
+   This documentation is on `GitHub <https://github.com/aldryn/aldryn-docs>`_
 
 `Aldryn`_ is an easy-to-use and developer-friendly content management platform.
 
