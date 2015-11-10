@@ -155,3 +155,41 @@ Addon-related commands
     Checks an Addon for validity. Note that it only checks that some basic configuration is in
     place; it cannot detect whether the Addon's code works well, or even if the Addon will actually
     work at all.
+
+
+.. _commandline_troubleshooting:
+
+***************
+Troubleshooting
+***************
+
+"Couldn't connect to Docker daemon"
+===================================
+
+You'll typically get this when the client attempts to issue a ``docker-compose`` command, that
+fails.
+
+Check status with ``aldryn doctor``::
+
+    $ aldryn doctor
+    Verifying your system setup
+     ✓  git client
+     ✓  docker client
+     ✖  docker server connection
+     ✓  docker-compose
+
+In this case, ``aldryn doctor`` confirms the problem. It could be because:
+
+* there's some sort of connection failure between ``docker-compose`` and the daemon
+* the daemon isn't running at all
+
+
+Possible causes
+---------------
+
+* The daemon isn't running. Start it::
+
+    docker-machine start default
+
+* Your shell environment can't reach the running machine. :ref:`launch-docker-quickstart-terminal`
+  (Macintosh), or :ref:`launch a Docker CLI <docker_cli_windows>` (Windows).
