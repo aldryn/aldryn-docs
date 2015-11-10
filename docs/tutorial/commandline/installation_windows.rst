@@ -201,4 +201,4 @@ In the shell, run the command ``aldryn doctor``, which should confirm that all i
      ✓ docker server connection
      ✓ docker-compose
 
-You're now ready to log in and :ref:`start working on a project <run_locally>`.
+You're now ready to log in and :ref:`start working on a project <local_setup>`.

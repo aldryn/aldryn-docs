@@ -5,9 +5,11 @@ Working on backend code
 #######################
 
 As well as your site's frontend code, you can also modify the Python code in the applications it
-runs. In this section we will create a new  Addon application, test and run it in the local environment, upload it to Aldryn, and apply it to a new site.
+runs. In this section we will create a new Addon application, test and run it in the local
+environment, upload it to Aldryn, and apply it to a new site.
 
-First, make sure you're ready to :ref:`work_locally`.
+First, make sure your site is up and running locally. Go back to :ref:`work_locally` if you need
+to.
 
 
 .. _prepare_aldryn_for_addon:
@@ -22,11 +24,14 @@ In the `Aldryn Control Panel <https://control.aldryn.com/control/>`_, select `Ad
 <https://control.aldryn.com/account/my-addons/>`_, then `Add custom Addon
 <https://control.aldryn.com/account/my-addons/new/>`_.
 
-You need to give your Addon a ``Name`` (a human-friendly name) and a ``Package name`` (a
-computer-friendly slug, containing only letters, numbers, underscores and hyphens). Call it "Hello
-World", and use ``hello-world-<your-name>`` for the package name.
+You need to give your Addon:
 
-.. important:: **About the ``package name``**
+* a ``Name`` (a human-friendly name), in the format "Hello World by <your name>" - for example,
+  *Hello World by Erika*
+* a ``Package name`` (a computer-friendly slug, containing only letters, numbers, underscores and
+  hyphens), in the format "hello-world-<your name>", such as *hello-world-erika*
+
+.. important:: **About the package name**
 
     Make sure you prefix the package name with ``hello-world``. This will help us, and you, because
     it will make it immediately clear that this Addon is one that was created for the purposes of a
@@ -46,31 +51,46 @@ downloaded into the new Addon for packaging purposes. You will need to use these
 Create the new Addon application locally
 ****************************************
 
-Run::
+Substituting something appropriate for ``<your name>`` in the examples below, run::
 
-    docker-compose run --rm web python manage.py startapp hello_world-<your-name>
+    docker-compose run --rm web python manage.py startapp hello_world_<your name>
 
-(If you have Django installed globally, you could also do::
+If you have Django installed globally, you could instead do::
 
-    django-admin startapp hello_world-<your-name>
+    django-admin startapp hello_world_<your name>
 
-)
+.. important:
 
-.. important:: **About the ``package name``**
+    The name you provide here is the Python *module name*, and can contain only only numbers,
+    letters and underscores.
 
-    The application name must match the one you provided in the :ref:`previous step
-    <prepare_aldryn_for_addon>` **exactly**.
+This will create a new directory, ``hello_world_<your name>`` (note the underscores), containing a
+new Django application with various files in it. For example::
 
-This will create a new directory, ``hello_world-<your-name>``, containing a new Django application.
-You now need to:
 
-* create another new directory, ``hello-world``
-* place the ``hello_world-<your-name>`` application directory inside it
-* place ``hello-world`` into ``addons-dev`` in your project
+    hello_world_erika
+        __init__.py
+        admin.py
+        models.py
+        tests.py
+        views.py
+
+You now need to create a new outer directory, with exactly the same name as the *Package name* you
+used earlier, and place the application inside it, so your package will now look like::
+
+    hello-world-erika
+        hello_world_erika
+            __init__.py
+            admin.py
+            models.py
+            tests.py
+            views.py
+
+Now place all this into ``addons-dev`` in your project.
 
 In other words, in your Aldryn project you should have::
 
-    addons-dev/hello-world-<your-name>/hello_world
+    addons-dev/hello-world-<your name>/hello_world_<your name>
 
 The ``addons-dev`` directory is your workspace for Addon development, and is on the Python path for
 the server.
@@ -86,9 +106,27 @@ Packaging the Addon
 The *Package information* page for your Addon on Aldryn list a number of files you need to package
 your Addon.
 
-Now download each of the files, putting them in the *outer* ``hello-world`` application directory.
+Now download each of the files, putting them in the *outer* ``hello-world-<your name>`` *package*
+directory.
 
-The exception is ``hello_world/__init__.py``, which goes in the *inner* ``hello_world`` directory.
+The exception is ``hello_world/__init__.py``, which goes in the *inner* ``hello_world_<your name>``
+*module* directory, replacing the empty one that's already there.
+
+You should now have::
+
+    addons-dev
+        hello-world-erika
+            hello_world_erika
+                __init__.py
+                admin.py
+                models.py
+                tests.py
+                views.py
+            addon.json
+            LICENSE.txt
+            MANIFEST.in
+            README.rst
+            setup.py
 
 .. note::
 
@@ -108,13 +146,13 @@ See :ref:`addon-packaging` for more information.
 ::
 
     {
-        "package-name": "hello-world-<your-name>",
+        "package-name": "hello-world-<your name>",
         "installed-apps": [
             "hello_world"
         ]
     }
 
-This tells Aldryn what the package is called; the ``package-name`` is ``hello-world-<your-name>``,
+This tells Aldryn what the package is called; the ``package-name`` is ``hello-world-<your name>``,
 which should match *exactly* the name you provided on Aldryn.
 
 ``installed-apps`` tells Aldryn what it needs to add the the Django project's ``INSTALLED_APPS``
@@ -126,7 +164,7 @@ Validate the Addon
 ******************
 
 With correct information in ``addon.json`` and ``__init.py__``, your application is ready. Make
-sure you are in the (outer) ``hello-world-<your-name>`` directory, and check it::
+sure you are in the (outer) ``hello-world-<your name>`` directory, and check it::
 
     $ aldryn addon validate
     Addon is valid!
@@ -151,10 +189,10 @@ Use the ``aldryn addon upload`` command::
     ok
     Configuration file is valid
 
-    New version 0.0.1 of hello-world uploaded to alpha channel
+    New version 0.0.1 of hello-world-erika uploaded to alpha channel
 
-    https://control.aldryn.com/api/v1/apps/serve/hello-world-<your-name>/
-    0.0.1/266b549a-79fc-4d1d-a86d-11f3031ce33f/hello-world-<your-name>-0.0.1.tar.gz
+    https://control.aldryn.com/api/v1/apps/serve/hello-world-erika/
+    0.0.1/266b549a-79fc-4d1d-a86d-11f3031ce33f/hello-world-erika-0.0.1.tar.gz
 
 Your Addon is now on Aldryn. You can see it listed on `your Addons page
 <https://control.aldryn.com/account/my-addons/>`_, and it's available to install into your projects.
@@ -180,9 +218,9 @@ and will appear in your list of installed Addons.
 Locally
 =======
 
-To deploy the new application locally, run ``aldryn project develop hello-world-<your-name>``::
+To deploy the new application locally, run ``aldryn project develop hello-world-<your name>``::
 
-    $ aldryn project develop hello-world-<your-name>
+    $ aldryn project develop hello-world-<your name>
     Building web...
 
     [time passes]
@@ -191,12 +229,12 @@ To deploy the new application locally, run ``aldryn project develop hello-world-
      ---> f1a1c3de4f68
     Removing intermediate container 3c32043caea6
     Successfully built f1a1c3de4f68
-    The package hello-world-<your-name> has been added to your local development project!
+    The package hello-world-<your name> has been added to your local development project!
 
 This installs the Addon, then redeploys the server - the same processes that unfolded on Aldryn.
 
 
-Add the addon to ``INSTALLED_APPS``
+Add the Addon to ``INSTALLED_APPS``
 -----------------------------------
 
 In the project's ``settings.py``, you'll find::
@@ -205,10 +243,10 @@ In the project's ``settings.py``, you'll find::
         # add your project specific apps here
     ])
 
-Add the application name to the list::
+Add the application name to the list, for example::
 
     INSTALLED_APPS.extend([
-        'hello_world',
+        'hello_world_erica',
     ])
 
 .. note:: A future update to the Aldryn client will take of this step automatically.
@@ -225,7 +263,7 @@ See `custom plugins <http://docs.django-cms.org/en/latest/how_to/custom_plugins.
 the django CMS documentation for more information about plugins.
 
 Create a new ``cms_plugins.py`` file inside the application (that is, in
-``addons-dev/hello-world-<your-name>/hello_world``)::
+``addons-dev/hello-world-<your name>/hello_world_<your name>``)::
 
     from cms.plugin_base import CMSPluginBase
     from cms.plugin_pool import plugin_pool
@@ -234,14 +272,17 @@ Create a new ``cms_plugins.py`` file inside the application (that is, in
 
     class HelloWorld(CMSPluginBase):
         model = CMSPlugin
-        render_template = "hello_plugin/hello.html"
+        render_template = "hello_plugin_<your name>/hello.html"
         text_enabled = True
 
 
     plugin_pool.register_plugin(HelloWorld)
 
-And in ``addons-dev/hello-world-<your-name>/hello_world/templates/hello_plugin/hello.html`` (you
-will need to create the file and the directories along the path)::
+Don't forget to change ``<your name`` above.
+
+And in ``addons-dev/hello-world-<your name>/hello_world_<your
+name>/templates/hello_plugin/hello.html`` (you will need to create the file and the directories
+along the path)::
 
     Hello
     {% if request.user.is_authenticated %}
@@ -249,6 +290,25 @@ will need to create the file and the directories along the path)::
     {% else %}
         Guest
     {% endif %}
+
+Your application should now look very like this::
+
+    hello-world-erika
+        hello_world_erika
+            templates
+                hello_plugin
+                    hello.html
+            __init__.py
+            admin.py
+            cms_plugins.py
+            models.py
+            tests.py
+            views.py
+        addon.json
+        LICENSE.txt
+        MANIFEST.in
+        README.rst
+        setup.py
 
 
 Test the new plugin
@@ -277,14 +337,15 @@ making development a very efficient process. For example, you could add a ``name
         model = CMSPlugin
         render_template = "hello_plugin/hello.html"
         text_enabled = True
-        name = "Hello World"
+        name = "Erika's Hello World"
 
 which will provide a friendlier representation of the plugin when displayed to users in the list of
 available plugins.
 
 If you now `scroll through the available plugins <structure-and-content>`_ while editing the site
 (use ``aldryn project open`` to open the site if you don't already have it open in the browser)
-you'll see that the News & Blog plugin that was previously named *Archive* is now called *Old news*.
+you'll see that the plugin that was previously named *HelloWorld* is now called *Erika's Hello
+World*.
 
 
 .. note:: **How this works**
