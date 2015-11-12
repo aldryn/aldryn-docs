@@ -42,32 +42,20 @@ Other than ``addon.json``, these are all standard Python packaging files.
 The only strictly-required file, and needed for :ref:`aldryn addon validate
 <addon-related-commands>` to run successfully.
 
-Here's an example of a configuration file using all options:
+Here's an example of a configuration file:
 
 .. code-block:: json
 
     {
-        "name": "My Addon",
-        "description": "This is my custom application.",
-        "url": "https://github.com/aldryn",
-        "package-name": "my-addon",
+        "package-name": "hello-world-erika",
         "installed-apps": [
-            "my_addon"
-        ],
-        "author": {
-            "name": "Divio",
-            "url": "https://www.aldryn.com"
-        },
-        "license": {
-            "name": "BSD"
-        }
+            "hello_world_erika"
+        ]
     }
 
 
 Options
 -------
-
-Most of the options are self-explanatory, but please take note of:
 
 .. describe:: package—name
 

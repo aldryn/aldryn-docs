@@ -20,7 +20,7 @@ We'll begin by making a simple CSS change, just as we did in :ref:`edit_a_file_l
 have not yet completed that tutorial, you are strongly recommended to do that now, so that you are
 familiar with some of the basics of the system.
 
-Find and open the file ``private/SASS/settings/_bootstrap.scss`` in your local project directory,
+Find and open the file ``private/sass/settings/_bootstrap.scss`` in your local project directory,
 and change the line that refers to ``text-color``::
 
     $text-color: #666;
