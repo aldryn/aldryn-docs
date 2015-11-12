@@ -1,7 +1,7 @@
 .. _working_locally_on_content:
 
 ##################
-Working on content
+Developing content
 ##################
 
 ********

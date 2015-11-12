@@ -1,8 +1,8 @@
 .. _working_locally_on_frontend:
 
-########################
-Working on frontend code
-########################
+##################################
+Developing your project's frontend
+##################################
 
 You're now ready to work on your project's code, which you'll find in the same directory. The
 project directory is in fact a Git repository, so you can work on it just as you'd work with any

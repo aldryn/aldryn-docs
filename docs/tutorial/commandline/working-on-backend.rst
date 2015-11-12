@@ -1,7 +1,7 @@
 .. _working_locally_on_backend:
 
 #######################
-Working on backend code
+Developing applications
 #######################
 
 As well as your site's frontend code, you can also modify the Python code in the applications it
@@ -44,7 +44,7 @@ When you hit **Create Addon**, you'll be taken to a the settings pages for it. Y
 change these settings later.
 
 First though, select *Package information* from the menu; this lists some files ready to be
-downloaded into the new Addon for packaging purposes. You will need to use these shortly.
+downloaded into the new Addon for packaging purposes. You will need to use them shortly.
 
 
 ****************************************
@@ -59,14 +59,13 @@ If you have Django installed globally, you could instead do::
 
     django-admin startapp hello_world_<your name>
 
-.. important:
+.. important::
 
     The name you provide here is the Python *module name*, and can contain only only numbers,
     letters and underscores.
 
-This will create a new directory, ``hello_world_<your name>`` (note the underscores), containing a
-new Django application with various files in it. For example::
-
+This will create a new *module-level* directory, ``hello_world_<your name>`` (note the
+underscores), containing a new Django application with various files in it. For example::
 
     hello_world_erika
         __init__.py
@@ -75,8 +74,9 @@ new Django application with various files in it. For example::
         tests.py
         views.py
 
-You now need to create a new outer directory, with exactly the same name as the *Package name* you
-used earlier, and place the application inside it, so your package will now look like::
+You now need to create a new outer *package-level* directory, with exactly the same name as the
+*Package name* you used earlier, and place the application inside it, so your package will now look
+like::
 
     hello-world-erika
         hello_world_erika
@@ -169,54 +169,84 @@ sure you are in the (outer) ``hello-world-<your name>`` directory, and check it:
     $ aldryn addon validate
     Addon is valid!
 
-
-****************
-Upload the Addon
-****************
-
-Use the ``aldryn addon upload`` command::
-
-    $ aldryn addon upload
-    Warning: Aldryn config file 'aldryn_config.py' not found. Your app will not have any
-    configurable settings.
-    warning: no files found matching 'LICENSE'
-    warning: no files found matching '*' under directory '*/boilerplates'
-    warning: no files found matching '*' under directory '*/templates'
-    warning: no files found matching '*' under directory '*/static'
-    warning: no files found matching '*' under directory '*/locale'
-    warning: check: missing required meta-data: url
-
-    ok
-    Configuration file is valid
-
-    New version 0.0.1 of hello-world-erika uploaded to alpha channel
-
-    https://control.aldryn.com/api/v1/apps/serve/hello-world-erika/
-    0.0.1/266b549a-79fc-4d1d-a86d-11f3031ce33f/hello-world-erika-0.0.1.tar.gz
-
-Your Addon is now on Aldryn. You can see it listed on `your Addons page
-<https://control.aldryn.com/account/my-addons/>`_, and it's available to install into your projects.
+``aldryn addon validate`` can't prove that your Addon will work, but it will catch some problems
+that could otherwise prevent it working on Aldryn.
 
 
-*****************
-Install the Addon
-*****************
+***********************************
+Add some functionality to the Addon
+***********************************
 
-You can now install the Addon, on Aldryn and in your local project.
+So far the Addon exists as a package, but doesn't actually do anything yet. We will add some code
+to it that does, a minimal django CMS plugin.
+
+See `custom plugins <http://docs.django-cms.org/en/latest/how_to/custom_plugins.html>`_ in
+the django CMS documentation for more information about plugins.
+
+Create a new ``cms_plugins.py`` file inside the application (that is, in
+``addons-dev/hello-world-<your name>/hello_world_<your name>``)::
+
+    from cms.plugin_base import CMSPluginBase
+    from cms.plugin_pool import plugin_pool
+    from cms.models.pluginmodel import CMSPlugin
 
 
-On Aldryn
-=========
-
-Open your project's Dashboard, select *Manage Addons* from the menu and install the new Addon in the
-usual way, before re-deploying the Test site.
-
-As an application it does nothing whatsoever and is utterly useless, but it's recognised by Aldryn
-and will appear in your list of installed Addons.
+    class HelloWorld(CMSPluginBase):
+        model = CMSPlugin
+        render_template = "hello_world_<your name>/hello.html"  # don't forget to edit this
+        text_enabled = True
 
 
-Locally
-=======
+    plugin_pool.register_plugin(HelloWorld)
+
+Don't forget to change ``<your name`` above.
+
+And in::
+
+    hello-world-<your name>
+        hello_world_<your name>
+            templates
+                hello_world_<your name>
+                    hello.html
+
+(you will need to create some of the file and the directories along the path)::
+
+    Hello
+    {% if request.user.is_authenticated %}
+        {{ request.user.first_name }} {{ request.user.last_name}}
+    {% else %}
+        Guest
+    {% endif %}
+
+Your application should now look very like this::
+
+    hello-world-erika
+        hello_world_erika
+            templates
+                hello_world_erika
+                    hello.html
+            __init__.py
+            admin.py
+            cms_plugins.py
+            models.py
+            tests.py
+            views.py
+        addon.json
+        LICENSE.txt
+        MANIFEST.in
+        README.rst
+        setup.py
+
+
+**************
+Test the Addon
+**************
+
+You can now test the Addon locally. First you must install it.
+
+
+Install the Addon in your local project
+=======================================
 
 To deploy the new application locally, run ``aldryn project develop hello-world-<your name>``::
 
@@ -252,65 +282,6 @@ Add the application name to the list, for example::
 .. note:: A future update to the Aldryn client will take of this step automatically.
 
 
-***************************
-Make the Addon do something
-***************************
-
-So far the Addon hasn't done anything at all, so we will add some code to it that does, a minimal
-django CMS plugin.
-
-See `custom plugins <http://docs.django-cms.org/en/latest/how_to/custom_plugins.html>`_ in
-the django CMS documentation for more information about plugins.
-
-Create a new ``cms_plugins.py`` file inside the application (that is, in
-``addons-dev/hello-world-<your name>/hello_world_<your name>``)::
-
-    from cms.plugin_base import CMSPluginBase
-    from cms.plugin_pool import plugin_pool
-    from cms.models.pluginmodel import CMSPlugin
-
-
-    class HelloWorld(CMSPluginBase):
-        model = CMSPlugin
-        render_template = "hello_plugin_<your name>/hello.html"
-        text_enabled = True
-
-
-    plugin_pool.register_plugin(HelloWorld)
-
-Don't forget to change ``<your name`` above.
-
-And in ``addons-dev/hello-world-<your name>/hello_world_<your
-name>/templates/hello_plugin/hello.html`` (you will need to create the file and the directories
-along the path)::
-
-    Hello
-    {% if request.user.is_authenticated %}
-        {{ request.user.first_name }} {{ request.user.last_name}}
-    {% else %}
-        Guest
-    {% endif %}
-
-Your application should now look very like this::
-
-    hello-world-erika
-        hello_world_erika
-            templates
-                hello_plugin
-                    hello.html
-            __init__.py
-            admin.py
-            cms_plugins.py
-            models.py
-            tests.py
-            views.py
-        addon.json
-        LICENSE.txt
-        MANIFEST.in
-        README.rst
-        setup.py
-
-
 Test the new plugin
 ===================
 
@@ -322,9 +293,17 @@ you'll see that there's a new plugin available, *HelloWorld*.
 
 Open the local site, select a Placeholder and add the new *HelloWorld* plugin to a page.
 
+..note:: **Problems?**
 
-Make your changes to the application
-====================================
+    Use the logs to help you find what's going on, or going wrong::
+
+        docker-compose logs web  # web server logs
+        docker-compose logs db   # database server logs
+        docker-compose logs      # both
+
+
+Make changes to the application
+===============================
 
 As you continue developing the Addon, your changes are immediately available on the server,
 making development a very efficient process. For example, you could add a ``name`` attribute to the
@@ -335,7 +314,7 @@ making development a very efficient process. For example, you could add a ``name
 
     class HelloWorld(CMSPluginBase):
         model = CMSPlugin
-        render_template = "hello_plugin/hello.html"
+        render_template = "hello_world_erika/hello.html"  # don't forget to edit this
         text_enabled = True
         name = "Erika's Hello World"
 
@@ -346,7 +325,6 @@ If you now `scroll through the available plugins <structure-and-content>`_ while
 (use ``aldryn project open`` to open the site if you don't already have it open in the browser)
 you'll see that the plugin that was previously named *HelloWorld* is now called *Erika's Hello
 World*.
-
 
 .. note:: **How this works**
 
@@ -364,13 +342,63 @@ World*.
 
     See :ref:`errors-and-logging` for information on how to deal with this.
 
+Once you have it working locally to your satisfaction, you're ready to upload it to Aldryn.
 
-************************
-Upload the updated Addon
-************************
 
-You won't be able to upload the updated plugin until you have incremented its version number in
-``__init.py__``, so change that to ``0.0.2``.
+*************************
+Using the Addon on Aldryn
+*************************
+
+Upload the Addon
+================
+
+Use the ``aldryn addon upload`` command::
+
+    $ aldryn addon upload
+    Warning: Aldryn config file 'aldryn_config.py' not found. Your app will not have any
+    configurable settings.
+    warning: no files found matching 'LICENSE'
+    warning: no files found matching '*' under directory '*/boilerplates'
+    warning: no files found matching '*' under directory '*/templates'
+    warning: no files found matching '*' under directory '*/static'
+    warning: no files found matching '*' under directory '*/locale'
+    warning: check: missing required meta-data: url
+
+    ok
+    Configuration file is valid
+
+    New version 0.0.1 of hello-world-erika uploaded to alpha channel
+
+    https://control.aldryn.com/api/v1/apps/serve/hello-world-erika/
+    0.0.1/266b549a-79fc-4d1d-a86d-11f3031ce33f/hello-world-erika-0.0.1.tar.gz
+
+Your Addon is now on Aldryn. You can see it listed on `your Addons page
+<https://control.aldryn.com/account/my-addons/>`_, and it's available to install into your projects.
+
+
+Install the Addon
+=================
+
+Open the project's Dashboard, select *Manage Addons*
+
+In *Manage Addons* you will note that your Addon doesn't yet show as having an update available.
+
+This is because by default new Addons are placed in the *Alpha* :ref:`Release channel
+<release-channels>`. Hit **Configure** to set how your project will use this new Addon, and set the
+*Release channel* to *Alpha*. Once you save the configuration, the *Manage Addons* page will
+indicate that an update is available.
+
+Install it, and redeploy the Test server; the new plugin will now be available on your Aldryn
+project too.
+
+
+*************************
+Uploading a newer version
+*************************
+
+From time to time you will want to upload an improved version of your Addon to Aldryn. In order to
+do this, need to increment its version number in ``__init.py__``, so for your next version, change
+that to ``0.0.2``, and so on.
 
 Once more, validate::
 
@@ -379,22 +407,6 @@ Once more, validate::
 and upload your plugin::
 
     aldryn addon upload
-
-
-************************************
-Install the updated plugin on Aldryn
-************************************
-
-In *Manage Addons* for your site in the Aldryn Control Panel, you will note that your Addon doesn't
-yet show as having an update available.
-
-This is because by default new Addons are placed in the *Alpha* :ref:`Release channel
-<release-channels>`. Hit **Configure** to set how your project will use this new Addon, and set the
-*Release channel* to *Alpha*. Once you save the configuration, the *Manage Addons* page will
-indicate that an update is available.
-
-Install it, and redeploy the Test server as before; the new plugin will now be available on your
-Aldryn project too.
 
 
 **********
