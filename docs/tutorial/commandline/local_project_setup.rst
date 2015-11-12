@@ -1,8 +1,8 @@
-.. _run_locally:
+.. _local_setup:
 
-###############################
-Run your Aldryn project locally
-###############################
+################################
+Set-up an Aldryn project locally
+################################
 
 If your code works with django CMS, you can expect it to work with Aldryn.
 
@@ -26,9 +26,9 @@ replicates as far as possible the one your code will encounter when deployed.
 .. todo:: specify which boilerplate must be used
 
 
-**********************
-Log in with the client
-**********************
+******************************************
+Log in using the Aldryn commandline client
+******************************************
 
 The next step is to log in to Aldryn using the client::
 
@@ -146,10 +146,11 @@ Run::
 
 to build the CSS and JavaScript files.
 
+
 .. _login_locally:
 
-Log in locally
-==============
+Log in to the Django website
+============================
 
 With the site in your browser, select the *edit mode* link (or simply add ``?edit`` to the URL),
 and and you will be presented with login options in the tool bar. Choose **Log in as...**, select a
@@ -169,4 +170,7 @@ with the same applications, styling and content.
       locally and try again
     * select **Create user** to set up an admin user locally
 
-Explore the site locally. When you're ready, you can go on to :ref:`work_locally`.
+Explore the site locally.
+
+Now that you know how to replicate a project, you need to know what to do when you come back to it
+future, to check its status and get it running again - so go on to :ref:`work_locally`.

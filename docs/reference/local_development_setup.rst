@@ -46,10 +46,67 @@ for each Addon.
 The ``addons.dev`` directory allows you to clone an Addon's source code into it.
 
 
+.. _addons.dev:
+
 ``addons.dev``
 ==============
 
-Once cloned, a correctly-configured Addon that requires no new dependencies will only require a
-server restart to be available in your local site.
+Your workspace for Addon development.
+
+If you are familiar with Python virtual environments, this directory functions much like the
+``src`` directory in a ``virtualenv``. It's on the Python path and any modules placed there will be
+discovered and made available to the Python environment.
+
+
+.. _local-django-server:
+
+***********************
+The local Django server
+***********************
+
+The server can be started with ``aldryn project up``, executed in the main project directory.
+
+
+Auto-reloading
+==============
+
+In your ``projectname_web_1`` container, the Django server auto-reloads when it detects code
+changes, just like the Django runserver does. This includes any code it has loaded, including code
+in the :ref:`addons.dev` directory.
+
+Changes will be immediately picked up and compiled, and the server restarted to make them available.
+
+.. _errors-and-logging:
+
+Errors and logging
+==================
+
+If your changes introduce an error that crashes the server, when you try to reload the web page
+you will instead get an error::
+
+     A server error occurred.  Please contact the administrator.
+
+In this case you will need to see where the error occurred, so run::
+
+    docker-compose logs
+
+to see the traceback.
+
+``docker-compose logs`` optionally takes the arguments ``web`` and ``db`` to specify the particular
+container. A useful way of working is to have ``docker-compose logs`` open in one terminal
+window while you work in another.
+
+After correcting the error and saving changes, the server will auto-reload the code and restart.
+
+.. note::
+
+    Depending on the error, an auto-reload may not be enough. In this case you will need to
+    stop and restart the server manually, with::
+
+         aldryn project stop; aldryn project up
+
+
+Installing an Addon
+===================
 
 If an Addon requires new dependencies, run ``aldryn addon develop`` to install them.

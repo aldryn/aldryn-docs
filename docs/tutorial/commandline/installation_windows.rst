@@ -143,6 +143,7 @@ computer this key belongs to.
 Your Aldryn account will now recognise your computer as a trusted host, and you'll be protected by
 encrypted communication for command-line operations between the two.
 
+.. _docker_cli_windows:
 
 *************
 Set up Docker
@@ -205,4 +206,4 @@ In the shell, run the command ``aldryn doctor``, which should confirm that all i
      ✓ docker server connection
      ✓ docker-compose
 
-You're now ready to log in and :ref:`start working on a project <run_locally>`.
+You're now ready to log in and :ref:`start working on a project <local_setup>`.
