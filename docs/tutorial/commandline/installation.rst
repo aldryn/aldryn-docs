@@ -122,7 +122,7 @@ aldryn-client`` regularly.
     * if ``pip`` is not installed, try one of:
 
         * use the `official pip installer <https://pip.pypa.io/en/latest/installing/#install-pip>`_
-        ``sudo easy_install pip``
+        * ``sudo easy_install pip``
         * (Debian/Ubuntu users) ``sudo apt-get install python-pip``
 
     then try again.
@@ -133,17 +133,17 @@ Later, you will want to consult the :ref:`command-line client reference notes
 <command-line-client-reference>`, but in the meantime, all the operations you'll need to use are
 described in this tutorial.
 
-.. _launch-docker-quickstart-terminal:
 
 .. note::
 
     The client is `released as open-source software <https://github.com/aldryn/aldryn-client>`_, on
     GitHub.
 
-    You can install the client directly from the GitHub repositotory with::
+    You can install the client directly from the GitHub repository with::
 
         pip install -e git+git://github.com/aldryn/aldryn-client.git#egg=aldryn_client
 
+.. _launch-docker-quickstart-terminal:
 
 *********************************
 Launch Docker Quickstart Terminal

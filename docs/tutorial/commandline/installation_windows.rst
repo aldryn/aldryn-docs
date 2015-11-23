@@ -110,7 +110,7 @@ described in this tutorial.
     The client is `released as open-source software <https://github.com/aldryn/aldryn-client>`_, on
     GitHub.
 
-    You can install the client directly from the GitHub repositotory with::
+    You can install the client directly from the GitHub repository with::
 
         pip install -e git+git://github.com/aldryn/aldryn-client.git#egg=aldryn_client
 
