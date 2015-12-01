@@ -10,6 +10,7 @@ This section covers the very basics to help you get started.
 Aldryn runs `django CMS <http://django-cms.org>`_. If you're already familiar with django CMS you
 can skip this section.
 
+
 .. _cms_login:
 
 ====================
@@ -22,20 +23,18 @@ If not, add ``/?edit`` to the end of the URL to trigger the login prompt.
 
 
 ================
-Using Draft mode
+Using Edit mode
 ================
 
 
-You're in *Live mode* - see the |live| button in the toolbar. Switch to *Draft mode*, by hitting
-the button.
+.. |edit| image:: images/edit.png
+   :alt: Edit
+   :width: 50
 
-.. |live| image:: images/live.png
-   :alt: Live mode indicator
+You're looking at the published version of your page. Switch to *Edit mode*, by hitting
+the |edit| button.
 
-Now you're in *Draft mode* |draft|, you're able to change much of the site's content simply by double-clicking on it.
-
-.. |draft| image:: images/draft.png
-   :alt: Draft mode indicator
+Now you're in *Edit mode*, you're able to change much of the site's content simply by double-clicking on it.
 
 When you're hovering over editable content, a *Double-click to edit* pop-up will appear alongside
 your pointer, along with the name of the content type involved.
@@ -59,17 +58,21 @@ other editing controls.
 
 Change some text and hit **Save**.
 
-Your changes are reflected immediately - but only in *Draft mode*. Switch back to *Live mode*,
-where you will see that the original text is unchanged. It will remain unchanged in *Live mode*
-until you hit **Publish changes**.
+.. |view-published| image:: images/view-published.png
+   :alt: View published
+   :width: 110
+
+.. |publish-changes| image:: images/publish-changes.png
+   :alt: Publish changes
+   :width: 110
+
+Your changes are reflected immediately - but only in *Edit mode*. Hit |view-published| and you'll see that the original text, as published, is unchanged. It will remain unchanged in
+until you hit |publish-changes|.
 
 This allows you to keep editing and refining your page until you are satisfied with your changes in
-*Draft mode*, while leaving the live content undisturbed.
+*Edit mode*, while leaving the live content undisturbed.
 
-.. image:: images/publish.png
-   :alt: Publishing changes
-
-Switch back to *Draft mode* once more, and **Publish** your changes.
+When you're happy with your work, |publish-changes|.
 
 ===============
 Further editing
@@ -121,13 +124,23 @@ published immediately.
 Structure and content editing modes
 ===================================
 
-.. image:: images/content_mode.png
-   :alt: The edit mode switch
-   :align: right
-   :width: 50%
+.. image:: images/structure-content.png
+     :align: right
+     :alt: the 'Structure/Content' mode control
+     :width: 148
 
-We're in *content editing mode*, as indicated in the Toolbar. Use the **edit mode switch** to
-change to *structure editing mode*.
+The *Structure/Content* mode control in the toolbar lets you switch between two different editing
+modes.
+
+You've already used *Content* mode, in which you can double-click on content to edit it.
+
+In *Structure* mode, you can manage the placement of content within the page structure.
+
+.. |structure-button| image:: images/structure-button.png
+   :alt: 'structure'
+   :width: 148
+
+* Switch to *Structure* mode by hitting the |structure-button| button.
 
 .. image:: images/placeholder.png
    :alt: The block of Placeholders
