@@ -25,7 +25,7 @@ Change an image
    :width: 25%
 
 To explore the basic use of Django Filer, we'll start by changing an existing image. Find an image
-in a page, and hover over it in *Draft mode* - you'll see the indicator that shows this is an
+in a page, and hover over it in *Edit mode* - you'll see the indicator that shows this is an
 *Image*.
 
 Double-click to open the plugin.
