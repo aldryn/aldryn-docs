@@ -68,6 +68,8 @@ also indicates that something’s on.
 You can use the standard django CMS editing interface to continue your
 event, as you did in :ref:`structure-and-content` earlier.
 
+.. note:: There's an even easier way to create a new Event - just hit **Create** in the toolbar
+    and follow the steps.
 
 =============
 Using plugins
