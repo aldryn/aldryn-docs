@@ -92,7 +92,7 @@ The *Blog* page lists a number of articles, including a snippet of introductory 
 along with a publishing date and the author's name, and a link to the full article.
 
 In some cases, for "featured" articles, a large image is displayed too. If you read a full article
-and switch to *Draft mode*, you'll see that double-click-to-edit works here too.
+and switch to *Edit mode*, you'll see that double-click-to-edit works here too.
 
 Double-clicking in an article's main body of text will open the text editor as before.
 
@@ -111,7 +111,7 @@ you can change settings such as the title, date of publication and so on.
 .. note::
 
    You'll notice that some content appears differently when double-clicked to edit it, or even when
-   you simply switch to *Draft mode*. For example, a collection of slides in a carousel will
+   you simply switch to *Edit mode*. For example, a collection of slides in a carousel will
    display each slide individually, to make them easier to edit.
 
 Unlike pages, weblog articles don't exist in draft and live forms, so any changes you make are

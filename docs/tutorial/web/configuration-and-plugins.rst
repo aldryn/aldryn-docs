@@ -95,3 +95,15 @@ lists the event you created.
 
 .. image:: images/homepage-event.png
    :alt: The plugin at work in the home page
+
+
+=================
+Exploring further
+=================
+
+There are numerous pre-installed applications on the Explorer site that work in the same way.
+
+As well as News & Blog and Events, you'll find People, Jobs and FAQ.
+
+To create new content for any of them, just start by hitting **Create** in the toolbar, and follow
+the steps.
