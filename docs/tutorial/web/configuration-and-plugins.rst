@@ -1,5 +1,5 @@
 ##########################################
-Configuring applications and using plugins
+Applications, Apphooks and plugins
 ##########################################
 
 Your *Explorer site* comes with a number of applications installed by default. As well as django
@@ -12,60 +12,51 @@ functionality through this.
 .. _create-events-apphook:
 
 =============================
-Create an Events landing page
+The Events landing page
 =============================
 
-By default, a django CMS page's content comes from the plugins you insert into it, but if an
-application has a django CMS **Apphook**, this application can insert content into your page
-automatically.
+Find the *Events* landing page on the site.
 
-For example, the Apphook for the Aldryn News & Blog application is what fills your *Blog* page with
-the news articles in the system. We'll do the same with Events.
+This page contains information about various forthcoming events.
 
-Create a django CMS page to hook the Aldryn Events application into, using *Page > Add Page* from the Toolbar. Call it *Events*, and select **Save and continue editing**.
+These events, and this page, are created by a separate application, Aldryn Events, that integrates
+into django CMS using an **Apphook**.
 
-In your new page's *Advanced settings*, set its ``Application`` to *Events* and **Save** again.
+.. note:: **About Apphooks**
 
-.. image:: images/apphook-setup.png
-   :alt: the apphook setup
-   :width: 50%
-   :align: center
+    By default, a django CMS page's content comes from the plugins you insert into it, but if an
+    application has a django CMS **Apphook**, this application can insert content into your page
+    automatically, from a different source.
 
-This page is now hooked into to the Aldryn Events application.
+    For example, the Apphook for the Aldryn News & Blog application is what fills your *Blog* page
+    with the news articles in the system, and the same is true of the Events page.
 
-.. note::
+    You can see the Apphook by selecting *Page* > *Advanced settings* > *Application* from the
+    Toolbar, which shows that this page is hooked into to the Aldryn Events application.
 
-    Sometimes after making changes related to Apphook configuration, you will see an error on your
-    django CMS page. This is a temporary error. Refresh the page after a few moments and the error
-    will have resolved itself.
-
-    A future update will address this.
 
 
 ============
 Add an event
 ============
 
-When you're on the *Events* page, you'll see that the django CMS *Toolbar* now contains a new item,
-*Events*. Select *Add Event...* from this menu.
+#.  Hit **Create** in the toolbar.
+#.  Select *New event* and hit **Next**.
+#.  Provide some basic details:
 
-.. image:: images/add-event.png
-   :alt: the add event item
+    * the ``Short description`` is a brief summary of the Event, that will be used in lists of
+      Events
+    * an event must have a ``Start date``, but the other date/time fields are optional
+    * for the ``Location``, enter as complete address as possible - Aldryn Events will pass this on
+      to Google Maps to display a map, so it needs to be unambiguous and accurate
 
-Provide some basic details:
-
-* the ``Short description`` is a brief summary of the Event, that will be used in lists of Events
-* an event must have a ``Start date``, but the other date/time fields are optional
-* for the ``Location``, enter as complete address as possible - Aldryn Events will pass this on to
-  Google Maps to display a map, so it needs to be unambiguous and accurate
-
-and **Save** your event.
+#.  **Save** your event.
 
 It now exists in the database and will be listed on the *Events* page. Notice that the calendar
 also indicates that something’s on.
 
 .. image:: images/event-sample.png
-   :alt: an published Event
+   :alt: a published Event
    :align: center
    :width: 50%
 
@@ -74,9 +65,11 @@ also indicates that something’s on.
    :align: center
    :width: 50%
 
-You can use the standard django CMS placeholder interface to add some more text content to your
-events, as you did in :ref:`structure-and-content` earlier.
+You can use the standard django CMS editing interface to continue your
+event, as you did in :ref:`structure-and-content` earlier.
 
+.. note:: There's an even easier way to create a new Event - just hit **Create** in the toolbar
+    and follow the steps.
 
 =============
 Using plugins
