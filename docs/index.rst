@@ -74,6 +74,7 @@ Table of Contents
     self
     tutorial/index
     reference/index
+    how-to/index
     improving
 
 .. _Aldryn: http://www.aldryn.com/
