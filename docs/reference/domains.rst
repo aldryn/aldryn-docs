@@ -8,7 +8,11 @@ Using your own domain names
 You'll probably want to use your own domain name with Aldryn, rather than having a site served at
 ``example.us-iad-rs.aldryn.io`` or similar.
 
-You need to have **Premium** account to do this.
+Your custom domain will only apply to your project's *Live* site - the *Test* site will continue to
+be served under our ``aldryn.io`` domain.
+
+You'll get one included *Live* server instance as standard with each of our account packages, and
+can add as many more as you need.
 
 
 ***************************
