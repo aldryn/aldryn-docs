@@ -115,7 +115,7 @@ the **Copy test data to live** button.
 Check that the live server now also features the new pages.
 
 
-Copying test data to live
+Copying live data to test
 =========================
 
 The **Copy live data to test** button will copy all site content in the other direction, so that
